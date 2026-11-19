@@ -1,0 +1,1768 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.22.2/x64/bin/node",
+      "/home/runner/work/lexical/lexical/node_modules/playwright/cli.js",
+      "test",
+      "--project=firefox",
+      "--shard=1/1",
+      "--reporter=dot,json,./packages/lexical-playground/__tests__/utils/timingReporter.mjs"
+    ],
+    "configFile": "/home/runner/work/lexical/lexical/playwright.config.mjs",
+    "rootDir": "/home/runner/work/lexical/lexical",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+        "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+        "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719"
+      },
+      "gitCommit": {
+        "shortHash": "eec04f5",
+        "hash": "eec04f579940fa4001b70674716561137b269a0d",
+        "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+        "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+        "author": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120824000
+        },
+        "committer": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120824000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/lexical/lexical/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+            "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+            "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719"
+          },
+          "gitCommit": {
+            "shortHash": "eec04f5",
+            "hash": "eec04f579940fa4001b70674716561137b269a0d",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__",
+        "testIgnore": [
+          "/\\/__tests__\\/(?:unit|browser)\\//"
+        ],
+        "testMatch": [
+          "/\\/e2e\\/(?:Collaboration|CollabY[^/]*)\\.spec\\.mjs$/"
+        ],
+        "timeout": 150000
+      },
+      {
+        "outputDir": "/home/runner/work/lexical/lexical/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+            "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+            "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719"
+          },
+          "gitCommit": {
+            "shortHash": "eec04f5",
+            "hash": "eec04f579940fa4001b70674716561137b269a0d",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__",
+        "testIgnore": [
+          "/\\/__tests__\\/(?:unit|browser)\\//"
+        ],
+        "testMatch": [
+          "/\\/e2e\\/(?:Collaboration|CollabY[^/]*)\\.spec\\.mjs$/"
+        ],
+        "timeout": 150000
+      },
+      {
+        "outputDir": "/home/runner/work/lexical/lexical/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+            "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+            "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719"
+          },
+          "gitCommit": {
+            "shortHash": "eec04f5",
+            "hash": "eec04f579940fa4001b70674716561137b269a0d",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__",
+        "testIgnore": [
+          "/\\/__tests__\\/(?:unit|browser)\\//"
+        ],
+        "testMatch": [
+          "/\\/e2e\\/(?:Collaboration|CollabY[^/]*)\\.spec\\.mjs$/"
+        ],
+        "timeout": 150000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "dot"
+      ],
+      [
+        "json"
+      ],
+      [
+        "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/utils/timingReporter.mjs"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 1,
+      "total": 1
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 4,
+    "webServer": {
+      "command": "pnpm run start-test-server",
+      "reuseExistingServer": false,
+      "timeout": 120000,
+      "url": "http://localhost:4000"
+    }
+  },
+  "suites": [
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collaboration",
+          "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+          "line": 39,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Undo with collaboration on",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9965,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:55.458Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-2886199b456dfbade0f9",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 42,
+              "column": 3
+            },
+            {
+              "title": "Remove dangling text from YJS when there is no preceding text node",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8986,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:55.420Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-fa3ebc5a33e7fb2e3d5c",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 235,
+              "column": 3
+            },
+            {
+              "title": "Merge dangling text into preceding text node",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8060,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:55.469Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-4fcd4c82dd7d8f239d19",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 313,
+              "column": 3
+            },
+            {
+              "title": "Undo/redo where text node is split by formatting change",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8516,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:55.448Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-e5a05e8bd18cd2db112b",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 402,
+              "column": 3
+            },
+            {
+              "title": "Undo/redo where text node is split by inline element node",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6717,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:05.329Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-ed176761563daab834c0",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 523,
+              "column": 3
+            },
+            {
+              "title": "$handleNormalizationMergeConflicts handles nodes that have been reparented",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5617,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:06.237Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-d8d956c79ffa5e34b0a9",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 660,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: tables",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "typing in cells, then a row and a column inserted at the same time",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 16990,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:06.480Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-f8cc44ff09e6d55707a3",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "two clients insert a row at the same place while a third types in the table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 13767,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:06.548Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-412d563729e535e97cc9",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 111,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: images",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+          "line": 139,
+          "column": 6,
+          "specs": [
+            {
+              "title": "an image syncs; its caption (a nested editor) cannot be added",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8217,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:11.961Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-f752e748d4a5cf729d99",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 140,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: IME",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+          "line": 170,
+          "column": 6,
+          "specs": [
+            {
+              "title": "compose in a line while a peer types in the same line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "IME composition is driven through CDP",
+                      "location": {
+                        "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                        "line": 171,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:12.161Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "IME composition is driven through CDP",
+                          "location": {
+                            "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                            "line": 171,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-a28b1553d16426eee2a0",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 176,
+              "column": 3
+            },
+            {
+              "title": "compose while a peer splits the line before the composition",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "IME composition is driven through CDP",
+                      "location": {
+                        "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                        "line": 171,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:12.232Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "IME composition is driven through CDP",
+                          "location": {
+                            "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                            "line": 171,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-00865ae78a4c16597ff3",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 197,
+              "column": 3
+            },
+            {
+              "title": "compose while a peer splits the line after the composition",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "IME composition is driven through CDP",
+                      "location": {
+                        "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                        "line": 171,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:12.290Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "IME composition is driven through CDP",
+                          "location": {
+                            "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                            "line": 171,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-324915f7967d74e953a4",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 221,
+              "column": 3
+            },
+            {
+              "title": "compose in a line while a peer joins it into the previous line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "IME composition is driven through CDP",
+                      "location": {
+                        "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                        "line": 171,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:12.398Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "IME composition is driven through CDP",
+                          "location": {
+                            "file": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+                            "line": 171,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-a38e23eb60c408580110",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 245,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: offline mode",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "edits made with no connection survive a reload and sync on reconnect",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7549,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:12.474Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-ff4b94765d6f762924f9",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "a replaced room: the offline edit is captured and reapplied as one undo step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6157,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:20.056Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-f7bc71a02285c888bd9e",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 81,
+              "column": 3
+            },
+            {
+              "title": "autoReplay none: the offline edit is not written over the block, but inserted after it in the collapsible section, as one undo step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6210,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:20.226Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-46aca21ba90d6c24cac1",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 112,
+              "column": 3
+            },
+            {
+              "title": "stage persist: nothing is applied until Reapply",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6359,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:20.401Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-8b0d56d0ca78a4c56a46",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 155,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: structure while typing",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "three clients type in the same line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12688,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:23.522Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-6c380499af83c09ef838",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "Enter in the middle of a line while a peer types at its end",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 10506,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:26.282Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-3bd591a9c89ca680ba03",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 55,
+              "column": 3
+            },
+            {
+              "title": "Backspace joins a line while peers type at its start and end",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14978,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:26.478Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-7cf7695186bb0464120a",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 81,
+              "column": 3
+            },
+            {
+              "title": "Delete at a line end while a peer types at the start of the next line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 9944,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:26.847Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-072e7a84d083f0ea0983",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 106,
+              "column": 3
+            },
+            {
+              "title": "two clients press Enter at the same position and type",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10812,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:36.235Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-2c3df564d64d60fe9555",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 123,
+              "column": 3
+            },
+            {
+              "title": "heading and quote toggles while peers type in the line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 15986,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:36.815Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-d2b56148932a4cff82cb",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 149,
+              "column": 3
+            },
+            {
+              "title": "list: create, indent, Enter and outdent while a peer types",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 15558,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:36.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-891b766f9c5e9281a4f7",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "link while peers type inside and after the linked text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13284,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:41.486Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-b0b0764b6cb5b3961a50",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 228,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: a new document",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 40,
+          "column": 6,
+          "specs": [
+            {
+              "title": "clients that open a new document at once write one paragraph",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10919,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:47.116Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-f5cdec3eea712912e200",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "the split view shows the first paragraph once",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3682,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:52.516Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-03c8f1b52bf3326cc71a",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 60,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: offline",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 91,
+          "column": 6,
+          "specs": [
+            {
+              "title": "both sides edit text and structure while one is offline, then reconnect",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 13674,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:52.886Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-326df9b4ec56c8fc0303",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "large divergence: 30 lines on each side, lists, headings and joins",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26930,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:54.854Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-6932d8987c32ea647861",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 130,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: undo isolation",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 183,
+          "column": 6,
+          "specs": [
+            {
+              "title": "undo and redo own typing after a peer typed in the same line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11315,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:56.248Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-56015776d80a65885850",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 184,
+              "column": 3
+            },
+            {
+              "title": "undo of Enter and a heading keeps a peer’s edits in those lines",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12341,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:58.082Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-7c21b762270cd7fa5ece",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 212,
+              "column": 3
+            },
+            {
+              "title": "undo while a peer types inside the text being undone",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10246,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:06.691Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-d1c5f53740f57425a020",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 255,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: version gate",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 291,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a client that does not support the document’s layout is read only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8128,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:07.629Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-ec4765e4f68da6452cff",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 292,
+              "column": 3
+            },
+            {
+              "title": "a client older than a version that wrote the document is read only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4514,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:10.464Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-d69b5d26d106811defde",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 354,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: the playground schema version",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 403,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a tab of the previous playground opens an edited document read only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4876,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:15.004Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-d6c922fd305f9c05d5c1",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 404,
+              "column": 3
+            },
+            {
+              "title": "another tab gets the same all-day date",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5968,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:15.798Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-ce7d33902335d7b51868",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 424,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: before the first sync",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 440,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the editor is not editable until the binding has read the document",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10325,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:16.970Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-4996bd6fb583c4b92506",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 441,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: transport",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 519,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a provider connection that fails is reported, even after the provider reconnects",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6354,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:19.908Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-2de4976b0b46c22db31d",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 520,
+              "column": 3
+            },
+            {
+              "title": "a client whose provider never connects does not open",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7351,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:21.802Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-6ba2d569614c0de78304",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 541,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T21:00:52.570Z",
+    "duration": 96934.938,
+    "expected": 35,
+    "skipped": 4,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

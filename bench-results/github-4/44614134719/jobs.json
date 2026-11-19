@@ -1,0 +1,1712 @@
+[
+ {
+  "id": 135878181374,
+  "name": "build-ubuntu (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878181374",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:03Z",
+  "started_at": "2026-11-19T20:59:04Z",
+  "completed_at": "2026-11-19T20:59:58Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000212",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:59:05Z",
+    "completed_at": "2026-11-19T20:59:05Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:59:05Z",
+    "completed_at": "2026-11-19T20:59:07Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:59:07Z",
+    "completed_at": "2026-11-19T20:59:36Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:59:36Z",
+    "completed_at": "2026-11-19T20:59:55Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:59:55Z",
+    "completed_at": "2026-11-19T20:59:56Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:59:56Z",
+    "completed_at": "2026-11-19T20:59:56Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T20:59:56Z",
+    "completed_at": "2026-11-19T20:59:56Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:59:56Z",
+    "completed_at": "2026-11-19T20:59:56Z"
+   }
+  ]
+ },
+ {
+  "id": 135878181965,
+  "name": "build-ubuntu-prod (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878181965",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:03Z",
+  "started_at": "2026-11-19T20:59:04Z",
+  "completed_at": "2026-11-19T21:00:02Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000213",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:59:05Z",
+    "completed_at": "2026-11-19T20:59:06Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:59:06Z",
+    "completed_at": "2026-11-19T20:59:07Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:59:07Z",
+    "completed_at": "2026-11-19T20:59:35Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:59:35Z",
+    "completed_at": "2026-11-19T20:59:55Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:59:55Z",
+    "completed_at": "2026-11-19T20:59:59Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:59:59Z",
+    "completed_at": "2026-11-19T20:59:59Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T20:59:59Z",
+    "completed_at": "2026-11-19T20:59:59Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T20:59:59Z",
+    "completed_at": "2026-11-19T20:59:59Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711367,
+  "name": "collab-v2-linux (chromium) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711367",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T20:59:59Z",
+  "completed_at": "2026-11-19T21:08:22Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000214",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:00Z",
+    "completed_at": "2026-11-19T21:00:01Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:02Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:02Z",
+    "completed_at": "2026-11-19T21:00:32Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:32Z",
+    "completed_at": "2026-11-19T21:00:32Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:32Z",
+    "completed_at": "2026-11-19T21:00:51Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:51Z",
+    "completed_at": "2026-11-19T21:00:53Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:53Z",
+    "completed_at": "2026-11-19T21:00:53Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:53Z",
+    "completed_at": "2026-11-19T21:08:19Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:08:19Z",
+    "completed_at": "2026-11-19T21:08:20Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:08:20Z",
+    "completed_at": "2026-11-19T21:08:20Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:08:20Z",
+    "completed_at": "2026-11-19T21:08:20Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:08:20Z",
+    "completed_at": "2026-11-19T21:08:21Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:08:21Z",
+    "completed_at": "2026-11-19T21:08:21Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:08:21Z",
+    "completed_at": "2026-11-19T21:08:21Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711379,
+  "name": "linux (chromium, plain-text) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711379",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T21:00:00Z",
+  "completed_at": "2026-11-19T21:01:41Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000220",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:02Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:02Z",
+    "completed_at": "2026-11-19T21:00:03Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:03Z",
+    "completed_at": "2026-11-19T21:00:28Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:28Z",
+    "completed_at": "2026-11-19T21:00:30Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:30Z",
+    "completed_at": "2026-11-19T21:00:49Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:49Z",
+    "completed_at": "2026-11-19T21:00:49Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:49Z",
+    "completed_at": "2026-11-19T21:00:49Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:49Z",
+    "completed_at": "2026-11-19T21:01:36Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:01:36Z",
+    "completed_at": "2026-11-19T21:01:38Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:01:38Z",
+    "completed_at": "2026-11-19T21:01:38Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:01:38Z",
+    "completed_at": "2026-11-19T21:01:38Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:01:38Z",
+    "completed_at": "2026-11-19T21:01:38Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:01:38Z",
+    "completed_at": "2026-11-19T21:01:38Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:01:38Z",
+    "completed_at": "2026-11-19T21:01:38Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711411,
+  "name": "collab-linux (chromium) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711411",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T20:59:59Z",
+  "completed_at": "2026-11-19T21:07:08Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000215",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:00Z",
+    "completed_at": "2026-11-19T21:00:01Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:02Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:02Z",
+    "completed_at": "2026-11-19T21:00:29Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:29Z",
+    "completed_at": "2026-11-19T21:00:30Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:30Z",
+    "completed_at": "2026-11-19T21:00:53Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:53Z",
+    "completed_at": "2026-11-19T21:00:54Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:54Z",
+    "completed_at": "2026-11-19T21:00:54Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:54Z",
+    "completed_at": "2026-11-19T21:07:04Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:07:04Z",
+    "completed_at": "2026-11-19T21:07:05Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:07:05Z",
+    "completed_at": "2026-11-19T21:07:05Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:07:05Z",
+    "completed_at": "2026-11-19T21:07:05Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:07:05Z",
+    "completed_at": "2026-11-19T21:07:05Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:07:05Z",
+    "completed_at": "2026-11-19T21:07:05Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:07:05Z",
+    "completed_at": "2026-11-19T21:07:05Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711437,
+  "name": "linux (firefox, plain-text) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711437",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T21:00:00Z",
+  "completed_at": "2026-11-19T21:02:35Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000216",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:02Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:02Z",
+    "completed_at": "2026-11-19T21:00:04Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:04Z",
+    "completed_at": "2026-11-19T21:00:37Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:37Z",
+    "completed_at": "2026-11-19T21:00:39Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:39Z",
+    "completed_at": "2026-11-19T21:01:00Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 6,
+    "started_at": "2026-11-19T21:01:00Z",
+    "completed_at": "2026-11-19T21:01:00Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:01:00Z",
+    "completed_at": "2026-11-19T21:01:00Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:01:00Z",
+    "completed_at": "2026-11-19T21:02:30Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:02:30Z",
+    "completed_at": "2026-11-19T21:02:31Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:02:31Z",
+    "completed_at": "2026-11-19T21:02:31Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:02:31Z",
+    "completed_at": "2026-11-19T21:02:31Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:02:31Z",
+    "completed_at": "2026-11-19T21:02:32Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:02:32Z",
+    "completed_at": "2026-11-19T21:02:32Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:02:32Z",
+    "completed_at": "2026-11-19T21:02:32Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711444,
+  "name": "linux (chromium, rich-text) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711444",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T20:59:59Z",
+  "completed_at": "2026-11-19T21:06:32Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000218",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:00Z",
+    "completed_at": "2026-11-19T21:00:01Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:03Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:03Z",
+    "completed_at": "2026-11-19T21:00:32Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:32Z",
+    "completed_at": "2026-11-19T21:00:33Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:33Z",
+    "completed_at": "2026-11-19T21:00:58Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:58Z",
+    "completed_at": "2026-11-19T21:00:58Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:58Z",
+    "completed_at": "2026-11-19T21:00:58Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:58Z",
+    "completed_at": "2026-11-19T21:06:28Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:06:28Z",
+    "completed_at": "2026-11-19T21:06:29Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:06:29Z",
+    "completed_at": "2026-11-19T21:06:29Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:06:29Z",
+    "completed_at": "2026-11-19T21:06:29Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:06:29Z",
+    "completed_at": "2026-11-19T21:06:29Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:06:29Z",
+    "completed_at": "2026-11-19T21:06:30Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:06:30Z",
+    "completed_at": "2026-11-19T21:06:30Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711476,
+  "name": "linux (firefox, rich-text) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711476",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T21:00:00Z",
+  "completed_at": "2026-11-19T21:09:20Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000222",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:00Z",
+    "completed_at": "2026-11-19T21:00:01Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:03Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:03Z",
+    "completed_at": "2026-11-19T21:00:32Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:32Z",
+    "completed_at": "2026-11-19T21:00:34Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:34Z",
+    "completed_at": "2026-11-19T21:00:58Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:58Z",
+    "completed_at": "2026-11-19T21:00:58Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:58Z",
+    "completed_at": "2026-11-19T21:00:58Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:58Z",
+    "completed_at": "2026-11-19T21:09:17Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:09:17Z",
+    "completed_at": "2026-11-19T21:09:18Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:09:18Z",
+    "completed_at": "2026-11-19T21:09:18Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:09:18Z",
+    "completed_at": "2026-11-19T21:09:18Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:09:18Z",
+    "completed_at": "2026-11-19T21:09:18Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:09:18Z",
+    "completed_at": "2026-11-19T21:09:19Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:09:19Z",
+    "completed_at": "2026-11-19T21:09:19Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711490,
+  "name": "collab-v2-linux (firefox) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711490",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T21:00:00Z",
+  "completed_at": "2026-11-19T21:10:56Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000219",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:02Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:02Z",
+    "completed_at": "2026-11-19T21:00:04Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:04Z",
+    "completed_at": "2026-11-19T21:00:35Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:35Z",
+    "completed_at": "2026-11-19T21:00:37Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:37Z",
+    "completed_at": "2026-11-19T21:00:59Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:59Z",
+    "completed_at": "2026-11-19T21:01:00Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:01:00Z",
+    "completed_at": "2026-11-19T21:01:00Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:01:00Z",
+    "completed_at": "2026-11-19T21:10:52Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:10:52Z",
+    "completed_at": "2026-11-19T21:10:53Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:10:53Z",
+    "completed_at": "2026-11-19T21:10:53Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:10:53Z",
+    "completed_at": "2026-11-19T21:10:53Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:10:53Z",
+    "completed_at": "2026-11-19T21:10:53Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:10:53Z",
+    "completed_at": "2026-11-19T21:10:54Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:10:54Z",
+    "completed_at": "2026-11-19T21:10:54Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711497,
+  "name": "collab-y-linux (chromium) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711497",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T20:59:59Z",
+  "completed_at": "2026-11-19T21:02:28Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000221",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:00Z",
+    "completed_at": "2026-11-19T21:00:01Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:02Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:02Z",
+    "completed_at": "2026-11-19T21:00:35Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:35Z",
+    "completed_at": "2026-11-19T21:00:36Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:36Z",
+    "completed_at": "2026-11-19T21:00:58Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:58Z",
+    "completed_at": "2026-11-19T21:00:59Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:59Z",
+    "completed_at": "2026-11-19T21:00:59Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:59Z",
+    "completed_at": "2026-11-19T21:02:25Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:02:25Z",
+    "completed_at": "2026-11-19T21:02:26Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:02:26Z",
+    "completed_at": "2026-11-19T21:02:26Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:02:26Z",
+    "completed_at": "2026-11-19T21:02:26Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:02:26Z",
+    "completed_at": "2026-11-19T21:02:27Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:02:27Z",
+    "completed_at": "2026-11-19T21:02:27Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:02:27Z",
+    "completed_at": "2026-11-19T21:02:27Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711535,
+  "name": "collab-y-linux (firefox) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711535",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T21:00:00Z",
+  "completed_at": "2026-11-19T21:02:32Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000217",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:00Z",
+    "completed_at": "2026-11-19T21:00:01Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:02Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:02Z",
+    "completed_at": "2026-11-19T21:00:30Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:30Z",
+    "completed_at": "2026-11-19T21:00:31Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:31Z",
+    "completed_at": "2026-11-19T21:00:50Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:50Z",
+    "completed_at": "2026-11-19T21:00:51Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:51Z",
+    "completed_at": "2026-11-19T21:00:51Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:51Z",
+    "completed_at": "2026-11-19T21:02:29Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:02:29Z",
+    "completed_at": "2026-11-19T21:02:30Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:02:30Z",
+    "completed_at": "2026-11-19T21:02:30Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:02:30Z",
+    "completed_at": "2026-11-19T21:02:30Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:02:30Z",
+    "completed_at": "2026-11-19T21:02:30Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:02:30Z",
+    "completed_at": "2026-11-19T21:02:30Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:02:30Z",
+    "completed_at": "2026-11-19T21:02:31Z"
+   }
+  ]
+ },
+ {
+  "id": 135878711802,
+  "name": "collab-linux (firefox) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878711802",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:59:58Z",
+  "started_at": "2026-11-19T20:59:59Z",
+  "completed_at": "2026-11-19T21:10:05Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000223",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:00Z",
+    "completed_at": "2026-11-19T21:00:01Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:01Z",
+    "completed_at": "2026-11-19T21:00:03Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:03Z",
+    "completed_at": "2026-11-19T21:00:27Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:27Z",
+    "completed_at": "2026-11-19T21:00:28Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:28Z",
+    "completed_at": "2026-11-19T21:00:47Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:47Z",
+    "completed_at": "2026-11-19T21:00:48Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:48Z",
+    "completed_at": "2026-11-19T21:00:48Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:48Z",
+    "completed_at": "2026-11-19T21:10:01Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:10:01Z",
+    "completed_at": "2026-11-19T21:10:03Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:10:03Z",
+    "completed_at": "2026-11-19T21:10:03Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:10:03Z",
+    "completed_at": "2026-11-19T21:10:03Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:10:03Z",
+    "completed_at": "2026-11-19T21:10:03Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:10:03Z",
+    "completed_at": "2026-11-19T21:10:03Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:10:03Z",
+    "completed_at": "2026-11-19T21:10:03Z"
+   }
+  ]
+ },
+ {
+  "id": 135878743920,
+  "name": "collab-prod (chromium, rich-text-with-collab) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878743920",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T21:00:02Z",
+  "started_at": "2026-11-19T21:00:04Z",
+  "completed_at": "2026-11-19T21:06:27Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000224",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:04Z",
+    "completed_at": "2026-11-19T21:00:05Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:05Z",
+    "completed_at": "2026-11-19T21:00:06Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:07Z",
+    "completed_at": "2026-11-19T21:00:32Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:32Z",
+    "completed_at": "2026-11-19T21:00:34Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:34Z",
+    "completed_at": "2026-11-19T21:00:54Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:54Z",
+    "completed_at": "2026-11-19T21:00:55Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:55Z",
+    "completed_at": "2026-11-19T21:00:55Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:55Z",
+    "completed_at": "2026-11-19T21:06:22Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:06:22Z",
+    "completed_at": "2026-11-19T21:06:24Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:06:24Z",
+    "completed_at": "2026-11-19T21:06:24Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:06:24Z",
+    "completed_at": "2026-11-19T21:06:24Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:06:24Z",
+    "completed_at": "2026-11-19T21:06:24Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:06:24Z",
+    "completed_at": "2026-11-19T21:06:24Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:06:24Z",
+    "completed_at": "2026-11-19T21:06:24Z"
+   }
+  ]
+ },
+ {
+  "id": 135878744039,
+  "name": "prod (chromium, rich-text) (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719/job/135878744039",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T21:00:02Z",
+  "started_at": "2026-11-19T21:00:04Z",
+  "completed_at": "2026-11-19T21:06:08Z",
+  "labels": [
+   "ubuntu-latest"
+  ],
+  "runner_name": "GitHub Actions 1000000225",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:00:04Z",
+    "completed_at": "2026-11-19T21:00:05Z"
+   },
+   {
+    "name": "Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:00:05Z",
+    "completed_at": "2026-11-19T21:00:07Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:00:07Z",
+    "completed_at": "2026-11-19T21:00:31Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playground",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:00:31Z",
+    "completed_at": "2026-11-19T21:00:33Z"
+   },
+   {
+    "name": "Run ./.github/actions/setup-playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:00:33Z",
+    "completed_at": "2026-11-19T21:00:53Z"
+   },
+   {
+    "name": "Start the collab server",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 6,
+    "started_at": "2026-11-19T21:00:53Z",
+    "completed_at": "2026-11-19T21:00:53Z"
+   },
+   {
+    "name": "Run the tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-19T21:00:53Z",
+    "completed_at": "2026-11-19T21:00:53Z"
+   },
+   {
+    "name": "Run the tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:00:53Z",
+    "completed_at": "2026-11-19T21:06:04Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T21:06:04Z",
+    "completed_at": "2026-11-19T21:06:05Z"
+   },
+   {
+    "name": "Upload Artifacts",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:06:05Z",
+    "completed_at": "2026-11-19T21:06:05Z"
+   },
+   {
+    "name": "Upload collab server log on failure",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-19T21:06:05Z",
+    "completed_at": "2026-11-19T21:06:05Z"
+   },
+   {
+    "name": "Post Run ./.github/actions/setup-pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:06:05Z",
+    "completed_at": "2026-11-19T21:06:05Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v7",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:06:05Z",
+    "completed_at": "2026-11-19T21:06:05Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:06:05Z",
+    "completed_at": "2026-11-19T21:06:05Z"
+   }
+  ]
+ }
+]

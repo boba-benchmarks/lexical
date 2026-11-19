@@ -1,0 +1,29 @@
+{
+ "at": "2026-11-19T21:11:30+00:00",
+ "suite": "lexical",
+ "repo": "boba-benchmarks/lexical",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/lexical/actions/runs/44614134719",
+ "run_id": 44614134719,
+ "sha": "eec04f579940fa4001b70674716561137b269a0d",
+ "conclusion": "success",
+ "wall_s": 712,
+ "queue_s": 3,
+ "job_s": 4563,
+ "jobs": 14,
+ "job_max_s": 656,
+ "vcpu_min": 304.2,
+ "billed_min": 83,
+ "usd": 0.996,
+ "tests": {
+  "passed": 4469,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 2689,
+  "failed_tests": [],
+  "flaky_tests": [],
+  "files": 12
+ }
+}
