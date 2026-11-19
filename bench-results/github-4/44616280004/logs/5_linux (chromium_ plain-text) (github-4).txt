@@ -1,0 +1,1060 @@
+﻿2026-11-19T21:12:33.7217164Z Current runner version: '2.338.2'
+2026-11-19T21:12:33.7234760Z ##[group]Runner Image Provisioner
+2026-11-19T21:12:33.7235331Z Hosted Compute Agent
+2026-11-19T21:12:33.7235736Z Version: 20261103.629
+2026-11-19T21:12:33.7236132Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T21:12:33.7236565Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T21:12:33.7237007Z Worker ID: {3d245c84-55db-40e5-9de7-03c19da7cf18}
+2026-11-19T21:12:33.7237471Z Region: centralus
+2026-11-19T21:12:33.7237865Z Cloud: Azure
+2026-11-19T21:12:33.7238202Z ##[endgroup]
+2026-11-19T21:12:33.7238961Z ##[group]Operating System
+2026-11-19T21:12:33.7239770Z Ubuntu
+2026-11-19T21:12:33.7240120Z 26.04.1
+2026-11-19T21:12:33.7240418Z LTS
+2026-11-19T21:12:33.7240768Z ##[endgroup]
+2026-11-19T21:12:33.7241099Z ##[group]Runner Image
+2026-11-19T21:12:33.7241478Z Image: ubuntu-26.04
+2026-11-19T21:12:33.7241862Z Version: 20261111.196.1
+2026-11-19T21:12:33.7242653Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T21:12:33.7243528Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+2026-11-19T21:12:33.7244110Z ##[endgroup]
+2026-11-19T21:12:33.7244966Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T21:12:33.7246437Z Actions: read
+2026-11-19T21:12:33.7246784Z Checks: write
+2026-11-19T21:12:33.7247106Z Contents: read
+2026-11-19T21:12:33.7247514Z Metadata: read
+2026-11-19T21:12:33.7247854Z PullRequests: write
+2026-11-19T21:12:33.7248222Z ##[endgroup]
+2026-11-19T21:12:33.7249739Z Secret source: Actions
+2026-11-19T21:12:33.7250360Z Cache mode: write
+2026-11-19T21:12:33.7250785Z Prepare workflow directory
+2026-11-19T21:12:33.7597134Z Prepare all required actions
+2026-11-19T21:12:33.7629166Z Getting action download info
+2026-11-19T21:12:33.9942123Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T21:12:34.1522476Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T21:12:34.4799457Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T21:12:34.6163747Z Complete job name: linux (chromium, plain-text) (github-4)
+2026-11-19T21:12:34.6664741Z ##[group]Run actions/checkout@v7
+2026-11-19T21:12:34.6665193Z with:
+2026-11-19T21:12:34.6665480Z   repository: boba-benchmarks/lexical
+2026-11-19T21:12:34.6667750Z   token: ***
+2026-11-19T21:12:34.6668010Z   ssh-strict: true
+2026-11-19T21:12:34.6668283Z   ssh-user: git
+2026-11-19T21:12:34.6668563Z   persist-credentials: true
+2026-11-19T21:12:34.6668866Z   clean: true
+2026-11-19T21:12:34.6669146Z   sparse-checkout-cone-mode: true
+2026-11-19T21:12:34.6669614Z   fetch-depth: 1
+2026-11-19T21:12:34.6669886Z   fetch-tags: false
+2026-11-19T21:12:34.6670171Z   show-progress: true
+2026-11-19T21:12:34.6670457Z   lfs: false
+2026-11-19T21:12:34.6670725Z   submodules: false
+2026-11-19T21:12:34.6671008Z   set-safe-directory: true
+2026-11-19T21:12:34.6671346Z   allow-unsafe-pr-checkout: false
+2026-11-19T21:12:34.6671744Z env:
+2026-11-19T21:12:34.6671988Z   CI: true
+2026-11-19T21:12:34.6672253Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:12:34.6672560Z   E2E_PORT: 4000
+2026-11-19T21:12:34.6672876Z   test_results_path: test-results/
+2026-11-19T21:12:34.6673196Z ##[endgroup]
+2026-11-19T21:12:34.8582926Z Syncing repository: boba-benchmarks/lexical
+2026-11-19T21:12:34.8584400Z ##[group]Getting Git version info
+2026-11-19T21:12:34.8585049Z Working directory is '/home/runner/work/lexical/lexical'
+2026-11-19T21:12:34.8585873Z [command]/usr/bin/git version
+2026-11-19T21:12:34.8598872Z git version 2.56.1
+2026-11-19T21:12:34.8612309Z ##[endgroup]
+2026-11-19T21:12:34.8619525Z Temporarily overriding HOME='/home/runner/work/_temp/38629837-de44-4742-9a43-6a2365ae123a' before making global git config changes
+2026-11-19T21:12:34.8620436Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T21:12:34.8623663Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/lexical/lexical
+2026-11-19T21:12:34.8677760Z Deleting the contents of '/home/runner/work/lexical/lexical'
+2026-11-19T21:12:34.8680481Z ##[group]Determining repository object format
+2026-11-19T21:12:34.8690387Z ##[endgroup]
+2026-11-19T21:12:34.8710190Z ##[group]Initializing the repository
+2026-11-19T21:12:34.8720543Z [command]/usr/bin/git init /home/runner/work/lexical/lexical
+2026-11-19T21:12:34.8777226Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T21:12:34.8778304Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T21:12:34.8779555Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T21:12:34.8780434Z hint: call:
+2026-11-19T21:12:34.8781167Z hint:
+2026-11-19T21:12:34.8781749Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T21:12:34.8782266Z hint:
+2026-11-19T21:12:34.8782656Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T21:12:34.8783368Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T21:12:34.8783811Z hint:
+2026-11-19T21:12:34.8784062Z hint: 	git branch -m <name>
+2026-11-19T21:12:34.8784357Z hint:
+2026-11-19T21:12:34.8784832Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T21:12:34.8789151Z Initialized empty Git repository in /home/runner/work/lexical/lexical/.git/
+2026-11-19T21:12:34.8797739Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/lexical
+2026-11-19T21:12:34.8856913Z ##[endgroup]
+2026-11-19T21:12:34.8857636Z ##[group]Disabling automatic garbage collection
+2026-11-19T21:12:34.8858234Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T21:12:34.8881157Z ##[endgroup]
+2026-11-19T21:12:34.8881911Z ##[group]Setting up auth
+2026-11-19T21:12:34.8882496Z Removing SSH command configuration
+2026-11-19T21:12:34.8886103Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T21:12:34.8917005Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T21:12:34.9272295Z Removing HTTP extra header
+2026-11-19T21:12:34.9276944Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T21:12:34.9304466Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T21:12:34.9518477Z Removing includeIf entries pointing to credentials config files
+2026-11-19T21:12:34.9525647Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T21:12:34.9556169Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T21:12:34.9778123Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T21:12:34.9809557Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/lexical/lexical/.git.path /home/runner/work/_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:12:34.9836294Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:12:34.9865294Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:12:34.9893351Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:12:34.9918216Z ##[endgroup]
+2026-11-19T21:12:34.9918946Z ##[group]Fetching the repository
+2026-11-19T21:12:34.9923412Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +eec04f579940fa4001b70674716561137b269a0d:refs/remotes/origin/main
+2026-11-19T21:12:35.6832559Z From https://github.com/boba-benchmarks/lexical
+2026-11-19T21:12:35.6834981Z  * [new ref]         eec04f579940fa4001b70674716561137b269a0d -> origin/main
+2026-11-19T21:12:35.6841012Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-19T21:12:35.6866120Z   origin/main
+2026-11-19T21:12:35.6872585Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-19T21:12:35.6894085Z eec04f579940fa4001b70674716561137b269a0d
+2026-11-19T21:12:35.6965588Z ##[endgroup]
+2026-11-19T21:12:35.6966833Z ##[group]Determining the checkout info
+2026-11-19T21:12:35.6968176Z ##[endgroup]
+2026-11-19T21:12:35.6969038Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T21:12:35.6971713Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T21:12:35.6986859Z ##[group]Checking out the ref
+2026-11-19T21:12:35.6989821Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T21:12:35.8927683Z Switched to a new branch 'main'
+2026-11-19T21:12:35.8938418Z branch 'main' set up to track 'origin/main'.
+2026-11-19T21:12:35.8942406Z ##[endgroup]
+2026-11-19T21:12:35.8984395Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T21:12:35.9009479Z eec04f579940fa4001b70674716561137b269a0d
+2026-11-19T21:12:35.9277300Z Prepare all required actions
+2026-11-19T21:12:35.9278469Z Getting action download info
+2026-11-19T21:12:36.0459148Z Download action repository 'pnpm/action-setup@v6' (SHA:73e46992e05b19abd31f2f3c20e0e7370d762115)
+2026-11-19T21:12:36.2828720Z Download action repository 'actions/setup-node@v6' (SHA:249970729cb0ef3589644e2896645e5dc5ba9c38)
+2026-11-19T21:12:36.3801022Z ##[group]Run ./.github/actions/setup-pnpm
+2026-11-19T21:12:36.3801742Z with:
+2026-11-19T21:12:36.3802234Z   node-version: 24.x
+2026-11-19T21:12:36.3802824Z   pnpm-install-args: --frozen-lockfile
+2026-11-19T21:12:36.3803475Z env:
+2026-11-19T21:12:36.3803938Z   CI: true
+2026-11-19T21:12:36.3804446Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:12:36.3805034Z   E2E_PORT: 4000
+2026-11-19T21:12:36.3805573Z   test_results_path: test-results/
+2026-11-19T21:12:36.3806185Z ##[endgroup]
+2026-11-19T21:12:36.3850718Z ##[start-action display=Run pnpm/action-setup@v6;id=__self.__pnpm_action-setup]
+2026-11-19T21:12:36.3918824Z ##[group]Run pnpm/action-setup@v6
+2026-11-19T21:12:36.3919612Z with:
+2026-11-19T21:12:36.3920089Z   dest: ~/setup-pnpm
+2026-11-19T21:12:36.3920621Z   run_install: null
+2026-11-19T21:12:36.3921126Z   cache: false
+2026-11-19T21:12:36.3921672Z   cache_dependency_path: pnpm-lock.yaml
+2026-11-19T21:12:36.3922435Z   package_json_file: package.json
+2026-11-19T21:12:36.3923055Z   standalone: false
+2026-11-19T21:12:36.3923557Z env:
+2026-11-19T21:12:36.3924034Z   CI: true
+2026-11-19T21:12:36.3924520Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:12:36.3925095Z   E2E_PORT: 4000
+2026-11-19T21:12:36.3925625Z   test_results_path: test-results/
+2026-11-19T21:12:36.3926228Z ##[endgroup]
+2026-11-19T21:12:36.4881364Z ##[group]Running self-installer...
+2026-11-19T21:12:37.4948949Z 
+2026-11-19T21:12:37.4949714Z added 1 package, and audited 2 packages in 784ms
+2026-11-19T21:12:37.4949987Z 
+2026-11-19T21:12:37.4950088Z 1 package is looking for funding
+2026-11-19T21:12:37.4950492Z   run `npm fund` for details
+2026-11-19T21:12:37.4954496Z 
+2026-11-19T21:12:37.4954743Z found 0 vulnerabilities
+2026-11-19T21:12:38.0354748Z Checking for updates...
+2026-11-19T21:12:38.4282813Z Switching pnpm from v11.28.10 to v11.24.0...
+2026-11-19T21:12:38.9922856Z .../v11/93b-1a1f5a784a7-29b6d5fcf7d82f94 | Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-19T21:12:38.9936410Z .../v11/93b-1a1f5a784a7-29b6d5fcf7d82f94 |   +1 +
+2026-11-19T21:12:39.2674386Z .../v11/93b-1a1f5a784a7-29b6d5fcf7d82f94 | Progress: resolved 1, reused 0, downloaded 1, added 1, done
+2026-11-19T21:12:39.7000939Z [WARN] Detected a pnpm v10 installation layout at PNPM_HOME. The pnpm shims at PNPM_HOME have been refreshed so the new version is active, but pnpm v11 expects bins in PNPM_HOME/bin. Run "pnpm setup" to migrate your PATH to the v11 layout.
+2026-11-19T21:12:39.7040225Z Successfully updated pnpm to v11.24.0
+2026-11-19T21:12:39.7357280Z ##[endgroup]
+2026-11-19T21:12:39.7357644Z Installation Completed!
+2026-11-19T21:12:39.7445118Z ##[end-action id=__self.__pnpm_action-setup;outcome=success;conclusion=success;duration_ms=3359]
+2026-11-19T21:12:39.7470129Z ##[start-action display=Use Node.js 24.x;id=__self.__actions_setup-node]
+2026-11-19T21:12:39.7520202Z ##[group]Run actions/setup-node@v6
+2026-11-19T21:12:39.7520374Z with:
+2026-11-19T21:12:39.7520495Z   cache: pnpm
+2026-11-19T21:12:39.7520616Z   node-version: 24.x
+2026-11-19T21:12:39.7520779Z   check-latest: false
+2026-11-19T21:12:39.7522129Z   token: ***
+2026-11-19T21:12:39.7522280Z   package-manager-cache: true
+2026-11-19T21:12:39.7522428Z env:
+2026-11-19T21:12:39.7522541Z   CI: true
+2026-11-19T21:12:39.7522662Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:12:39.7522812Z   E2E_PORT: 4000
+2026-11-19T21:12:39.7522969Z   test_results_path: test-results/
+2026-11-19T21:12:39.7523159Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:12:39.7523348Z ##[endgroup]
+2026-11-19T21:12:39.8500483Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+2026-11-19T21:12:39.8502851Z ##[group]Environment details
+2026-11-19T21:12:40.1336907Z node: v24.22.2
+2026-11-19T21:12:40.1337293Z npm: 11.19.1
+2026-11-19T21:12:40.1337705Z yarn: 1.22.22
+2026-11-19T21:12:40.1338711Z ##[endgroup]
+2026-11-19T21:12:40.1352001Z [command]/home/runner/setup-pnpm/node_modules/.bin/bin/pnpm store path --silent
+2026-11-19T21:12:40.4330635Z /home/runner/setup-pnpm/node_modules/.bin/store/v11
+2026-11-19T21:12:40.6086321Z Cache hit for: node-cache-Linux-x64-pnpm-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-19T21:12:41.7754310Z Received 134217728 of 530106739 (25.3%), 127.9 MBs/sec
+2026-11-19T21:12:42.7758394Z Received 369098752 of 530106739 (69.6%), 175.9 MBs/sec
+2026-11-19T21:12:43.7760585Z Received 432013312 of 530106739 (81.5%), 137.3 MBs/sec
+2026-11-19T21:12:44.2022334Z Received 530106739 of 530106739 (100.0%), 147.5 MBs/sec
+2026-11-19T21:12:44.2023091Z Cache Size: ~506 MB (530106739 B)
+2026-11-19T21:12:44.2106136Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f3cf386c-45d5-43ba-afe8-3a0280e27c19/cache.tzst -P -C /home/runner/work/lexical/lexical --use-compress-program unzstd
+2026-11-19T21:12:47.9070469Z Cache restored successfully
+2026-11-19T21:12:47.9287169Z Cache restored from key: node-cache-Linux-x64-pnpm-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-19T21:12:47.9444839Z ##[end-action id=__self.__actions_setup-node;outcome=success;conclusion=success;duration_ms=8197]
+2026-11-19T21:12:47.9446706Z ##[start-action display=Install dependencies;id=__self.__run]
+2026-11-19T21:12:47.9568742Z ##[group]Run pnpm install --frozen-lockfile
+2026-11-19T21:12:47.9568995Z [36;1mpnpm install --frozen-lockfile[0m
+2026-11-19T21:12:47.9618757Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:12:47.9618962Z env:
+2026-11-19T21:12:47.9619084Z   CI: true
+2026-11-19T21:12:47.9619209Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:12:47.9619458Z   E2E_PORT: 4000
+2026-11-19T21:12:47.9619590Z   test_results_path: test-results/
+2026-11-19T21:12:47.9619800Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:12:47.9619985Z ##[endgroup]
+2026-11-19T21:12:48.2920254Z Scope: all 44 workspace projects
+2026-11-19T21:12:48.4328161Z ? Verifying lockfile against supply-chain policies (2567 entries)...
+2026-11-19T21:12:48.4450186Z Lockfile is up to date, resolution step is skipped
+2026-11-19T21:12:48.5963344Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-19T21:12:48.7285460Z Packages: +2435
+2026-11-19T21:12:48.7286036Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-19T21:12:49.6024334Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-19T21:12:49.6053833Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+2026-11-19T21:12:49.6066772Z   Virtual store is at:             node_modules/.pnpm
+2026-11-19T21:12:49.6080221Z Progress: resolved 2435, reused 2392, downloaded 0, added 1
+2026-11-19T21:12:50.6020439Z Progress: resolved 2435, reused 2392, downloaded 0, added 151
+2026-11-19T21:12:51.6050945Z Progress: resolved 2435, reused 2392, downloaded 0, added 468
+2026-11-19T21:12:52.6055620Z Progress: resolved 2435, reused 2392, downloaded 0, added 743
+2026-11-19T21:12:53.6097559Z Progress: resolved 2435, reused 2392, downloaded 0, added 956
+2026-11-19T21:12:54.6147436Z Progress: resolved 2435, reused 2392, downloaded 0, added 1290
+2026-11-19T21:12:55.6187942Z Progress: resolved 2435, reused 2392, downloaded 0, added 1717
+2026-11-19T21:12:56.6190449Z Progress: resolved 2435, reused 2392, downloaded 0, added 2365
+2026-11-19T21:12:56.7006810Z Progress: resolved 2435, reused 2392, downloaded 0, added 2435, done
+2026-11-19T21:12:58.9301165Z ✓ Lockfile passes supply-chain policies (2567 entries in 10.4s)
+2026-11-19T21:12:59.1636807Z 
+2026-11-19T21:12:59.1640069Z dependencies:
+2026-11-19T21:12:59.1640372Z + semver 7.7.4
+2026-11-19T21:12:59.1640565Z + yjs 13.6.31
+2026-11-19T21:12:59.1640674Z 
+2026-11-19T21:12:59.1640762Z devDependencies:
+2026-11-19T21:12:59.1640974Z + @babel/core 8.0.6
+2026-11-19T21:12:59.1641736Z + @babel/helper-module-imports 8.0.0
+2026-11-19T21:12:59.1642133Z + @babel/plugin-transform-optional-catch-binding 8.0.1
+2026-11-19T21:12:59.1642478Z + @babel/preset-env 8.0.6
+2026-11-19T21:12:59.1642709Z + @babel/preset-flow 8.0.1
+2026-11-19T21:12:59.1642950Z + @babel/preset-react 8.0.1
+2026-11-19T21:12:59.1643205Z + @babel/preset-typescript 8.0.1
+2026-11-19T21:12:59.1643489Z + @docusaurus/plugin-content-docs 3.10.2
+2026-11-19T21:12:59.1643771Z + @docusaurus/types 3.10.2
+2026-11-19T21:12:59.1644072Z + @eslint/compat 2.1.1
+2026-11-19T21:12:59.1644287Z + @eslint/js 10.0.1
+2026-11-19T21:12:59.1644647Z + @lexical/eslint-plugin 0.53.0 <- packages/lexical-eslint-plugin
+2026-11-19T21:12:59.1645181Z + @lexical/eslint-plugin-internal 0.53.0 <- packages/lexical-eslint-plugin-internal
+2026-11-19T21:12:59.1645586Z + @playwright/test 1.63.0
+2026-11-19T21:12:59.1645860Z + @prettier/sync 0.6.1
+2026-11-19T21:12:59.1647591Z + @rollup/plugin-alias 6.0.0
+2026-11-19T21:12:59.1647843Z + @rollup/plugin-babel 7.1.0
+2026-11-19T21:12:59.1648101Z + @rollup/plugin-commonjs 29.0.3
+2026-11-19T21:12:59.1648347Z + @rollup/plugin-json 6.1.0
+2026-11-19T21:12:59.1648626Z + @rollup/plugin-node-resolve 16.0.3
+2026-11-19T21:12:59.1648907Z + @rollup/plugin-replace 6.0.3
+2026-11-19T21:12:59.1649165Z + @rollup/plugin-terser 1.0.0
+2026-11-19T21:12:59.1649536Z + @types/babel__core 7.20.5
+2026-11-19T21:12:59.1649815Z + @types/babel__helper-module-imports 7.18.3
+2026-11-19T21:12:59.1650086Z + @types/fs-extra 11.0.4
+2026-11-19T21:12:59.1650305Z + @types/jsdom 30.0.0
+2026-11-19T21:12:59.1650511Z + @types/katex 0.16.7
+2026-11-19T21:12:59.1650727Z + @types/markdown-it 14.2.0
+2026-11-19T21:12:59.1650947Z + @types/minimist 1.2.5
+2026-11-19T21:12:59.1651158Z + @types/node 26.4.1
+2026-11-19T21:12:59.1651445Z + @types/prismjs 1.26.6
+2026-11-19T21:12:59.1651687Z + @types/proper-lockfile 4.1.4
+2026-11-19T21:12:59.1651927Z + @types/react 19.2.14
+2026-11-19T21:12:59.1652142Z + @types/react-dom 19.2.3
+2026-11-19T21:12:59.1652362Z + @types/semver 7.7.1
+2026-11-19T21:12:59.1652582Z + @vitejs/plugin-react 6.1.1
+2026-11-19T21:12:59.1652848Z + @vitest/browser-playwright 5.0.1
+2026-11-19T21:12:59.1654246Z + baseline-browser-mapping 2.11.26
+2026-11-19T21:12:59.1654486Z + chokidar 5.0.0
+2026-11-19T21:12:59.1654746Z + concurrently 10.0.5
+2026-11-19T21:12:59.1655945Z + confusing-browser-globals 1.0.11
+2026-11-19T21:12:59.1656186Z + cross-env 10.1.0
+2026-11-19T21:12:59.1656544Z + esbuild 0.28.2
+2026-11-19T21:12:59.1656725Z + eslint 10.11.0
+2026-11-19T21:12:59.1656977Z + eslint-config-prettier 10.1.8
+2026-11-19T21:12:59.1657227Z + eslint-plugin-compat 7.0.2
+2026-11-19T21:12:59.1657599Z + eslint-plugin-header 3.1.1
+2026-11-19T21:12:59.1669156Z + eslint-plugin-import-x 4.17.1
+2026-11-19T21:12:59.1669741Z + eslint-plugin-jsx-a11y 6.10.2
+2026-11-19T21:12:59.1670086Z + eslint-plugin-no-function-declare-after-return 1.1.0
+2026-11-19T21:12:59.1670434Z + eslint-plugin-no-only-tests 3.4.0
+2026-11-19T21:12:59.1670693Z + eslint-plugin-react 7.37.5
+2026-11-19T21:12:59.1670995Z + eslint-plugin-react-hooks 7.1.1
+2026-11-19T21:12:59.1672517Z + eslint-plugin-simple-import-sort 14.0.0
+2026-11-19T21:12:59.1672992Z + eslint-plugin-sort-keys-fix 1.1.2
+2026-11-19T21:12:59.1673250Z + fast-check 4.10.2
+2026-11-19T21:12:59.1673456Z + flow-bin 0.333.0
+2026-11-19T21:12:59.1673655Z + flow-typed 4.1.1
+2026-11-19T21:12:59.1673848Z + fs-extra 11.3.4
+2026-11-19T21:12:59.1674064Z + get-east-asian-width 1.7.0
+2026-11-19T21:12:59.1674281Z + glob 13.0.6
+2026-11-19T21:12:59.1674576Z + globals 17.12.0
+2026-11-19T21:12:59.1674812Z + gzip-size 7.0.0
+2026-11-19T21:12:59.1675010Z + hermes-estree 0.37.0
+2026-11-19T21:12:59.1676449Z + hermes-parser 0.37.0
+2026-11-19T21:12:59.1676976Z + hermes-transform 0.37.0
+2026-11-19T21:12:59.1677189Z + husky 9.1.7
+2026-11-19T21:12:59.1677369Z + jsdom 30.1.1
+2026-11-19T21:12:59.1677566Z + lint-staged 17.5.1
+2026-11-19T21:12:59.1677780Z + markdown-it 15.0.3
+2026-11-19T21:12:59.1678016Z + markdown-it-cjk-friendly 3.0.0
+2026-11-19T21:12:59.1678240Z + minimist 1.2.8
+2026-11-19T21:12:59.1689795Z + npm-run-all 4.1.5
+2026-11-19T21:12:59.1690255Z + pkg-pr-new 0.0.91
+2026-11-19T21:12:59.1690464Z + playwright 1.63.0
+2026-11-19T21:12:59.1690660Z + prettier 3.8.5
+2026-11-19T21:12:59.1690932Z + prettier-plugin-hermes-parser 0.37.0
+2026-11-19T21:12:59.1691264Z + prettier-plugin-organize-attributes 1.0.0
+2026-11-19T21:12:59.1691581Z + prettier-plugin-tailwindcss 0.8.1
+2026-11-19T21:12:59.1691845Z + proper-lockfile 4.1.2
+2026-11-19T21:12:59.1692055Z + react 19.2.5
+2026-11-19T21:12:59.1692245Z + react-dom 19.2.5
+2026-11-19T21:12:59.1699862Z + react-test-renderer 19.3.0
+2026-11-19T21:12:59.1700295Z + rollup 4.63.5
+2026-11-19T21:12:59.1700518Z + ts-morph 28.0.0
+2026-11-19T21:12:59.1700721Z + tsx 4.23.15
+2026-11-19T21:12:59.1700915Z + typedoc 0.28.20
+2026-11-19T21:12:59.1701117Z + typescript 6.0.3
+2026-11-19T21:12:59.1701334Z + typescript-eslint 8.70.1
+2026-11-19T21:12:59.1701564Z + vite 8.3.3
+2026-11-19T21:12:59.1703029Z + vitest 5.0.1
+2026-11-19T21:12:59.1703219Z + y-websocket 2.1.0
+2026-11-19T21:12:59.1703359Z 
+2026-11-19T21:12:59.1894368Z . prepare$ husky
+2026-11-19T21:12:59.2565089Z . prepare: Done
+2026-11-19T21:12:59.3076325Z packages/lexical-devtools postinstall$ wxt prepare
+2026-11-19T21:12:59.5648380Z packages/lexical-devtools postinstall: [log] 
+2026-11-19T21:12:59.5648873Z packages/lexical-devtools postinstall: WXT 0.21.4
+2026-11-19T21:12:59.9927107Z packages/lexical-devtools postinstall: [info] Generating types...
+2026-11-19T21:13:00.0696232Z packages/lexical-devtools postinstall: Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+2026-11-19T21:13:00.0696983Z packages/lexical-devtools postinstall:   npx update-browserslist-db@latest
+2026-11-19T21:13:00.0697939Z packages/lexical-devtools postinstall:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-11-19T21:13:00.1508325Z packages/lexical-devtools postinstall: [success] Finished in 587 ms
+2026-11-19T21:13:00.2206760Z packages/lexical-devtools postinstall: Done
+2026-11-19T21:13:00.2967238Z Done in 12.2s using pnpm v11.24.0
+2026-11-19T21:13:00.3913806Z ##[end-action id=__self.__run;outcome=success;conclusion=success;duration_ms=12446]
+2026-11-19T21:13:00.3954500Z Prepare all required actions
+2026-11-19T21:13:00.3954805Z Getting action download info
+2026-11-19T21:13:00.5096717Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-19T21:13:00.7224953Z ##[group]Run ./.github/actions/setup-playground
+2026-11-19T21:13:00.7225272Z with:
+2026-11-19T21:13:00.7225394Z   node-version: 24.x
+2026-11-19T21:13:00.7225521Z env:
+2026-11-19T21:13:00.7225632Z   CI: true
+2026-11-19T21:13:00.7225765Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:00.7225908Z   E2E_PORT: 4000
+2026-11-19T21:13:00.7226042Z   test_results_path: test-results/
+2026-11-19T21:13:00.7226225Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:00.7226414Z ##[endgroup]
+2026-11-19T21:13:00.7230211Z ##[start-action display=Restore build cache;id=__self_2.build-cache]
+2026-11-19T21:13:00.7305222Z ##[group]Run actions/cache/restore@v5
+2026-11-19T21:13:00.7305473Z with:
+2026-11-19T21:13:00.7305758Z   path: packages/lexical-playground/build
+packages/*/dist
+
+2026-11-19T21:13:00.7306157Z   key: build-dev-24.x-Linux-X64-eec04f579940fa4001b70674716561137b269a0d
+2026-11-19T21:13:00.7306509Z   enableCrossOsArchive: false
+2026-11-19T21:13:00.7306745Z   lookup-only: false
+2026-11-19T21:13:00.7306942Z env:
+2026-11-19T21:13:00.7307114Z   CI: true
+2026-11-19T21:13:00.7307301Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:00.7307519Z   E2E_PORT: 4000
+2026-11-19T21:13:00.7307725Z   test_results_path: test-results/
+2026-11-19T21:13:00.7308003Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:00.7308280Z ##[endgroup]
+2026-11-19T21:13:00.9840309Z Cache hit for: build-dev-24.x-Linux-X64-eec04f579940fa4001b70674716561137b269a0d
+2026-11-19T21:13:01.6749270Z Received 25211731 of 25211731 (100.0%), 46.4 MBs/sec
+2026-11-19T21:13:01.6749792Z Cache Size: ~24 MB (25211731 B)
+2026-11-19T21:13:01.6766461Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1bbc8a3e-646d-4289-9bbb-9f9bc818e70b/cache.tzst -P -C /home/runner/work/lexical/lexical --use-compress-program unzstd
+2026-11-19T21:13:01.7750772Z Cache restored successfully
+2026-11-19T21:13:01.7812091Z Cache restored from key: build-dev-24.x-Linux-X64-eec04f579940fa4001b70674716561137b269a0d
+2026-11-19T21:13:01.7929996Z ##[end-action id=__self_2.build-cache;outcome=success;conclusion=success;duration_ms=1069]
+2026-11-19T21:13:01.7933671Z ##[start-action display=Build;id=__self_2.__run]
+2026-11-19T21:13:01.7940270Z ##[end-action id=__self_2.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T21:13:01.7941570Z ##[start-action display=Save build cache;id=__self_2.__actions_cache]
+2026-11-19T21:13:01.7944425Z ##[end-action id=__self_2.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T21:13:01.7992417Z Prepare all required actions
+2026-11-19T21:13:01.7992735Z Getting action download info
+2026-11-19T21:13:01.9912113Z ##[group]Run ./.github/actions/setup-playwright
+2026-11-19T21:13:01.9912311Z with:
+2026-11-19T21:13:01.9912437Z   node-version: 24.x
+2026-11-19T21:13:01.9912580Z   browsers: chromium firefox
+2026-11-19T21:13:01.9912726Z env:
+2026-11-19T21:13:01.9912839Z   CI: true
+2026-11-19T21:13:01.9912992Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:01.9913141Z   E2E_PORT: 4000
+2026-11-19T21:13:01.9913279Z   test_results_path: test-results/
+2026-11-19T21:13:01.9913487Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:01.9913674Z ##[endgroup]
+2026-11-19T21:13:01.9918046Z ##[start-action display=Compute path;id=__self_3.vars]
+2026-11-19T21:13:02.1007225Z ##[group]Run echo "cache_playwright_path=~/.cache/ms-playwright" >> "$GITHUB_OUTPUT"
+2026-11-19T21:13:02.1007601Z [36;1mecho "cache_playwright_path=~/.cache/ms-playwright" >> "$GITHUB_OUTPUT"[0m
+2026-11-19T21:13:02.1050080Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:13:02.1050281Z env:
+2026-11-19T21:13:02.1050399Z   CI: true
+2026-11-19T21:13:02.1050532Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:02.1050677Z   E2E_PORT: 4000
+2026-11-19T21:13:02.1050815Z   test_results_path: test-results/
+2026-11-19T21:13:02.1051002Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:02.1051185Z ##[endgroup]
+2026-11-19T21:13:02.2226203Z ##[end-action id=__self_3.vars;outcome=success;conclusion=success;duration_ms=230]
+2026-11-19T21:13:02.2228649Z ##[start-action display=Compute apt cache key;id=__self_3.apt-vars]
+2026-11-19T21:13:02.2405526Z ##[group]Run set -euo pipefail
+2026-11-19T21:13:02.2405721Z [36;1mset -euo pipefail[0m
+2026-11-19T21:13:02.2405873Z [36;1m# shellcheck disable=SC1091[0m
+2026-11-19T21:13:02.2406034Z [36;1m. /etc/os-release[0m
+2026-11-19T21:13:02.2406240Z [36;1m# The dependency set is a function of the distro, the arch, the[0m
+2026-11-19T21:13:02.2406535Z [36;1m# playwright version (it ships the package list) and the browsers.[0m
+2026-11-19T21:13:02.2406970Z [36;1mprefix="playwright-apt-v1-${ID}-${VERSION_ID}-${RUNNER_ARCH}-pw$(pnpm exec playwright --version | tr -cd '0-9.')-$(echo "$BROWSERS" | tr ' ' '+')"[0m
+2026-11-19T21:13:02.2407318Z [36;1m{[0m
+2026-11-19T21:13:02.2407487Z [36;1m  echo "dir=${RUNNER_TEMP}/playwright-apt"[0m
+2026-11-19T21:13:02.2407679Z [36;1m  echo "restore_key=${prefix}-"[0m
+2026-11-19T21:13:02.2407904Z [36;1m  # The ISO week rotates the key so the cached .debs never drift more[0m
+2026-11-19T21:13:02.2408175Z [36;1m  # than a week behind the archive index (apt re-downloads anything[0m
+2026-11-19T21:13:02.2408450Z [36;1m  # whose hash no longer matches, and the refreshed set is saved).[0m
+2026-11-19T21:13:02.2408672Z [36;1m  echo "key=${prefix}-$(date -u +%Y-%V)"[0m
+2026-11-19T21:13:02.2408854Z [36;1m} >> "$GITHUB_OUTPUT"[0m
+2026-11-19T21:13:02.2448241Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:13:02.2448440Z env:
+2026-11-19T21:13:02.2448552Z   CI: true
+2026-11-19T21:13:02.2448680Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:02.2448828Z   E2E_PORT: 4000
+2026-11-19T21:13:02.2448963Z   test_results_path: test-results/
+2026-11-19T21:13:02.2449149Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:02.2449413Z   BROWSERS: chromium firefox
+2026-11-19T21:13:02.2449555Z ##[endgroup]
+2026-11-19T21:13:02.8897886Z ##[end-action id=__self_3.apt-vars;outcome=success;conclusion=success;duration_ms=666]
+2026-11-19T21:13:02.8900796Z ##[start-action display=Restore apt packages from cache;id=__self_3.apt-cache]
+2026-11-19T21:13:02.8939467Z ##[group]Run actions/cache/restore@v5
+2026-11-19T21:13:02.8939734Z with:
+2026-11-19T21:13:02.8939979Z   path: /home/runner/work/_temp/playwright-apt/*.deb
+2026-11-19T21:13:02.8940415Z   key: playwright-apt-v1-ubuntu-26.04-X64-pw1.63.0-chromium+firefox-2026-47
+2026-11-19T21:13:02.8941221Z   restore-keys: playwright-apt-v1-ubuntu-26.04-X64-pw1.63.0-chromium+firefox-
+2026-11-19T21:13:02.8941638Z   enableCrossOsArchive: false
+2026-11-19T21:13:02.8941891Z   fail-on-cache-miss: false
+2026-11-19T21:13:02.8942122Z   lookup-only: false
+2026-11-19T21:13:02.8942328Z env:
+2026-11-19T21:13:02.8942500Z   CI: true
+2026-11-19T21:13:02.8942697Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:02.8942920Z   E2E_PORT: 4000
+2026-11-19T21:13:02.8943152Z   test_results_path: test-results/
+2026-11-19T21:13:02.8943469Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:02.8943769Z ##[endgroup]
+2026-11-19T21:13:03.1023716Z Cache hit for: playwright-apt-v1-ubuntu-26.04-X64-pw1.63.0-chromium+firefox-2026-47
+2026-11-19T21:13:03.9974439Z Received 54325047 of 54325047 (100.0%), 70.8 MBs/sec
+2026-11-19T21:13:03.9974739Z Cache Size: ~52 MB (54325047 B)
+2026-11-19T21:13:04.0056745Z [command]/usr/bin/tar -xf /home/runner/work/_temp/5886b190-722e-4356-86ca-28ac6f74c2ae/cache.tzst -P -C /home/runner/work/lexical/lexical --use-compress-program unzstd
+2026-11-19T21:13:04.0725362Z Cache restored successfully
+2026-11-19T21:13:04.0801036Z Cache restored from key: playwright-apt-v1-ubuntu-26.04-X64-pw1.63.0-chromium+firefox-2026-47
+2026-11-19T21:13:04.0890542Z ##[end-action id=__self_3.apt-cache;outcome=success;conclusion=success;duration_ms=1198]
+2026-11-19T21:13:04.0893899Z ##[start-action display=Install playwright system dependencies;id=__self_3.apt-deps]
+2026-11-19T21:13:04.0907800Z ##[group]Run set -euo pipefail
+2026-11-19T21:13:04.0908016Z [36;1mset -euo pipefail[0m
+2026-11-19T21:13:04.0908316Z [36;1mmkdir -p "$APT_CACHE_DIR/partial"[0m
+2026-11-19T21:13:04.0908571Z [36;1m# apt drops privileges to `_apt` while downloading; without this it[0m
+2026-11-19T21:13:04.0908866Z [36;1m# warns that the partial directory is inaccessible and falls back to[0m
+2026-11-19T21:13:04.0909106Z [36;1m# downloading unsandboxed as root.[0m
+2026-11-19T21:13:04.0909487Z [36;1msudo chown _apt:root "$APT_CACHE_DIR/partial" || true[0m
+2026-11-19T21:13:04.0909793Z [36;1mprintf 'Dir::Cache::archives "%s";\nAPT::Keep-Downloaded-Packages "true";\n' \[0m
+2026-11-19T21:13:04.0910144Z [36;1m  "$APT_CACHE_DIR" | sudo tee /etc/apt/apt.conf.d/99-playwright-deps-cache > /dev/null[0m
+2026-11-19T21:13:04.0910406Z [36;1m# shellcheck disable=SC2086[0m
+2026-11-19T21:13:04.0910602Z [36;1mpnpm exec playwright install-deps $BROWSERS[0m
+2026-11-19T21:13:04.0910863Z [36;1m# actions/cache reads as the runner user; apt writes the .debs as root.[0m
+2026-11-19T21:13:04.0911128Z [36;1msudo chmod -f a+r "$APT_CACHE_DIR"/*.deb || true[0m
+2026-11-19T21:13:04.0911332Z [36;1mshopt -s nullglob[0m
+2026-11-19T21:13:04.0911487Z [36;1mdebs=("$APT_CACHE_DIR"/*.deb)[0m
+2026-11-19T21:13:04.0911681Z [36;1mecho "deb_count=${#debs[@]}" >> "$GITHUB_OUTPUT"[0m
+2026-11-19T21:13:04.0911911Z [36;1mecho "Cached ${#debs[@]} package(s) in $APT_CACHE_DIR"[0m
+2026-11-19T21:13:04.0954771Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:13:04.0954979Z env:
+2026-11-19T21:13:04.0955104Z   CI: true
+2026-11-19T21:13:04.0955238Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:04.0955390Z   E2E_PORT: 4000
+2026-11-19T21:13:04.0955533Z   test_results_path: test-results/
+2026-11-19T21:13:04.0955730Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:04.0955959Z   APT_CACHE_DIR: /home/runner/work/_temp/playwright-apt
+2026-11-19T21:13:04.0956154Z   BROWSERS: chromium firefox
+2026-11-19T21:13:04.0956307Z ##[endgroup]
+2026-11-19T21:13:04.7253108Z Installing dependencies...
+2026-11-19T21:13:04.7312840Z Switching to root user to install dependencies...
+2026-11-19T21:13:04.8061139Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-19T21:13:04.8416731Z Hit:2 http://azure.archive.ubuntu.com/ubuntu resolute InRelease
+2026-11-19T21:13:04.8417827Z Get:6 https://packages.microsoft.com/ubuntu/26.04/prod resolute InRelease [3964 B]
+2026-11-19T21:13:04.8521194Z Get:3 http://azure.archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+2026-11-19T21:13:04.8522592Z Get:4 http://azure.archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+2026-11-19T21:13:04.8546403Z Get:5 http://azure.archive.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+2026-11-19T21:13:04.8756740Z Get:13 https://packages.microsoft.com/ubuntu/26.04/prod resolute/main arm64 Packages [151 kB]
+2026-11-19T21:13:04.8819202Z Get:7 http://azure.archive.ubuntu.com/ubuntu resolute-updates/main amd64v3 Packages [901 kB]
+2026-11-19T21:13:04.8866446Z Get:8 http://azure.archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [200 kB]
+2026-11-19T21:13:04.8924243Z Get:9 http://azure.archive.ubuntu.com/ubuntu resolute-updates/universe amd64v3 Packages [394 kB]
+2026-11-19T21:13:04.8925070Z Get:14 https://packages.microsoft.com/ubuntu/26.04/prod resolute/main amd64 Packages [165 kB]
+2026-11-19T21:13:04.8932072Z Get:10 http://azure.archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [124 kB]
+2026-11-19T21:13:04.8961579Z Get:11 http://azure.archive.ubuntu.com/ubuntu resolute-updates/restricted amd64v3 Packages [629 kB]
+2026-11-19T21:13:04.8965661Z Get:12 http://azure.archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [130 kB]
+2026-11-19T21:13:04.9037418Z Get:15 http://azure.archive.ubuntu.com/ubuntu resolute-security/main amd64v3 Packages [721 kB]
+2026-11-19T21:13:04.9087002Z Get:16 http://azure.archive.ubuntu.com/ubuntu resolute-security/main Translation-en [158 kB]
+2026-11-19T21:13:04.9106352Z Get:17 http://azure.archive.ubuntu.com/ubuntu resolute-security/universe amd64v3 Packages [222 kB]
+2026-11-19T21:13:04.9107290Z Get:18 http://azure.archive.ubuntu.com/ubuntu resolute-security/universe Translation-en [72.7 kB]
+2026-11-19T21:13:04.9530552Z Get:19 http://azure.archive.ubuntu.com/ubuntu resolute-security/restricted amd64v3 Packages [590 kB]
+2026-11-19T21:13:04.9558192Z Get:20 http://azure.archive.ubuntu.com/ubuntu resolute-security/restricted Translation-en [122 kB]
+2026-11-19T21:13:06.9929912Z Fetched 4995 kB in 0s (15.8 MB/s)
+2026-11-19T21:13:07.4715445Z Reading package lists...
+2026-11-19T21:13:07.4947113Z Reading package lists...
+2026-11-19T21:13:07.6362175Z Building dependency tree...
+2026-11-19T21:13:07.6367590Z Reading state information...
+2026-11-19T21:13:07.6620225Z libasound2t64 is already the newest version (1.2.15.3-1ubuntu1.1).
+2026-11-19T21:13:07.6620656Z libasound2t64 set to manually installed.
+2026-11-19T21:13:07.6621048Z libatk-bridge2.0-0t64 is already the newest version (2.60.4-0ubuntu0.1).
+2026-11-19T21:13:07.6634012Z libatk-bridge2.0-0t64 set to manually installed.
+2026-11-19T21:13:07.6634487Z libatk1.0-0t64 is already the newest version (2.60.4-0ubuntu0.1).
+2026-11-19T21:13:07.6634883Z libatk1.0-0t64 set to manually installed.
+2026-11-19T21:13:07.6635265Z libatspi2.0-0t64 is already the newest version (2.60.4-0ubuntu0.1).
+2026-11-19T21:13:07.6635640Z libatspi2.0-0t64 set to manually installed.
+2026-11-19T21:13:07.6635992Z libcairo2 is already the newest version (1.18.4-3).
+2026-11-19T21:13:07.6636317Z libcairo2 set to manually installed.
+2026-11-19T21:13:07.6636684Z libcups2t64 is already the newest version (2.4.16-1ubuntu1.3).
+2026-11-19T21:13:07.6637046Z libcups2t64 set to manually installed.
+2026-11-19T21:13:07.6637429Z libdbus-1-3 is already the newest version (1.16.2-2ubuntu4).
+2026-11-19T21:13:07.6637757Z libdbus-1-3 set to manually installed.
+2026-11-19T21:13:07.6638091Z libdrm2 is already the newest version (2.4.131-1).
+2026-11-19T21:13:07.6638419Z libdrm2 set to manually installed.
+2026-11-19T21:13:07.6638775Z libgbm1 is already the newest version (26.0.8-1ubuntu0.3).
+2026-11-19T21:13:07.6639138Z libgbm1 set to manually installed.
+2026-11-19T21:13:07.6639693Z libglib2.0-0t64 is already the newest version (2.88.0-1ubuntu0.1).
+2026-11-19T21:13:07.6640098Z libglib2.0-0t64 set to manually installed.
+2026-11-19T21:13:07.6640488Z libnspr4 is already the newest version (2:4.38.2-1ubuntu1).
+2026-11-19T21:13:07.6640844Z libnspr4 set to manually installed.
+2026-11-19T21:13:07.6641205Z libnss3 is already the newest version (2:3.120-1ubuntu2.2).
+2026-11-19T21:13:07.6642039Z libnss3 set to manually installed.
+2026-11-19T21:13:07.6642411Z libpango-1.0-0 is already the newest version (1.57.0-1).
+2026-11-19T21:13:07.6642772Z libpango-1.0-0 set to manually installed.
+2026-11-19T21:13:07.6643149Z libx11-6 is already the newest version (2:1.8.13-1ubuntu0.1).
+2026-11-19T21:13:07.6643525Z libx11-6 set to manually installed.
+2026-11-19T21:13:07.6643873Z libxcb1 is already the newest version (1.17.0-2ubuntu1).
+2026-11-19T21:13:07.6644221Z libxcb1 set to manually installed.
+2026-11-19T21:13:07.6644609Z libxcomposite1 is already the newest version (1:0.4.6-1build1).
+2026-11-19T21:13:07.6645001Z libxcomposite1 set to manually installed.
+2026-11-19T21:13:07.6645377Z libxdamage1 is already the newest version (1:1.1.7-1).
+2026-11-19T21:13:07.6645734Z libxdamage1 set to manually installed.
+2026-11-19T21:13:07.6646115Z libxext6 is already the newest version (2:1.3.4-1build3).
+2026-11-19T21:13:07.6646461Z libxext6 set to manually installed.
+2026-11-19T21:13:07.6646839Z libxfixes3 is already the newest version (1:6.0.0-2build2).
+2026-11-19T21:13:07.6647203Z libxfixes3 set to manually installed.
+2026-11-19T21:13:07.6647562Z libxkbcommon0 is already the newest version (1.13.1-1).
+2026-11-19T21:13:07.6647907Z libxkbcommon0 set to manually installed.
+2026-11-19T21:13:07.6648299Z libxrandr2 is already the newest version (2:1.5.4-1build1).
+2026-11-19T21:13:07.6648632Z libxrandr2 set to manually installed.
+2026-11-19T21:13:07.6649009Z xvfb is already the newest version (2:21.1.22-1ubuntu1.3).
+2026-11-19T21:13:07.6649630Z fonts-noto-color-emoji is already the newest version (2.051-1build1).
+2026-11-19T21:13:07.6650331Z libfontconfig1 is already the newest version (2.17.1-3ubuntu1).
+2026-11-19T21:13:07.6650698Z libfontconfig1 set to manually installed.
+2026-11-19T21:13:07.6651111Z libfreetype6 is already the newest version (2.14.2+dfsg-1ubuntu0.2).
+2026-11-19T21:13:07.6651490Z libfreetype6 set to manually installed.
+2026-11-19T21:13:07.6651886Z fonts-liberation is already the newest version (1:2.1.5-3build1).
+2026-11-19T21:13:07.6652160Z fonts-liberation set to manually installed.
+2026-11-19T21:13:07.6652403Z libcairo-gobject2 is already the newest version (1.18.4-3).
+2026-11-19T21:13:07.6652642Z libcairo-gobject2 set to manually installed.
+2026-11-19T21:13:07.6652920Z libgdk-pixbuf-2.0-0 is already the newest version (2.44.5+dfsg-4ubuntu1).
+2026-11-19T21:13:07.6653184Z libgdk-pixbuf-2.0-0 set to manually installed.
+2026-11-19T21:13:07.6653449Z libgtk-3-0t64 is already the newest version (3.24.52-0ubuntu1).
+2026-11-19T21:13:07.6653675Z libgtk-3-0t64 set to manually installed.
+2026-11-19T21:13:07.6653926Z libpangocairo-1.0-0 is already the newest version (1.57.0-1).
+2026-11-19T21:13:07.6654174Z libpangocairo-1.0-0 set to manually installed.
+2026-11-19T21:13:07.6654424Z libx11-xcb1 is already the newest version (2:1.8.13-1ubuntu0.1).
+2026-11-19T21:13:07.6654655Z libx11-xcb1 set to manually installed.
+2026-11-19T21:13:07.6654882Z libxcb-shm0 is already the newest version (1.17.0-2ubuntu1).
+2026-11-19T21:13:07.6655106Z libxcb-shm0 set to manually installed.
+2026-11-19T21:13:07.6655339Z libxcursor1 is already the newest version (1:1.2.3-1build1).
+2026-11-19T21:13:07.6655560Z libxcursor1 set to manually installed.
+2026-11-19T21:13:07.6655777Z libxi6 is already the newest version (2:1.8.2-2).
+2026-11-19T21:13:07.6655980Z libxi6 set to manually installed.
+2026-11-19T21:13:07.6656212Z libxrender1 is already the newest version (1:0.9.12-1build1).
+2026-11-19T21:13:07.6656437Z libxrender1 set to manually installed.
+2026-11-19T21:13:07.7015582Z Solving dependencies...
+2026-11-19T21:13:07.7696925Z The following additional packages will be installed:
+2026-11-19T21:13:07.7697655Z   libavutil60 libcodec2-1.2 libdav1d7 libgsm1 libmp3lame0 libmpg123-0t64
+2026-11-19T21:13:07.7700616Z   libopus0 librav1e0.8 libshine3 libsoxr0 libspeex1 libsvtav1enc2
+2026-11-19T21:13:07.7700939Z   libswresample6 libtheoradec2 libtheoraenc2 libtwolame0 libva-drm2
+2026-11-19T21:13:07.7701708Z   libva-x11-2 libva2 libvdpau1 libvorbisenc2 libvpl2 libvpx12 libx264-165
+2026-11-19T21:13:07.7703554Z   libx265-215 libxvidcore4 libzvbi-common libzvbi0t64 ocl-icd-libopencl1
+2026-11-19T21:13:07.7703799Z   xfonts-encodings xfonts-utils
+2026-11-19T21:13:07.7709732Z Suggested packages:
+2026-11-19T21:13:07.7709978Z   libcuda1 libnvcuvid1 libnvidia-encode1 opus-tools speex opencl-icd
+2026-11-19T21:13:07.7710204Z Recommended packages:
+2026-11-19T21:13:07.7710378Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-11-19T21:13:07.7843279Z The following NEW packages will be installed:
+2026-11-19T21:13:07.7843596Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-11-19T21:13:07.7844360Z   fonts-wqy-zenhei libavcodec62 libavutil60 libcodec2-1.2 libdav1d7 libgsm1
+2026-11-19T21:13:07.7846560Z   libmp3lame0 libmpg123-0t64 libopus0 librav1e0.8 libshine3 libsoxr0 libspeex1
+2026-11-19T21:13:07.7847216Z   libsvtav1enc2 libswresample6 libtheoradec2 libtheoraenc2 libtwolame0
+2026-11-19T21:13:07.7847861Z   libva-drm2 libva-x11-2 libva2 libvdpau1 libvorbisenc2 libvpl2 libvpx12
+2026-11-19T21:13:07.7848448Z   libx264-165 libx265-215 libxvidcore4 libzvbi-common libzvbi0t64
+2026-11-19T21:13:07.7849052Z   ocl-icd-libopencl1 xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-11-19T21:13:07.7849660Z   xfonts-utils
+2026-11-19T21:13:08.0400752Z 0 upgraded, 39 newly installed, 0 to remove and 39 not upgraded.
+2026-11-19T21:13:08.0401073Z Need to get 0 B/54.4 MB of archives.
+2026-11-19T21:13:08.0401333Z After this operation, 173 MB of additional disk space will be used.
+2026-11-19T21:13:08.0581549Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-11-19T21:13:08.0807684Z (Reading database ... 
+2026-11-19T21:13:08.0807954Z (Reading database ... 5%
+2026-11-19T21:13:08.0808192Z (Reading database ... 10%
+2026-11-19T21:13:08.0808507Z (Reading database ... 15%
+2026-11-19T21:13:08.0808736Z (Reading database ... 20%
+2026-11-19T21:13:08.0808896Z (Reading database ... 25%
+2026-11-19T21:13:08.0809044Z (Reading database ... 30%
+2026-11-19T21:13:08.0809211Z (Reading database ... 35%
+2026-11-19T21:13:08.0809547Z (Reading database ... 40%
+2026-11-19T21:13:08.0809731Z (Reading database ... 45%
+2026-11-19T21:13:08.0809931Z (Reading database ... 50%
+2026-11-19T21:13:08.1683120Z (Reading database ... 55%
+2026-11-19T21:13:08.3549419Z (Reading database ... 60%
+2026-11-19T21:13:08.4778083Z (Reading database ... 65%
+2026-11-19T21:13:08.6669544Z (Reading database ... 70%
+2026-11-19T21:13:08.8116446Z (Reading database ... 75%
+2026-11-19T21:13:09.0172603Z (Reading database ... 80%
+2026-11-19T21:13:09.2059532Z (Reading database ... 85%
+2026-11-19T21:13:09.3798536Z (Reading database ... 90%
+2026-11-19T21:13:09.5194562Z (Reading database ... 95%
+2026-11-19T21:13:09.5194861Z (Reading database ... 100%
+2026-11-19T21:13:09.5195260Z (Reading database ... 213946 files and directories currently installed.)
+2026-11-19T21:13:09.5231702Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-23ubuntu1_all.deb ...
+2026-11-19T21:13:09.5317316Z Unpacking fonts-ipafont-gothic (00303-23ubuntu1) ...
+2026-11-19T21:13:09.6464071Z Selecting previously unselected package fonts-freefont-ttf.
+2026-11-19T21:13:09.6573124Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-4build1_all.deb ...
+2026-11-19T21:13:09.6578994Z Unpacking fonts-freefont-ttf (20211204+svn4273-4build1) ...
+2026-11-19T21:13:09.7428439Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-11-19T21:13:09.7536276Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1build1_all.deb ...
+2026-11-19T21:13:09.7542021Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1build1) ...
+2026-11-19T21:13:09.7737090Z Selecting previously unselected package fonts-unifont.
+2026-11-19T21:13:09.7841752Z Preparing to unpack .../03-fonts-unifont_1%3a16.0.04-1build1_all.deb ...
+2026-11-19T21:13:09.7847526Z Unpacking fonts-unifont (1:16.0.04-1build1) ...
+2026-11-19T21:13:09.9716853Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-11-19T21:13:09.9823751Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8build1_all.deb ...
+2026-11-19T21:13:09.9945507Z Unpacking fonts-wqy-zenhei (0.9.45-8build1) ...
+2026-11-19T21:13:10.1808300Z Selecting previously unselected package libva2:amd64.
+2026-11-19T21:13:10.1916368Z Preparing to unpack .../05-libva2_2.23.0-1ubuntu1_amd64v3.deb ...
+2026-11-19T21:13:10.1928888Z Unpacking libva2:amd64 (2.23.0-1ubuntu1) ...
+2026-11-19T21:13:10.2135518Z Selecting previously unselected package libva-drm2:amd64.
+2026-11-19T21:13:10.2245384Z Preparing to unpack .../06-libva-drm2_2.23.0-1ubuntu1_amd64v3.deb ...
+2026-11-19T21:13:10.2251002Z Unpacking libva-drm2:amd64 (2.23.0-1ubuntu1) ...
+2026-11-19T21:13:10.2449066Z Selecting previously unselected package libva-x11-2:amd64.
+2026-11-19T21:13:10.2556773Z Preparing to unpack .../07-libva-x11-2_2.23.0-1ubuntu1_amd64v3.deb ...
+2026-11-19T21:13:10.2562920Z Unpacking libva-x11-2:amd64 (2.23.0-1ubuntu1) ...
+2026-11-19T21:13:10.2756749Z Selecting previously unselected package libvdpau1:amd64.
+2026-11-19T21:13:10.2863456Z Preparing to unpack .../08-libvdpau1_1.5-4_amd64v3.deb ...
+2026-11-19T21:13:10.2869491Z Unpacking libvdpau1:amd64 (1.5-4) ...
+2026-11-19T21:13:10.3069854Z Selecting previously unselected package libvpl2.
+2026-11-19T21:13:10.3178013Z Preparing to unpack .../09-libvpl2_1%3a2.16.0-1_amd64v3.deb ...
+2026-11-19T21:13:10.3184419Z Unpacking libvpl2 (1:2.16.0-1) ...
+2026-11-19T21:13:10.3386376Z Selecting previously unselected package ocl-icd-libopencl1:amd64.
+2026-11-19T21:13:10.3494661Z Preparing to unpack .../10-ocl-icd-libopencl1_2.3.4-1_amd64v3.deb ...
+2026-11-19T21:13:10.3501441Z Unpacking ocl-icd-libopencl1:amd64 (2.3.4-1) ...
+2026-11-19T21:13:10.3724318Z Selecting previously unselected package libavutil60:amd64.
+2026-11-19T21:13:10.3832081Z Preparing to unpack .../11-libavutil60_7%3a8.0.1-3ubuntu2_amd64v3.deb ...
+2026-11-19T21:13:10.3838479Z Unpacking libavutil60:amd64 (7:8.0.1-3ubuntu2) ...
+2026-11-19T21:13:10.4070201Z Selecting previously unselected package libcodec2-1.2:amd64.
+2026-11-19T21:13:10.4180657Z Preparing to unpack .../12-libcodec2-1.2_1.2.0-4_amd64v3.deb ...
+2026-11-19T21:13:10.4186085Z Unpacking libcodec2-1.2:amd64 (1.2.0-4) ...
+2026-11-19T21:13:10.5488013Z Selecting previously unselected package libdav1d7:amd64.
+2026-11-19T21:13:10.5598632Z Preparing to unpack .../13-libdav1d7_1.5.3-1_amd64v3.deb ...
+2026-11-19T21:13:10.5604205Z Unpacking libdav1d7:amd64 (1.5.3-1) ...
+2026-11-19T21:13:10.5839560Z Selecting previously unselected package libgsm1:amd64.
+2026-11-19T21:13:10.5947180Z Preparing to unpack .../14-libgsm1_1.0.23-2_amd64v3.deb ...
+2026-11-19T21:13:10.5953171Z Unpacking libgsm1:amd64 (1.0.23-2) ...
+2026-11-19T21:13:10.6147567Z Selecting previously unselected package libmpg123-0t64:amd64.
+2026-11-19T21:13:10.6256400Z Preparing to unpack .../15-libmpg123-0t64_1.33.3-2_amd64v3.deb ...
+2026-11-19T21:13:10.6262246Z Unpacking libmpg123-0t64:amd64 (1.33.3-2) ...
+2026-11-19T21:13:10.6467355Z Selecting previously unselected package libmp3lame0:amd64.
+2026-11-19T21:13:10.6575320Z Preparing to unpack .../16-libmp3lame0_3.101~svn6525+dfsg-2ubuntu0.1_amd64v3.deb ...
+2026-11-19T21:13:10.6581478Z Unpacking libmp3lame0:amd64 (3.101~svn6525+dfsg-2ubuntu0.1) ...
+2026-11-19T21:13:10.6787249Z Selecting previously unselected package libopus0:amd64.
+2026-11-19T21:13:10.6895983Z Preparing to unpack .../17-libopus0_1.6.1-1_amd64v3.deb ...
+2026-11-19T21:13:10.6902343Z Unpacking libopus0:amd64 (1.6.1-1) ...
+2026-11-19T21:13:10.7383415Z Selecting previously unselected package librav1e0.8:amd64.
+2026-11-19T21:13:10.7492480Z Preparing to unpack .../18-librav1e0.8_0.8.1-7_amd64v3.deb ...
+2026-11-19T21:13:10.7498180Z Unpacking librav1e0.8:amd64 (0.8.1-7) ...
+2026-11-19T21:13:10.7919825Z Selecting previously unselected package libshine3:amd64.
+2026-11-19T21:13:10.8027166Z Preparing to unpack .../19-libshine3_3.1.1-3build1_amd64v3.deb ...
+2026-11-19T21:13:10.8032994Z Unpacking libshine3:amd64 (3.1.1-3build1) ...
+2026-11-19T21:13:10.8223111Z Selecting previously unselected package libspeex1:amd64.
+2026-11-19T21:13:10.8328767Z Preparing to unpack .../20-libspeex1_1.2.1-3build1_amd64v3.deb ...
+2026-11-19T21:13:10.8346492Z Unpacking libspeex1:amd64 (1.2.1-3build1) ...
+2026-11-19T21:13:10.8546755Z Selecting previously unselected package libsvtav1enc2:amd64.
+2026-11-19T21:13:10.8654367Z Preparing to unpack .../21-libsvtav1enc2_2.3.0+dfsg-1build1_amd64v3.deb ...
+2026-11-19T21:13:10.8661107Z Unpacking libsvtav1enc2:amd64 (2.3.0+dfsg-1build1) ...
+2026-11-19T21:13:10.9467619Z Selecting previously unselected package libsoxr0:amd64.
+2026-11-19T21:13:10.9575466Z Preparing to unpack .../22-libsoxr0_0.1.3-4.1_amd64v3.deb ...
+2026-11-19T21:13:10.9581749Z Unpacking libsoxr0:amd64 (0.1.3-4.1) ...
+2026-11-19T21:13:10.9787920Z Selecting previously unselected package libswresample6:amd64.
+2026-11-19T21:13:10.9897452Z Preparing to unpack .../23-libswresample6_7%3a8.0.1-3ubuntu2_amd64v3.deb ...
+2026-11-19T21:13:10.9903576Z Unpacking libswresample6:amd64 (7:8.0.1-3ubuntu2) ...
+2026-11-19T21:13:11.0106970Z Selecting previously unselected package libtheoradec2:amd64.
+2026-11-19T21:13:11.0213008Z Preparing to unpack .../24-libtheoradec2_1.2.0+dfsg-6_amd64v3.deb ...
+2026-11-19T21:13:11.0219728Z Unpacking libtheoradec2:amd64 (1.2.0+dfsg-6) ...
+2026-11-19T21:13:11.0417524Z Selecting previously unselected package libtheoraenc2:amd64.
+2026-11-19T21:13:11.0526145Z Preparing to unpack .../25-libtheoraenc2_1.2.0+dfsg-6_amd64v3.deb ...
+2026-11-19T21:13:11.0532756Z Unpacking libtheoraenc2:amd64 (1.2.0+dfsg-6) ...
+2026-11-19T21:13:11.0750126Z Selecting previously unselected package libtwolame0:amd64.
+2026-11-19T21:13:11.0859616Z Preparing to unpack .../26-libtwolame0_0.4.0-2build4_amd64v3.deb ...
+2026-11-19T21:13:11.0885624Z Unpacking libtwolame0:amd64 (0.4.0-2build4) ...
+2026-11-19T21:13:11.1116883Z Selecting previously unselected package libvorbisenc2:amd64.
+2026-11-19T21:13:11.1227007Z Preparing to unpack .../27-libvorbisenc2_1.3.7-3build2_amd64v3.deb ...
+2026-11-19T21:13:11.1233798Z Unpacking libvorbisenc2:amd64 (1.3.7-3build2) ...
+2026-11-19T21:13:11.1456456Z Selecting previously unselected package libvpx12:amd64.
+2026-11-19T21:13:11.1565488Z Preparing to unpack .../28-libvpx12_1.16.0-3_amd64v3.deb ...
+2026-11-19T21:13:11.1572183Z Unpacking libvpx12:amd64 (1.16.0-3) ...
+2026-11-19T21:13:11.1979926Z Selecting previously unselected package libx264-165:amd64.
+2026-11-19T21:13:11.2088149Z Preparing to unpack .../29-libx264-165_2%3a0.165.3222+gitb35605ac-3build1_amd64v3.deb ...
+2026-11-19T21:13:11.2094587Z Unpacking libx264-165:amd64 (2:0.165.3222+gitb35605ac-3build1) ...
+2026-11-19T21:13:11.2856786Z Selecting previously unselected package libx265-215:amd64.
+2026-11-19T21:13:11.2964833Z Preparing to unpack .../30-libx265-215_4.1-4_amd64v3.deb ...
+2026-11-19T21:13:11.2971502Z Unpacking libx265-215:amd64 (4.1-4) ...
+2026-11-19T21:13:11.4145062Z Selecting previously unselected package libxvidcore4:amd64.
+2026-11-19T21:13:11.4253255Z Preparing to unpack .../31-libxvidcore4_2%3a1.3.7-3_amd64v3.deb ...
+2026-11-19T21:13:11.4259079Z Unpacking libxvidcore4:amd64 (2:1.3.7-3) ...
+2026-11-19T21:13:11.4496692Z Selecting previously unselected package libzvbi-common.
+2026-11-19T21:13:11.4603678Z Preparing to unpack .../32-libzvbi-common_0.2.44-1ubuntu2_all.deb ...
+2026-11-19T21:13:11.4611233Z Unpacking libzvbi-common (0.2.44-1ubuntu2) ...
+2026-11-19T21:13:11.4878611Z Selecting previously unselected package libzvbi0t64:amd64.
+2026-11-19T21:13:11.4988773Z Preparing to unpack .../33-libzvbi0t64_0.2.44-1ubuntu2_amd64v3.deb ...
+2026-11-19T21:13:11.4995645Z Unpacking libzvbi0t64:amd64 (0.2.44-1ubuntu2) ...
+2026-11-19T21:13:11.5218016Z Selecting previously unselected package libavcodec62:amd64.
+2026-11-19T21:13:11.5330701Z Preparing to unpack .../34-libavcodec62_7%3a8.0.1-3ubuntu2_amd64v3.deb ...
+2026-11-19T21:13:11.5336954Z Unpacking libavcodec62:amd64 (7:8.0.1-3ubuntu2) ...
+2026-11-19T21:13:11.7708408Z Selecting previously unselected package xfonts-encodings.
+2026-11-19T21:13:11.7815983Z Preparing to unpack .../35-xfonts-encodings_1%3a1.0.5-0ubuntu3_all.deb ...
+2026-11-19T21:13:11.7824524Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu3) ...
+2026-11-19T21:13:11.8104302Z Selecting previously unselected package xfonts-utils.
+2026-11-19T21:13:11.8211976Z Preparing to unpack .../36-xfonts-utils_1%3a7.7+7build1_amd64v3.deb ...
+2026-11-19T21:13:11.8217421Z Unpacking xfonts-utils (1:7.7+7build1) ...
+2026-11-19T21:13:11.8533297Z Selecting previously unselected package xfonts-cyrillic.
+2026-11-19T21:13:11.8640086Z Preparing to unpack .../37-xfonts-cyrillic_1%3a1.0.5+nmu1build1_all.deb ...
+2026-11-19T21:13:11.8646444Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1build1) ...
+2026-11-19T21:13:11.8912723Z Selecting previously unselected package xfonts-scalable.
+2026-11-19T21:13:11.9018298Z Preparing to unpack .../38-xfonts-scalable_1%3a1.0.3-1.3build1_all.deb ...
+2026-11-19T21:13:11.9024237Z Unpacking xfonts-scalable (1:1.0.3-1.3build1) ...
+2026-11-19T21:13:11.9558086Z Setting up libspeex1:amd64 (1.2.1-3build1) ...
+2026-11-19T21:13:11.9574828Z Setting up libshine3:amd64 (3.1.1-3build1) ...
+2026-11-19T21:13:11.9589587Z Setting up libvpl2 (1:2.16.0-1) ...
+2026-11-19T21:13:11.9603431Z Setting up libtwolame0:amd64 (0.4.0-2build4) ...
+2026-11-19T21:13:11.9616982Z Setting up libgsm1:amd64 (1.0.23-2) ...
+2026-11-19T21:13:11.9630287Z Setting up libsoxr0:amd64 (0.1.3-4.1) ...
+2026-11-19T21:13:11.9643912Z Setting up libx264-165:amd64 (2:0.165.3222+gitb35605ac-3build1) ...
+2026-11-19T21:13:11.9658442Z Setting up libcodec2-1.2:amd64 (1.2.0-4) ...
+2026-11-19T21:13:11.9672406Z Setting up fonts-wqy-zenhei (0.9.45-8build1) ...
+2026-11-19T21:13:11.9789972Z Setting up fonts-freefont-ttf (20211204+svn4273-4build1) ...
+2026-11-19T21:13:11.9816212Z Setting up libmpg123-0t64:amd64 (1.33.3-2) ...
+2026-11-19T21:13:11.9841237Z Setting up libxvidcore4:amd64 (2:1.3.7-3) ...
+2026-11-19T21:13:11.9856476Z Setting up libtheoraenc2:amd64 (1.2.0+dfsg-6) ...
+2026-11-19T21:13:11.9872187Z Setting up librav1e0.8:amd64 (0.8.1-7) ...
+2026-11-19T21:13:11.9886811Z Setting up libtheoradec2:amd64 (1.2.0+dfsg-6) ...
+2026-11-19T21:13:11.9900842Z Setting up libvpx12:amd64 (1.16.0-3) ...
+2026-11-19T21:13:11.9935434Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1build1) ...
+2026-11-19T21:13:11.9968762Z Setting up libva2:amd64 (2.23.0-1ubuntu1) ...
+2026-11-19T21:13:11.9984117Z Setting up libsvtav1enc2:amd64 (2.3.0+dfsg-1build1) ...
+2026-11-19T21:13:11.9998470Z Setting up xfonts-encodings (1:1.0.5-0ubuntu3) ...
+2026-11-19T21:13:12.0012987Z Setting up libopus0:amd64 (1.6.1-1) ...
+2026-11-19T21:13:12.0042358Z Setting up libdav1d7:amd64 (1.5.3-1) ...
+2026-11-19T21:13:12.0060553Z Setting up libva-drm2:amd64 (2.23.0-1ubuntu1) ...
+2026-11-19T21:13:12.0074723Z Setting up fonts-ipafont-gothic (00303-23ubuntu1) ...
+2026-11-19T21:13:12.0123874Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-11-19T21:13:12.0137525Z Setting up ocl-icd-libopencl1:amd64 (2.3.4-1) ...
+2026-11-19T21:13:12.0151374Z Setting up libvdpau1:amd64 (1.5-4) ...
+2026-11-19T21:13:12.0176231Z Setting up libx265-215:amd64 (4.1-4) ...
+2026-11-19T21:13:12.0192532Z Setting up libva-x11-2:amd64 (2.23.0-1ubuntu1) ...
+2026-11-19T21:13:12.0206812Z Setting up libzvbi-common (0.2.44-1ubuntu2) ...
+2026-11-19T21:13:12.0221117Z Setting up libmp3lame0:amd64 (3.101~svn6525+dfsg-2ubuntu0.1) ...
+2026-11-19T21:13:12.0236248Z Setting up libvorbisenc2:amd64 (1.3.7-3build2) ...
+2026-11-19T21:13:12.0250724Z Setting up fonts-unifont (1:16.0.04-1build1) ...
+2026-11-19T21:13:12.0548877Z Setting up libzvbi0t64:amd64 (0.2.44-1ubuntu2) ...
+2026-11-19T21:13:12.0564405Z Setting up libavutil60:amd64 (7:8.0.1-3ubuntu2) ...
+2026-11-19T21:13:12.0578718Z Setting up xfonts-utils (1:7.7+7build1) ...
+2026-11-19T21:13:12.0629464Z Setting up libswresample6:amd64 (7:8.0.1-3ubuntu2) ...
+2026-11-19T21:13:12.0645245Z Setting up xfonts-cyrillic (1:1.0.5+nmu1build1) ...
+2026-11-19T21:13:12.1006801Z Setting up xfonts-scalable (1:1.0.3-1.3build1) ...
+2026-11-19T21:13:12.1326264Z Setting up libavcodec62:amd64 (7:8.0.1-3ubuntu2) ...
+2026-11-19T21:13:12.1345510Z Processing triggers for libc-bin (2.43-2ubuntu2.4) ...
+2026-11-19T21:13:12.2824465Z Processing triggers for man-db (2.13.1-1build1) ...
+2026-11-19T21:13:12.2845239Z Not building database; man-db/auto-update is not 'true'.
+2026-11-19T21:13:12.2856554Z Processing triggers for fontconfig (2.17.1-3ubuntu1) ...
+2026-11-19T21:13:12.8059635Z 
+2026-11-19T21:13:12.8060255Z Running kernel seems to be up-to-date.
+2026-11-19T21:13:12.8060534Z 
+2026-11-19T21:13:12.8060647Z Restarting services...
+2026-11-19T21:13:12.8134883Z 
+2026-11-19T21:13:12.8135415Z Service restarts being deferred:
+2026-11-19T21:13:12.8137390Z  systemctl restart hosted-compute-agent.service
+2026-11-19T21:13:12.8137615Z 
+2026-11-19T21:13:12.8138109Z No containers need to be restarted.
+2026-11-19T21:13:12.8138283Z 
+2026-11-19T21:13:12.8138452Z No user sessions are running outdated binaries.
+2026-11-19T21:13:12.8138649Z 
+2026-11-19T21:13:12.8138910Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-19T21:13:13.5743016Z Cached 39 package(s) in /home/runner/work/_temp/playwright-apt
+2026-11-19T21:13:13.5749060Z ##[end-action id=__self_3.apt-deps;outcome=success;conclusion=success;duration_ms=9485]
+2026-11-19T21:13:13.5751490Z ##[start-action display=Save apt packages to cache;id=__self_3.__actions_cache]
+2026-11-19T21:13:13.5757237Z ##[end-action id=__self_3.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T21:13:13.5758340Z ##[start-action display=Restore playwright from cache;id=__self_3.playwright-cache]
+2026-11-19T21:13:13.6220524Z ##[group]Run actions/cache/restore@v5
+2026-11-19T21:13:13.6220854Z with:
+2026-11-19T21:13:13.6220993Z   path: ~/.cache/ms-playwright
+2026-11-19T21:13:13.6221303Z   key: playwright-v2-24.x-Linux-X64-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-19T21:13:13.6221615Z   enableCrossOsArchive: false
+2026-11-19T21:13:13.6221779Z   lookup-only: false
+2026-11-19T21:13:13.6221913Z env:
+2026-11-19T21:13:13.6222031Z   CI: true
+2026-11-19T21:13:13.6222161Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:13.6222323Z   E2E_PORT: 4000
+2026-11-19T21:13:13.6222462Z   test_results_path: test-results/
+2026-11-19T21:13:13.6222661Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:13.6222856Z ##[endgroup]
+2026-11-19T21:13:13.9012638Z Cache hit for: playwright-v2-24.x-Linux-X64-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-19T21:13:15.0980222Z Received 134217728 of 487539650 (27.5%), 124.2 MBs/sec
+2026-11-19T21:13:16.0989517Z Received 348127232 of 487539650 (71.4%), 163.4 MBs/sec
+2026-11-19T21:13:16.7837124Z Received 487539650 of 487539650 (100.0%), 171.1 MBs/sec
+2026-11-19T21:13:16.7838509Z Cache Size: ~465 MB (487539650 B)
+2026-11-19T21:13:16.7887651Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f6dcef59-6dc4-421e-ab4e-b8356ae4466d/cache.tzst -P -C /home/runner/work/lexical/lexical --use-compress-program unzstd
+2026-11-19T21:13:18.1386499Z Cache restored successfully
+2026-11-19T21:13:18.1634228Z Cache restored from key: playwright-v2-24.x-Linux-X64-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-19T21:13:18.1823559Z ##[end-action id=__self_3.playwright-cache;outcome=success;conclusion=success;duration_ms=4606]
+2026-11-19T21:13:18.1826122Z ##[start-action display=Install playwright;id=__self_3.__run]
+2026-11-19T21:13:18.2059001Z ##[group]Run pnpm exec playwright install
+2026-11-19T21:13:18.2059237Z [36;1mpnpm exec playwright install[0m
+2026-11-19T21:13:18.2059677Z [36;1mpnpm exec playwright install --list[0m
+2026-11-19T21:13:18.2102328Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:13:18.2102556Z env:
+2026-11-19T21:13:18.2102679Z   CI: true
+2026-11-19T21:13:18.2102815Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:18.2102973Z   E2E_PORT: 4000
+2026-11-19T21:13:18.2103114Z   test_results_path: test-results/
+2026-11-19T21:13:18.2103323Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:18.2103522Z ##[endgroup]
+2026-11-19T21:13:18.9392271Z Playwright Host validation warning: 
+2026-11-19T21:13:18.9393415Z ╔══════════════════════════════════════════════════════╗
+2026-11-19T21:13:18.9393890Z ║ Host system is missing dependencies to run browsers. ║
+2026-11-19T21:13:18.9394325Z ║ Missing libraries:                                   ║
+2026-11-19T21:13:18.9394737Z ║     libgtk-4.so.1                                    ║
+2026-11-19T21:13:18.9395215Z ║     libgraphene-1.0.so.0                             ║
+2026-11-19T21:13:18.9395627Z ║     libevent-2.1.so.7                                ║
+2026-11-19T21:13:18.9396041Z ║     libgstallocators-1.0.so.0                        ║
+2026-11-19T21:13:18.9396461Z ║     libgstapp-1.0.so.0                               ║
+2026-11-19T21:13:18.9396863Z ║     libgstpbutils-1.0.so.0                           ║
+2026-11-19T21:13:18.9397261Z ║     libgstaudio-1.0.so.0                             ║
+2026-11-19T21:13:18.9397659Z ║     libgsttag-1.0.so.0                               ║
+2026-11-19T21:13:18.9398086Z ║     libgstvideo-1.0.so.0                             ║
+2026-11-19T21:13:18.9398419Z ║     libgstgl-1.0.so.0                                ║
+2026-11-19T21:13:18.9398693Z ║     libgstcodecparsers-1.0.so.0                      ║
+2026-11-19T21:13:18.9398966Z ║     libgstfft-1.0.so.0                               ║
+2026-11-19T21:13:18.9399227Z ║     libflite.so.1                                    ║
+2026-11-19T21:13:18.9399671Z ║     libflite_usenglish.so.1                          ║
+2026-11-19T21:13:18.9399956Z ║     libflite_cmu_grapheme_lang.so.1                  ║
+2026-11-19T21:13:18.9400222Z ║     libflite_cmu_grapheme_lex.so.1                   ║
+2026-11-19T21:13:18.9400926Z ║     libflite_cmu_indic_lang.so.1                     ║
+2026-11-19T21:13:18.9401341Z ║     libflite_cmu_indic_lex.so.1                      ║
+2026-11-19T21:13:18.9401745Z ║     libflite_cmulex.so.1                             ║
+2026-11-19T21:13:18.9402165Z ║     libflite_cmu_time_awb.so.1                       ║
+2026-11-19T21:13:18.9402576Z ║     libflite_cmu_us_awb.so.1                         ║
+2026-11-19T21:13:18.9403018Z ║     libflite_cmu_us_kal16.so.1                       ║
+2026-11-19T21:13:18.9403500Z ║     libflite_cmu_us_kal.so.1                         ║
+2026-11-19T21:13:18.9403952Z ║     libflite_cmu_us_rms.so.1                         ║
+2026-11-19T21:13:18.9404290Z ║     libflite_cmu_us_slt.so.1                         ║
+2026-11-19T21:13:18.9404556Z ║     libavif.so.16                                    ║
+2026-11-19T21:13:18.9404822Z ║     libharfbuzz-icu.so.0                             ║
+2026-11-19T21:13:18.9405125Z ║     libsoup-3.0.so.0                                 ║
+2026-11-19T21:13:18.9405562Z ║     libwayland-server.so.0                           ║
+2026-11-19T21:13:18.9406022Z ║     libmanette-0.2.so.0                              ║
+2026-11-19T21:13:18.9406379Z ║     libhyphen.so.0                                   ║
+2026-11-19T21:13:18.9406743Z ║     libsecret-1.so.0                                 ║
+2026-11-19T21:13:18.9407196Z ║     libGLESv2.so.2                                   ║
+2026-11-19T21:13:18.9407634Z ╚══════════════════════════════════════════════════════╝
+2026-11-19T21:13:18.9420828Z     at validateDependenciesLinux (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:32259:9)
+2026-11-19T21:13:18.9421630Z     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-11-19T21:13:18.9422207Z     at async Registry._validateHostRequirements (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:33519:18)
+2026-11-19T21:13:18.9423035Z     at async Registry._validateHostRequirementsForExecutableIfNeeded (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:33641:11)
+2026-11-19T21:13:18.9424321Z     at async Registry.validateHostRequirementsForExecutablesIfNeeded (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:33630:11)
+2026-11-19T21:13:18.9425299Z     at async installBrowsers (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:70097:5)
+2026-11-19T21:13:18.9426188Z     at async _Command.<anonymous> (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:73670:7)
+2026-11-19T21:13:19.5940079Z 
+2026-11-19T21:13:19.5940729Z Playwright version: 1.63.0
+2026-11-19T21:13:19.5941072Z   Browsers:
+2026-11-19T21:13:19.5941407Z     /home/runner/.cache/ms-playwright/chromium-1243
+2026-11-19T21:13:19.5941849Z     /home/runner/.cache/ms-playwright/chromium_headless_shell-1243
+2026-11-19T21:13:19.5942261Z     /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-11-19T21:13:19.5942659Z     /home/runner/.cache/ms-playwright/firefox-1543
+2026-11-19T21:13:19.5943015Z     /home/runner/.cache/ms-playwright/webkit-2359
+2026-11-19T21:13:19.5943307Z   References:
+2026-11-19T21:13:19.5943816Z     /home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core
+2026-11-19T21:13:19.6287708Z ##[end-action id=__self_3.__run;outcome=success;conclusion=success;duration_ms=1446]
+2026-11-19T21:13:19.6290532Z ##[start-action display=Save playwright to cache;id=__self_3.__actions_cache_2]
+2026-11-19T21:13:19.6295752Z ##[end-action id=__self_3.__actions_cache_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T21:13:19.6465137Z ##[group]Run pnpm run test-e2e-chromium --shard=1/1 --reporter=dot,json,./packages/lexical-playground/__tests__/utils/timingReporter.mjs
+2026-11-19T21:13:19.6465822Z [36;1mpnpm run test-e2e-chromium --shard=1/1 --reporter=dot,json,./packages/lexical-playground/__tests__/utils/timingReporter.mjs[0m
+2026-11-19T21:13:19.6508832Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:13:19.6508993Z env:
+2026-11-19T21:13:19.6509118Z   CI: true
+2026-11-19T21:13:19.6509254Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:13:19.6509485Z   E2E_PORT: 4000
+2026-11-19T21:13:19.6509634Z   test_results_path: test-results/
+2026-11-19T21:13:19.6509843Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:13:19.6510115Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/work/lexical/lexical/results.json
+2026-11-19T21:13:19.6510351Z ##[endgroup]
+2026-11-19T21:13:19.9745196Z $ cross-env E2E_BROWSER=chromium playwright test --project="chromium" --shard=1/1 --reporter=dot,json,./packages/lexical-playground/__tests__/utils/timingReporter.mjs
+2026-11-19T21:13:20.6900210Z [WebServer] $ pnpm -C packages/lexical-playground run preview
+2026-11-19T21:13:20.9823114Z [WebServer] $ vite preview --port 4000 --host
+2026-11-19T21:13:23.2653007Z 
+2026-11-19T21:13:23.2654131Z Running 708 tests using 4 workers, shard 1 of 1
+2026-11-19T21:13:29.2296117Z °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°··°°····°°·°°°°°°°°°°°°°°··°°°··°
+2026-11-19T21:13:31.7537753Z °·°°°°°°°°°°°°°°°°°°°°°°°°°·°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°·°·°°°°°°·°°°°°°°°°
+2026-11-19T21:13:35.4655420Z °°°°°°°°°°°°°·°°·····°···°°°°°°°°·°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°·°°°°°°°°°°°°°°°
+2026-11-19T21:13:36.5265801Z °°°°°°°°°°°°°°°°°°°°·°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°·°°°°°°°°°°°°°°°°°°
+2026-11-19T21:13:44.3867631Z °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°·················°°°°°°°°°°°°°°°°°°°°°°
+2026-11-19T21:13:45.1732278Z °°°°°°°°°·°°°°°°°°°°°°°°°°°°°°·°°°°°°°°°°°°°°°°°°°°°°°·°°°°°°°°°°°°°°°°°°°°°°°°°
+2026-11-19T21:13:46.7614231Z °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°···°°°°°°°°°°·°°°°°°°°°°°°°°°°°°°°°°°°°
+2026-11-19T21:13:51.5382407Z °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°···°°·········°°°°°°°°
+2026-11-19T21:14:02.9948156Z °°°°°°·°°°°°°°°···°·····°·°°··°°°°°°°°°°°°°°°°°°°····°······°·°··°··
+2026-11-19T21:14:02.9955449Z   616 skipped
+2026-11-19T21:14:02.9955742Z   92 passed (42.6s)
+2026-11-19T21:14:03.0111021Z 
+2026-11-19T21:14:03.0111705Z E2E timings: 42.6s elapsed
+2026-11-19T21:14:03.0112258Z Playground initialization: 93 calls, 67.5s summed across workers
+2026-11-19T21:14:03.0112782Z Slowest test attempts (including setup and teardown):
+2026-11-19T21:14:03.0113598Z   3.6s chromium > packages/lexical-playground/__tests__/e2e/CopyAndPaste/lexical/CopyAndPaste.spec.mjs > CopyAndPaste > Copy and paste between sections
+2026-11-19T21:14:03.0114702Z   3.6s chromium > packages/lexical-playground/__tests__/e2e/Mentions.spec.mjs > Mentions > Can enter multiple Luke Skywalker mentions and then delete them from start
+2026-11-19T21:14:03.0115830Z   3.0s chromium > packages/lexical-playground/__tests__/e2e/Mentions.spec.mjs > Mentions > Can enter a mention then delete it and partially remove text after
+2026-11-19T21:14:03.0117229Z   2.7s chromium > packages/lexical-playground/__tests__/e2e/History.spec.mjs > History > Can type two paragraphs of text and correctly undo and redo
+2026-11-19T21:14:03.0118179Z   2.7s chromium > packages/lexical-playground/__tests__/e2e/Composition.spec.mjs > Composition > IME > Can type Hiragana via IME part way through a mention
+2026-11-19T21:14:03.0119109Z   2.5s chromium > packages/lexical-playground/__tests__/e2e/Autocomplete.spec.mjs > Autocomplete > Can autocomplete a word
+2026-11-19T21:14:03.0120218Z   2.3s chromium > packages/lexical-playground/__tests__/e2e/Composition.spec.mjs > Composition > IME > Can type Hiragana via IME between emojis
+2026-11-19T21:14:03.0121517Z   2.2s chromium > packages/lexical-playground/__tests__/e2e/Mentions.spec.mjs > Mentions > Can enter and backspace part of the Luke Skywalker mention in the middle
+2026-11-19T21:14:03.0122245Z   2.2s chromium > packages/lexical-playground/__tests__/e2e/MaxLength.spec.mjs > MaxLength > can restrict emojis on boundaries
+2026-11-19T21:14:03.0123263Z   2.2s chromium > packages/lexical-playground/__tests__/regression/379-backspace-with-mentions.spec.mjs > Regression test #379 > Is able to correctly handle backspace press at the line boundary
+2026-11-19T21:14:03.0124144Z   2.2s chromium > packages/lexical-playground/__tests__/e2e/Mentions.spec.mjs > Mentions > Can enter and backspace part of the Luke Skywalker mention
+2026-11-19T21:14:03.0125097Z   2.1s chromium > packages/lexical-playground/__tests__/e2e/Composition.spec.mjs > Composition > IME > Can type Hiragana via IME at the end of a mention
+2026-11-19T21:14:03.0126200Z   2.1s chromium > packages/lexical-playground/__tests__/regression/231-empty-text-nodes.spec.mjs > Regression test #231 > Does not generate segment error when editing empty text nodes
+2026-11-19T21:14:03.0127308Z   2.1s chromium > packages/lexical-playground/__tests__/e2e/Mentions.spec.mjs > Mentions > Can enter and delete part of the Luke Skywalker mention in the middle
+2026-11-19T21:14:03.0128247Z   2.0s chromium > packages/lexical-playground/__tests__/e2e/TextEntry.spec.mjs > TextEntry > Paragraphed text entry and selection
+2026-11-19T21:14:03.0129243Z   2.0s chromium > packages/lexical-playground/__tests__/e2e/TextDragDrop.spec.mjs > Text drag and drop > moves a selected word forward within the same block (plain text)
+2026-11-19T21:14:03.0130266Z   2.0s chromium > packages/lexical-playground/__tests__/e2e/Mentions.spec.mjs > Mentions > Can enter the Luke Skywalker mention
+2026-11-19T21:14:03.0131000Z   1.9s chromium > packages/lexical-playground/__tests__/e2e/Keywords.spec.mjs > Keywords > Can create a decorator and move selection around it
+2026-11-19T21:14:03.0131953Z   1.9s chromium > packages/lexical-playground/__tests__/e2e/Mentions.spec.mjs > Mentions > Can enter and delete part of the Luke Skywalker mention
+2026-11-19T21:14:03.0132917Z   1.9s chromium > packages/lexical-playground/__tests__/e2e/Composition.spec.mjs > Composition > Handles Arabic characters with diacritics
+2026-11-19T21:14:03.0133651Z Slowest Playwright methods (summed calls, may overlap):
+2026-11-19T21:14:03.0134053Z   57.5s / 93 calls: Navigate
+2026-11-19T21:14:03.0134339Z   18.4s / 132 calls: Wait for selector
+2026-11-19T21:14:03.0134669Z   7.4s / 132 calls: Press "ArrowLeft"
+2026-11-19T21:14:03.0134960Z   5.3s / 89 calls: Focus
+2026-11-19T21:14:03.0135205Z   4.6s / 92 calls: Create page
+2026-11-19T21:14:03.0135473Z   3.2s / 54 calls: Press "Backspace"
+2026-11-19T21:14:03.0135752Z   2.6s / 45 calls: Press "ArrowRight"
+2026-11-19T21:14:03.0136013Z   2.5s / 341 calls: Evaluate
+2026-11-19T21:14:03.0136267Z   2.3s / 39 calls: Press "Enter"
+2026-11-19T21:14:03.0136531Z   1.6s / 17 calls: Type "@Luke"
+2026-11-19T21:14:03.0136790Z   1.4s / 23 calls: Press "Delete"
+2026-11-19T21:14:03.0137060Z   1.2s / 9 calls: Launch browser
+2026-11-19T21:14:03.0137331Z   0.9s / 16 calls: Key down "Shift"
+2026-11-19T21:14:03.0137580Z   0.9s / 9 calls: Click
+2026-11-19T21:14:03.0138027Z   0.8s / 4 calls: Type "1234:)56"
+2026-11-19T21:14:03.0778076Z ##[group]Run actions/upload-artifact@v7
+2026-11-19T21:14:03.0778271Z with:
+2026-11-19T21:14:03.0778438Z   name: results-github-4-linux-chromium-plain-text
+2026-11-19T21:14:03.0778638Z   path: results.json
+2026-11-19T21:14:03.0778786Z   retention-days: 30
+2026-11-19T21:14:03.0778928Z   if-no-files-found: warn
+2026-11-19T21:14:03.0779085Z   compression-level: 6
+2026-11-19T21:14:03.0779227Z   overwrite: false
+2026-11-19T21:14:03.0779974Z   include-hidden-files: false
+2026-11-19T21:14:03.0780186Z   archive: true
+2026-11-19T21:14:03.0780315Z env:
+2026-11-19T21:14:03.0780435Z   CI: true
+2026-11-19T21:14:03.0780572Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:14:03.0780723Z   E2E_PORT: 4000
+2026-11-19T21:14:03.0780869Z   test_results_path: test-results/
+2026-11-19T21:14:03.0781070Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:14:03.0781257Z ##[endgroup]
+2026-11-19T21:14:03.1809607Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:14:03.1812984Z Artifact name is valid!
+2026-11-19T21:14:03.1813332Z Root directory input is valid!
+2026-11-19T21:14:03.4946192Z Uploading artifact: results-github-4-linux-chromium-plain-text.zip
+2026-11-19T21:14:03.4963604Z Beginning upload of artifact content to blob storage
+2026-11-19T21:14:03.7501786Z Uploaded bytes 65656
+2026-11-19T21:14:03.7964446Z Finished uploading artifact content to blob storage!
+2026-11-19T21:14:03.7965256Z SHA256 digest of uploaded artifact is 0fa9ec3759ba1d2142409b91c7a545dbc47bab65525fd31aba6e31422a7021b2
+2026-11-19T21:14:03.7965782Z Finalizing artifact upload
+2026-11-19T21:14:04.2195226Z Artifact results-github-4-linux-chromium-plain-text successfully finalized. Artifact ID 14575800220
+2026-11-19T21:14:04.2196167Z Artifact results-github-4-linux-chromium-plain-text has been successfully uploaded! Final size is 65656 bytes. Artifact ID is 14575800220
+2026-11-19T21:14:04.2198330Z Artifact download URL: https://github.com/boba-benchmarks/lexical/actions/runs/44616280004/artifacts/14575800220
+2026-11-19T21:14:04.2328419Z ##[group]Run actions/upload-artifact@v7
+2026-11-19T21:14:04.2328602Z with:
+2026-11-19T21:14:04.2328784Z   name: Test Results linux-chromium-plain-text-44616280004-1
+2026-11-19T21:14:04.2328999Z   path: test-results/
+2026-11-19T21:14:04.2329150Z   if-no-files-found: ignore
+2026-11-19T21:14:04.2329473Z   retention-days: 7
+2026-11-19T21:14:04.2329633Z   compression-level: 6
+2026-11-19T21:14:04.2329774Z   overwrite: false
+2026-11-19T21:14:04.2329915Z   include-hidden-files: false
+2026-11-19T21:14:04.2330070Z   archive: true
+2026-11-19T21:14:04.2330199Z env:
+2026-11-19T21:14:04.2330316Z   CI: true
+2026-11-19T21:14:04.2330448Z   E2E_EDITOR_MODE: plain-text
+2026-11-19T21:14:04.2330601Z   E2E_PORT: 4000
+2026-11-19T21:14:04.2330742Z   test_results_path: test-results/
+2026-11-19T21:14:04.2330942Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-19T21:14:04.2331134Z ##[endgroup]
+2026-11-19T21:14:04.3299983Z No files were found with the provided path: test-results/. No artifacts will be uploaded.
+2026-11-19T21:14:04.3454132Z Post job cleanup.
+2026-11-19T21:14:04.3458280Z ##[start-action display=Use Node.js 24.x;id=__ef40fedf-f22e-48cc-90e4-ce1242b11870.__actions_setup-node]
+2026-11-19T21:14:04.3495484Z Post job cleanup.
+2026-11-19T21:14:04.4289884Z Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77, not saving cache.
+2026-11-19T21:14:04.4349143Z ##[end-action id=__ef40fedf-f22e-48cc-90e4-ce1242b11870.__actions_setup-node;outcome=success;conclusion=success;duration_ms=89]
+2026-11-19T21:14:04.4351383Z ##[start-action display=Run pnpm/action-setup@v6;id=__ef40fedf-f22e-48cc-90e4-ce1242b11870.__pnpm_action-setup]
+2026-11-19T21:14:04.4375692Z Post job cleanup.
+2026-11-19T21:14:04.5298434Z Pruning is unnecessary.
+2026-11-19T21:14:04.5395821Z ##[end-action id=__ef40fedf-f22e-48cc-90e4-ce1242b11870.__pnpm_action-setup;outcome=success;conclusion=success;duration_ms=104]
+2026-11-19T21:14:04.5459560Z Post job cleanup.
+2026-11-19T21:14:04.6113175Z [command]/usr/bin/git version
+2026-11-19T21:14:04.6155823Z git version 2.56.1
+2026-11-19T21:14:04.6182286Z Temporarily overriding HOME='/home/runner/work/_temp/f728bbac-c3a8-4853-a5ea-ce939abeea03' before making global git config changes
+2026-11-19T21:14:04.6185059Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T21:14:04.6185920Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/lexical/lexical
+2026-11-19T21:14:04.6232937Z Removing SSH command configuration
+2026-11-19T21:14:04.6236319Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T21:14:04.6261978Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T21:14:04.6525371Z Removing HTTP extra header
+2026-11-19T21:14:04.6526069Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T21:14:04.6563155Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T21:14:04.6817942Z Removing includeIf entries pointing to credentials config files
+2026-11-19T21:14:04.6823386Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T21:14:04.6845888Z includeif.gitdir:/home/runner/work/lexical/lexical/.git.path
+2026-11-19T21:14:04.6846425Z includeif.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path
+2026-11-19T21:14:04.6846862Z includeif.gitdir:/github/workspace/.git.path
+2026-11-19T21:14:04.6847265Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T21:14:04.6852642Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/lexical/lexical/.git.path
+2026-11-19T21:14:04.6872678Z /home/runner/work/_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:14:04.6879971Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/lexical/lexical/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-bb729e88\-c4f7\-4608\-b90b\-e8a2bbb4f7d5\.config
+2026-11-19T21:14:04.6909739Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path
+2026-11-19T21:14:04.6930799Z /home/runner/work/_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:14:04.6937104Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-bb729e88\-c4f7\-4608\-b90b\-e8a2bbb4f7d5\.config
+2026-11-19T21:14:04.6964002Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-19T21:14:04.6983650Z /github/runner_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:14:04.6988264Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-bb729e88\-c4f7\-4608\-b90b\-e8a2bbb4f7d5\.config
+2026-11-19T21:14:04.7015290Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T21:14:04.7034248Z /github/runner_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config
+2026-11-19T21:14:04.7038957Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-bb729e88\-c4f7\-4608\-b90b\-e8a2bbb4f7d5\.config
+2026-11-19T21:14:04.7066279Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T21:14:04.7281606Z Removing credentials config '/home/runner/work/_temp/git-credentials-bb729e88-c4f7-4608-b90b-e8a2bbb4f7d5.config'
+2026-11-19T21:14:04.7403719Z Cleaning up orphan processes
