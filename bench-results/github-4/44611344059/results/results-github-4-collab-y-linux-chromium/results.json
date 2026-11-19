@@ -1,0 +1,1688 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.22.2/x64/bin/node",
+      "/home/runner/work/lexical/lexical/node_modules/playwright/cli.js",
+      "test",
+      "--project=chromium",
+      "--shard=1/1",
+      "--reporter=dot,json,./packages/lexical-playground/__tests__/utils/timingReporter.mjs"
+    ],
+    "configFile": "/home/runner/work/lexical/lexical/playwright.config.mjs",
+    "rootDir": "/home/runner/work/lexical/lexical",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+        "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+        "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44611344059"
+      },
+      "gitCommit": {
+        "shortHash": "eec04f5",
+        "hash": "eec04f579940fa4001b70674716561137b269a0d",
+        "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+        "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+        "author": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120824000
+        },
+        "committer": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120824000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/lexical/lexical/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+            "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+            "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44611344059"
+          },
+          "gitCommit": {
+            "shortHash": "eec04f5",
+            "hash": "eec04f579940fa4001b70674716561137b269a0d",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__",
+        "testIgnore": [
+          "/\\/__tests__\\/(?:unit|browser)\\//"
+        ],
+        "testMatch": [
+          "/\\/e2e\\/(?:Collaboration|CollabY[^/]*)\\.spec\\.mjs$/"
+        ],
+        "timeout": 150000
+      },
+      {
+        "outputDir": "/home/runner/work/lexical/lexical/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+            "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+            "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44611344059"
+          },
+          "gitCommit": {
+            "shortHash": "eec04f5",
+            "hash": "eec04f579940fa4001b70674716561137b269a0d",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__",
+        "testIgnore": [
+          "/\\/__tests__\\/(?:unit|browser)\\//"
+        ],
+        "testMatch": [
+          "/\\/e2e\\/(?:Collaboration|CollabY[^/]*)\\.spec\\.mjs$/"
+        ],
+        "timeout": 150000
+      },
+      {
+        "outputDir": "/home/runner/work/lexical/lexical/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/lexical/commit/eec04f579940fa4001b70674716561137b269a0d",
+            "commitHash": "eec04f579940fa4001b70674716561137b269a0d",
+            "buildHref": "https://github.com/boba-benchmarks/lexical/actions/runs/44611344059"
+          },
+          "gitCommit": {
+            "shortHash": "eec04f5",
+            "hash": "eec04f579940fa4001b70674716561137b269a0d",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120824000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__",
+        "testIgnore": [
+          "/\\/__tests__\\/(?:unit|browser)\\//"
+        ],
+        "testMatch": [
+          "/\\/e2e\\/(?:Collaboration|CollabY[^/]*)\\.spec\\.mjs$/"
+        ],
+        "timeout": 150000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "dot"
+      ],
+      [
+        "json"
+      ],
+      [
+        "/home/runner/work/lexical/lexical/packages/lexical-playground/__tests__/utils/timingReporter.mjs"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 1,
+      "total": 1
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 4,
+    "webServer": {
+      "command": "pnpm run start-test-server",
+      "reuseExistingServer": false,
+      "timeout": 120000,
+      "url": "http://localhost:4000"
+    }
+  },
+  "suites": [
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collaboration",
+          "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+          "line": 39,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Undo with collaboration on",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4775,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:42.239Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-b1c3d88ef371d2f59a1f",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 42,
+              "column": 3
+            },
+            {
+              "title": "Remove dangling text from YJS when there is no preceding text node",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4182,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:42.190Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-8763066b63dc3ad8f5a0",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 235,
+              "column": 3
+            },
+            {
+              "title": "Merge dangling text into preceding text node",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3910,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:42.202Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-5456a8ab4970519c1c56",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 313,
+              "column": 3
+            },
+            {
+              "title": "Undo/redo where text node is split by formatting change",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3875,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:42.214Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-63c9dbfb28950db9348d",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 402,
+              "column": 3
+            },
+            {
+              "title": "Undo/redo where text node is split by inline element node",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4066,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:48.085Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-a448db457edd69baff94",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 523,
+              "column": 3
+            },
+            {
+              "title": "$handleNormalizationMergeConflicts handles nodes that have been reparented",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3105,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:48.135Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e501a09d14bf0e54ba4c-f9aefb0868ccd4b94646",
+              "file": "packages/lexical-playground/__tests__/e2e/Collaboration.spec.mjs",
+              "line": 660,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: tables",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "typing in cells, then a row and a column inserted at the same time",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11661,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:48.437Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-0421070dc734a899743f",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "two clients insert a row at the same place while a third types in the table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8440,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:49.014Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-740ead14aeb86826141b",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 111,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: images",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+          "line": 139,
+          "column": 6,
+          "specs": [
+            {
+              "title": "an image syncs; its caption (a nested editor) cannot be added",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5505,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:51.282Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-bea985cac58e6b651e38",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 140,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: IME",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+          "line": 170,
+          "column": 6,
+          "specs": [
+            {
+              "title": "compose in a line while a peer types in the same line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5510,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:52.182Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-fe54a27eedca2cfcdda5",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 176,
+              "column": 3
+            },
+            {
+              "title": "compose while a peer splits the line before the composition",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5391,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:56.809Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-552c2b9c136ee35a33e6",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 197,
+              "column": 3
+            },
+            {
+              "title": "compose while a peer splits the line after the composition",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5889,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:57.493Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-bcac010d5c03b9241ac8",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 221,
+              "column": 3
+            },
+            {
+              "title": "compose in a line while a peer joins it into the previous line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5733,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:45:57.715Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c14a482e2d31cff9c4e0-cfeb13da489a188365e8",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYNodes.spec.mjs",
+              "line": 245,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: offline mode",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "edits made with no connection survive a reload and sync on reconnect",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4756,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:00.162Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-db454244dc21aabe56e9",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "a replaced room: the offline edit is captured and reapplied as one undo step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3489,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:02.247Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-d6dcb0a71f81df318c52",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 81,
+              "column": 3
+            },
+            {
+              "title": "autoReplay none: the offline edit is not written over the block, but inserted after it in the collapsible section, as one undo step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3712,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:03.413Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-77c0ada251b1dbe673fa",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 112,
+              "column": 3
+            },
+            {
+              "title": "stage persist: nothing is applied until Reapply",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3566,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:03.514Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d54bdb16c8556a9ee0e-ab04062a5147d652e0f6",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYOffline.spec.mjs",
+              "line": 155,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: structure while typing",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "three clients type in the same line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7198,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:04.943Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-1e6885f72ca982c7b5aa",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "Enter in the middle of a line while a peer types at its end",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6831,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:05.768Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-6a26147a717e1553d9ae",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 55,
+              "column": 3
+            },
+            {
+              "title": "Backspace joins a line while peers type at its start and end",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7982,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:07.105Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-4bbccd9b24453263b9c4",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 81,
+              "column": 3
+            },
+            {
+              "title": "Delete at a line end while a peer types at the start of the next line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6319,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:07.157Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-73ad3317d7299aa7bbd1",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 106,
+              "column": 3
+            },
+            {
+              "title": "two clients press Enter at the same position and type",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5571,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:12.167Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-db964923be46266c582d",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 123,
+              "column": 3
+            },
+            {
+              "title": "heading and quote toggles while peers type in the line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8931,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:12.630Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-59da29f864d37e35aec9",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 149,
+              "column": 3
+            },
+            {
+              "title": "list: create, indent, Enter and outdent while a peer types",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9820,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:13.531Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-7dd14bb7b61e85df1d09",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "link while peers type inside and after the linked text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8815,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:15.105Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "241b591870bf01a549a0-2ed7be3666836502829d",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYStructure.spec.mjs",
+              "line": 228,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+      "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Collab Y: a new document",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 40,
+          "column": 6,
+          "specs": [
+            {
+              "title": "clients that open a new document at once write one paragraph",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6458,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:17.775Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-4d5e5701eabb2d15e61f",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "the split view shows the first paragraph once",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2150,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:21.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-fd1fc56a690971e3db31",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 60,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: offline",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 91,
+          "column": 6,
+          "specs": [
+            {
+              "title": "both sides edit text and structure while one is offline, then reconnect",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8745,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:23.401Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-0fb480923861faa1628d",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "large divergence: 30 lines on each side, lists, headings and joins",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 18560,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:23.776Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-afe2b36e6fd096fd67aa",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 130,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: undo isolation",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 183,
+          "column": 6,
+          "specs": [
+            {
+              "title": "undo and redo own typing after a peer typed in the same line",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8058,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:23.968Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-55c7dfb4c645e2ff0fee",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 184,
+              "column": 3
+            },
+            {
+              "title": "undo of Enter and a heading keeps a peer’s edits in those lines",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7469,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:24.275Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-6acd5590011e14a46429",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 212,
+              "column": 3
+            },
+            {
+              "title": "undo while a peer types inside the text being undone",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5959,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:31.777Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-2be3a310259c69bc4ce6",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 255,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: version gate",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 291,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a client that does not support the document’s layout is read only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5284,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:32.052Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-baa9f34d0a827c6f30cf",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 292,
+              "column": 3
+            },
+            {
+              "title": "a client older than a version that wrote the document is read only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3396,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:32.172Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-6280f3810a630b7411f2",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 354,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: the playground schema version",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 403,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a tab of the previous playground opens an edited document read only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2539,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:35.597Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-9c9f33e811dc71fa4320",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 404,
+              "column": 3
+            },
+            {
+              "title": "another tab gets the same all-day date",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2678,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:37.382Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-24b52ee26bb586e4a4e3",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 424,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: before the first sync",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 440,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the editor is not editable until the binding has read the document",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7268,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:37.761Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-28cb9eab8e37e8d5a26c",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 441,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Collab Y: transport",
+          "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+          "line": 519,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a provider connection that fails is reported, even after the provider reconnects",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4426,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:38.155Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-17d03538e9ffe71f9ac6",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 520,
+              "column": 3
+            },
+            {
+              "title": "a client whose provider never connects does not open",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6949,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T20:46:40.082Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c48243367a7b4e14f39-0f2d9a3bafc8675cd413",
+              "file": "packages/lexical-playground/__tests__/e2e/CollabYSync.spec.mjs",
+              "line": 541,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T20:45:39.480Z",
+    "duration": 67624.86099999999,
+    "expected": 39,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
