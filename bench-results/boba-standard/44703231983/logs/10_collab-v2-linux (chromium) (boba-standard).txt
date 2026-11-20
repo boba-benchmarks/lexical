@@ -1,0 +1,1661 @@
+﻿2026-11-20T08:33:01.8674193Z Current runner version: '2.338.2'
+2026-11-20T08:33:01.8679328Z Runner name: 'boba-136176994421-1'
+2026-11-20T08:33:01.8680074Z Runner group name: 'coldtea boba - lexical'
+2026-11-20T08:33:01.8680931Z Machine name: 'ubuntu'
+2026-11-20T08:33:01.8683304Z ##[group]GITHUB_TOKEN Permissions
+2026-11-20T08:33:01.8684927Z Actions: read
+2026-11-20T08:33:01.8685629Z Checks: write
+2026-11-20T08:33:01.8686177Z Contents: read
+2026-11-20T08:33:01.8686699Z Metadata: read
+2026-11-20T08:33:01.8687295Z PullRequests: write
+2026-11-20T08:33:01.8687903Z ##[endgroup]
+2026-11-20T08:33:01.8689575Z Secret source: Actions
+2026-11-20T08:33:01.8690470Z Cache mode: write
+2026-11-20T08:33:01.8691339Z Prepare workflow directory
+2026-11-20T08:33:01.9013497Z Prepare all required actions
+2026-11-20T08:33:01.9042491Z Getting action download info
+2026-11-20T08:33:02.3637517Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-20T08:33:02.4133374Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-20T08:33:02.9679837Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-20T08:33:03.1005257Z Complete job name: collab-v2-linux (chromium) (boba-standard)
+2026-11-20T08:33:03.1392267Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-20T08:33:03.1573645Z ##[group]Run '/run/boba/job-started.sh'
+2026-11-20T08:33:03.1587229Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:33:03.1588042Z ##[endgroup]
+2026-11-20T08:33:03.2378090Z Boba checked this job in 66 ms; dependency cache: box disk; databases: fresh
+2026-11-20T08:33:03.2561209Z ##[group]Run actions/checkout@v7
+2026-11-20T08:33:03.2561836Z with:
+2026-11-20T08:33:03.2562324Z   repository: boba-benchmarks/lexical
+2026-11-20T08:33:03.2565196Z   token: ***
+2026-11-20T08:33:03.2565720Z   ssh-strict: true
+2026-11-20T08:33:03.2566296Z   ssh-user: git
+2026-11-20T08:33:03.2566819Z   persist-credentials: true
+2026-11-20T08:33:03.2567394Z   clean: true
+2026-11-20T08:33:03.2567997Z   sparse-checkout-cone-mode: true
+2026-11-20T08:33:03.2568587Z   fetch-depth: 1
+2026-11-20T08:33:03.2569104Z   fetch-tags: false
+2026-11-20T08:33:03.2569676Z   show-progress: true
+2026-11-20T08:33:03.2570215Z   lfs: false
+2026-11-20T08:33:03.2570840Z   submodules: false
+2026-11-20T08:33:03.2571419Z   set-safe-directory: true
+2026-11-20T08:33:03.2571970Z   allow-unsafe-pr-checkout: false
+2026-11-20T08:33:03.2572575Z env:
+2026-11-20T08:33:03.2573071Z   CI: true
+2026-11-20T08:33:03.2573627Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:03.2574234Z   E2E_PORT: 4000
+2026-11-20T08:33:03.2575049Z   test_results_path: test-results/
+2026-11-20T08:33:03.2575626Z ##[endgroup]
+2026-11-20T08:33:03.4339678Z Syncing repository: boba-benchmarks/lexical
+2026-11-20T08:33:03.4341707Z ##[group]Getting Git version info
+2026-11-20T08:33:03.4342609Z Working directory is '/home/runner/work/lexical/lexical'
+2026-11-20T08:33:03.4343811Z [command]/usr/bin/git version
+2026-11-20T08:33:03.4400995Z git version 2.56.1
+2026-11-20T08:33:03.4412620Z ##[endgroup]
+2026-11-20T08:33:03.4417199Z Temporarily overriding HOME='/home/runner/work/_temp/4d3ad833-26e7-4bc8-91bf-965d38be7c28' before making global git config changes
+2026-11-20T08:33:03.4418463Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T08:33:03.4419966Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/lexical/lexical
+2026-11-20T08:33:03.4455644Z Deleting the contents of '/home/runner/work/lexical/lexical'
+2026-11-20T08:33:03.4457840Z ##[group]Determining repository object format
+2026-11-20T08:33:03.4458784Z ##[endgroup]
+2026-11-20T08:33:03.4459823Z ##[group]Initializing the repository
+2026-11-20T08:33:03.4461643Z [command]/usr/bin/git init /home/runner/work/lexical/lexical
+2026-11-20T08:33:03.4521378Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-20T08:33:03.4522073Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-20T08:33:03.4523178Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-20T08:33:03.4523884Z hint: call:
+2026-11-20T08:33:03.4524402Z hint:
+2026-11-20T08:33:03.4525021Z hint: 	git config --global init.defaultBranch <name>
+2026-11-20T08:33:03.4525707Z hint:
+2026-11-20T08:33:03.4526418Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-20T08:33:03.4527235Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-20T08:33:03.4527929Z hint:
+2026-11-20T08:33:03.4528519Z hint: 	git branch -m <name>
+2026-11-20T08:33:03.4529092Z hint:
+2026-11-20T08:33:03.4529804Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-20T08:33:03.4530697Z Initialized empty Git repository in /home/runner/work/lexical/lexical/.git/
+2026-11-20T08:33:03.4533569Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/lexical
+2026-11-20T08:33:03.4563517Z ##[endgroup]
+2026-11-20T08:33:03.4564182Z ##[group]Disabling automatic garbage collection
+2026-11-20T08:33:03.4564835Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-20T08:33:03.4588035Z ##[endgroup]
+2026-11-20T08:33:03.4588624Z ##[group]Setting up auth
+2026-11-20T08:33:03.4589043Z Removing SSH command configuration
+2026-11-20T08:33:03.4589804Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T08:33:03.4611157Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T08:33:03.4873508Z Removing HTTP extra header
+2026-11-20T08:33:03.4876304Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T08:33:03.4900768Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T08:33:03.5103512Z Removing includeIf entries pointing to credentials config files
+2026-11-20T08:33:03.5106108Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T08:33:03.5130333Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T08:33:03.5322239Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-20T08:33:03.5348171Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/lexical/lexical/.git.path /home/runner/work/_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:33:03.5371180Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:33:03.5391806Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:33:03.5413586Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:33:03.5434907Z ##[endgroup]
+2026-11-20T08:33:03.5435826Z ##[group]Fetching the repository
+2026-11-20T08:33:03.5438639Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0b0898076de03774b4f08838d1ffc42dd18bc90c:refs/remotes/origin/main
+2026-11-20T08:33:04.5181671Z From https://github.com/boba-benchmarks/lexical
+2026-11-20T08:33:04.5182803Z  * [new ref]         0b0898076de03774b4f08838d1ffc42dd18bc90c -> origin/main
+2026-11-20T08:33:04.5187849Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-20T08:33:04.5210158Z   origin/main
+2026-11-20T08:33:04.5215521Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-20T08:33:04.5233721Z 0b0898076de03774b4f08838d1ffc42dd18bc90c
+2026-11-20T08:33:04.5236905Z ##[endgroup]
+2026-11-20T08:33:04.5237747Z ##[group]Determining the checkout info
+2026-11-20T08:33:04.5238543Z ##[endgroup]
+2026-11-20T08:33:04.5239738Z [command]/usr/bin/git sparse-checkout disable
+2026-11-20T08:33:04.5268083Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-20T08:33:04.5288526Z ##[group]Checking out the ref
+2026-11-20T08:33:04.5289662Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-20T08:33:04.7595021Z Switched to a new branch 'main'
+2026-11-20T08:33:04.7596263Z branch 'main' set up to track 'origin/main'.
+2026-11-20T08:33:04.7611940Z ##[endgroup]
+2026-11-20T08:33:04.7645533Z [command]/usr/bin/git log -1 --format=%H
+2026-11-20T08:33:04.7668715Z 0b0898076de03774b4f08838d1ffc42dd18bc90c
+2026-11-20T08:33:04.7879156Z Prepare all required actions
+2026-11-20T08:33:04.7880096Z Getting action download info
+2026-11-20T08:33:04.9603592Z Download action repository 'pnpm/action-setup@v6' (SHA:73e46992e05b19abd31f2f3c20e0e7370d762115)
+2026-11-20T08:33:05.2579914Z Download action repository 'actions/setup-node@v6' (SHA:249970729cb0ef3589644e2896645e5dc5ba9c38)
+2026-11-20T08:33:05.3386612Z ##[group]Run ./.github/actions/setup-pnpm
+2026-11-20T08:33:05.3387153Z with:
+2026-11-20T08:33:05.3387589Z   node-version: 24.x
+2026-11-20T08:33:05.3388064Z   pnpm-install-args: --frozen-lockfile
+2026-11-20T08:33:05.3388549Z env:
+2026-11-20T08:33:05.3388981Z   CI: true
+2026-11-20T08:33:05.3389399Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:05.3390138Z   E2E_PORT: 4000
+2026-11-20T08:33:05.3390645Z   test_results_path: test-results/
+2026-11-20T08:33:05.3391102Z ##[endgroup]
+2026-11-20T08:33:05.3429634Z ##[start-action display=Run pnpm/action-setup@v6;id=__self.__pnpm_action-setup]
+2026-11-20T08:33:05.3486027Z ##[group]Run pnpm/action-setup@v6
+2026-11-20T08:33:05.3486527Z with:
+2026-11-20T08:33:05.3486940Z   dest: ~/setup-pnpm
+2026-11-20T08:33:05.3487343Z   run_install: null
+2026-11-20T08:33:05.3487817Z   cache: false
+2026-11-20T08:33:05.3488228Z   cache_dependency_path: pnpm-lock.yaml
+2026-11-20T08:33:05.3488762Z   package_json_file: package.json
+2026-11-20T08:33:05.3489270Z   standalone: false
+2026-11-20T08:33:05.3489658Z env:
+2026-11-20T08:33:05.3490055Z   CI: true
+2026-11-20T08:33:05.3490461Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:05.3490948Z   E2E_PORT: 4000
+2026-11-20T08:33:05.3491418Z   test_results_path: test-results/
+2026-11-20T08:33:05.3491881Z ##[endgroup]
+2026-11-20T08:33:05.4591865Z ##[group]Running self-installer...
+2026-11-20T08:33:06.3957864Z 
+2026-11-20T08:33:06.3958616Z added 1 package, and audited 2 packages in 753ms
+2026-11-20T08:33:06.3958926Z 
+2026-11-20T08:33:06.3959129Z 1 package is looking for funding
+2026-11-20T08:33:06.3959795Z   run `npm fund` for details
+2026-11-20T08:33:06.3961902Z 
+2026-11-20T08:33:06.3962134Z found 0 vulnerabilities
+2026-11-20T08:33:06.8866296Z Checking for updates...
+2026-11-20T08:33:07.0169070Z Switching pnpm from v11.28.10 to v11.24.0...
+2026-11-20T08:33:07.4648372Z .../v11/792-1a1f81682eb-4f19368f6fe9253e | Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-20T08:33:07.4659668Z .../v11/792-1a1f81682eb-4f19368f6fe9253e |   +1 +
+2026-11-20T08:33:07.7245571Z .../v11/792-1a1f81682eb-4f19368f6fe9253e | Progress: resolved 1, reused 0, downloaded 1, added 1, done
+2026-11-20T08:33:08.2030393Z [WARN] Detected a pnpm v10 installation layout at PNPM_HOME. The pnpm shims at PNPM_HOME have been refreshed so the new version is active, but pnpm v11 expects bins in PNPM_HOME/bin. Run "pnpm setup" to migrate your PATH to the v11 layout.
+2026-11-20T08:33:08.2081994Z Successfully updated pnpm to v11.24.0
+2026-11-20T08:33:08.2571250Z ##[endgroup]
+2026-11-20T08:33:08.2571879Z Installation Completed!
+2026-11-20T08:33:08.2678530Z ##[end-action id=__self.__pnpm_action-setup;outcome=success;conclusion=success;duration_ms=2924]
+2026-11-20T08:33:08.2701088Z ##[start-action display=Use Node.js 24.x;id=__self.__actions_setup-node]
+2026-11-20T08:33:08.2762751Z ##[group]Run actions/setup-node@v6
+2026-11-20T08:33:08.2763008Z with:
+2026-11-20T08:33:08.2763203Z   cache: pnpm
+2026-11-20T08:33:08.2763523Z   node-version: 24.x
+2026-11-20T08:33:08.2763744Z   check-latest: false
+2026-11-20T08:33:08.2765396Z   token: ***
+2026-11-20T08:33:08.2765619Z   package-manager-cache: true
+2026-11-20T08:33:08.2765838Z env:
+2026-11-20T08:33:08.2766107Z   CI: true
+2026-11-20T08:33:08.2766368Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:08.2766666Z   E2E_PORT: 4000
+2026-11-20T08:33:08.2766906Z   test_results_path: test-results/
+2026-11-20T08:33:08.2767174Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:08.2767503Z ##[endgroup]
+2026-11-20T08:33:08.3670299Z Found in cache @ /opt/hostedtoolcache/node/24.22.3/x64
+2026-11-20T08:33:08.3673208Z ##[group]Environment details
+2026-11-20T08:33:08.5999272Z node: v24.22.3
+2026-11-20T08:33:08.5999715Z npm: 11.19.1
+2026-11-20T08:33:08.5999952Z yarn: 1.22.22
+2026-11-20T08:33:08.6000693Z ##[endgroup]
+2026-11-20T08:33:08.6007423Z [command]/home/runner/setup-pnpm/node_modules/.bin/bin/pnpm store path --silent
+2026-11-20T08:33:08.9713915Z /home/runner/.local/share/pnpm/store/v11
+2026-11-20T08:33:09.3105404Z pnpm cache is not found
+2026-11-20T08:33:09.3235770Z ##[end-action id=__self.__actions_setup-node;outcome=success;conclusion=success;duration_ms=1053]
+2026-11-20T08:33:09.3238749Z ##[start-action display=Install dependencies;id=__self.__run]
+2026-11-20T08:33:09.3254806Z ##[group]Run pnpm install --frozen-lockfile
+2026-11-20T08:33:09.3255157Z [36;1mpnpm install --frozen-lockfile[0m
+2026-11-20T08:33:09.3274075Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:33:09.3274403Z env:
+2026-11-20T08:33:09.3274699Z   CI: true
+2026-11-20T08:33:09.3274947Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:09.3351802Z   E2E_PORT: 4000
+2026-11-20T08:33:09.3352112Z   test_results_path: test-results/
+2026-11-20T08:33:09.3352398Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:09.3352668Z ##[endgroup]
+2026-11-20T08:33:09.6318561Z Scope: all 44 workspace projects
+2026-11-20T08:33:09.7518403Z ? Verifying lockfile against supply-chain policies (2567 entries)...
+2026-11-20T08:33:09.7611557Z Lockfile is up to date, resolution step is skipped
+2026-11-20T08:33:09.9051416Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-20T08:33:10.0178136Z Packages: +2435
+2026-11-20T08:33:10.0178464Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-20T08:33:10.9176639Z Progress: resolved 2435, reused 0, downloaded 3, added 0
+2026-11-20T08:33:11.1785007Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-20T08:33:11.1785428Z   Content-addressable store is at: /home/runner/.local/share/pnpm/store/v11
+2026-11-20T08:33:11.1785768Z   Virtual store is at:             node_modules/.pnpm
+2026-11-20T08:33:11.9179858Z Progress: resolved 2435, reused 0, downloaded 132, added 20
+2026-11-20T08:33:12.9179295Z Progress: resolved 2435, reused 0, downloaded 305, added 98
+2026-11-20T08:33:13.9178382Z Progress: resolved 2435, reused 0, downloaded 506, added 184
+2026-11-20T08:33:14.9202585Z Progress: resolved 2435, reused 0, downloaded 689, added 423
+2026-11-20T08:33:15.9872850Z Progress: resolved 2435, reused 0, downloaded 828, added 640
+2026-11-20T08:33:17.0465287Z Progress: resolved 2435, reused 0, downloaded 981, added 671
+2026-11-20T08:33:18.0481610Z Progress: resolved 2435, reused 0, downloaded 1106, added 754
+2026-11-20T08:33:19.0482430Z Progress: resolved 2435, reused 0, downloaded 1297, added 773
+2026-11-20T08:33:20.0542331Z Progress: resolved 2435, reused 0, downloaded 1462, added 813
+2026-11-20T08:33:21.0574634Z Progress: resolved 2435, reused 0, downloaded 1792, added 895
+2026-11-20T08:33:22.0841124Z Progress: resolved 2435, reused 0, downloaded 2162, added 1105
+2026-11-20T08:33:23.2022929Z Progress: resolved 2435, reused 0, downloaded 2391, added 1139
+2026-11-20T08:33:23.7975044Z Progress: resolved 2435, reused 0, downloaded 2392, added 2435, done
+2026-11-20T08:33:24.0835880Z ✓ Lockfile passes supply-chain policies (2567 entries in 14.3s)
+2026-11-20T08:33:24.6265395Z 
+2026-11-20T08:33:24.6265970Z dependencies:
+2026-11-20T08:33:24.6266292Z + semver 7.7.4
+2026-11-20T08:33:24.6266571Z + yjs 13.6.31
+2026-11-20T08:33:24.6266724Z 
+2026-11-20T08:33:24.6266851Z devDependencies:
+2026-11-20T08:33:24.6267150Z + @babel/core 8.0.6
+2026-11-20T08:33:24.6267590Z + @babel/helper-module-imports 8.0.0
+2026-11-20T08:33:24.6268142Z + @babel/plugin-transform-optional-catch-binding 8.0.1
+2026-11-20T08:33:24.6268523Z + @babel/preset-env 8.0.6
+2026-11-20T08:33:24.6268817Z + @babel/preset-flow 8.0.1
+2026-11-20T08:33:24.6269038Z + @babel/preset-react 8.0.1
+2026-11-20T08:33:24.6269534Z + @babel/preset-typescript 8.0.1
+2026-11-20T08:33:24.6270777Z + @docusaurus/plugin-content-docs 3.10.2
+2026-11-20T08:33:24.6271119Z + @docusaurus/types 3.10.2
+2026-11-20T08:33:24.6271380Z + @eslint/compat 2.1.1
+2026-11-20T08:33:24.6271599Z + @eslint/js 10.0.1
+2026-11-20T08:33:24.6271991Z + @lexical/eslint-plugin 0.53.0 <- packages/lexical-eslint-plugin
+2026-11-20T08:33:24.6272556Z + @lexical/eslint-plugin-internal 0.53.0 <- packages/lexical-eslint-plugin-internal
+2026-11-20T08:33:24.6272982Z + @playwright/test 1.63.0
+2026-11-20T08:33:24.6273221Z + @prettier/sync 0.6.1
+2026-11-20T08:33:24.6273465Z + @rollup/plugin-alias 6.0.0
+2026-11-20T08:33:24.6273711Z + @rollup/plugin-babel 7.1.0
+2026-11-20T08:33:24.6273953Z + @rollup/plugin-commonjs 29.0.3
+2026-11-20T08:33:24.6274200Z + @rollup/plugin-json 6.1.0
+2026-11-20T08:33:24.6274480Z + @rollup/plugin-node-resolve 16.0.3
+2026-11-20T08:33:24.6274763Z + @rollup/plugin-replace 6.0.3
+2026-11-20T08:33:24.6275022Z + @rollup/plugin-terser 1.0.0
+2026-11-20T08:33:24.6275271Z + @types/babel__core 7.20.5
+2026-11-20T08:33:24.6275578Z + @types/babel__helper-module-imports 7.18.3
+2026-11-20T08:33:24.6275864Z + @types/fs-extra 11.0.4
+2026-11-20T08:33:24.6276087Z + @types/jsdom 30.0.0
+2026-11-20T08:33:24.6276296Z + @types/katex 0.16.7
+2026-11-20T08:33:24.6276519Z + @types/markdown-it 14.2.0
+2026-11-20T08:33:24.6276761Z + @types/minimist 1.2.5
+2026-11-20T08:33:24.6276979Z + @types/node 26.4.1
+2026-11-20T08:33:24.6277193Z + @types/prismjs 1.26.6
+2026-11-20T08:33:24.6277436Z + @types/proper-lockfile 4.1.4
+2026-11-20T08:33:24.6277730Z + @types/react 19.2.14
+2026-11-20T08:33:24.6277997Z + @types/react-dom 19.2.3
+2026-11-20T08:33:24.6278228Z + @types/semver 7.7.1
+2026-11-20T08:33:24.6278506Z + @vitejs/plugin-react 6.1.1
+2026-11-20T08:33:24.6278791Z + @vitest/browser-playwright 5.0.1
+2026-11-20T08:33:24.6279101Z + baseline-browser-mapping 2.11.26
+2026-11-20T08:33:24.6279346Z + chokidar 5.0.0
+2026-11-20T08:33:24.6279571Z + concurrently 10.0.5
+2026-11-20T08:33:24.6279835Z + confusing-browser-globals 1.0.11
+2026-11-20T08:33:24.6280095Z + cross-env 10.1.0
+2026-11-20T08:33:24.6280295Z + esbuild 0.28.2
+2026-11-20T08:33:24.6280483Z + eslint 10.11.0
+2026-11-20T08:33:24.6280715Z + eslint-config-prettier 10.1.8
+2026-11-20T08:33:24.6280987Z + eslint-plugin-compat 7.0.2
+2026-11-20T08:33:24.6281258Z + eslint-plugin-header 3.1.1
+2026-11-20T08:33:24.6281540Z + eslint-plugin-import-x 4.17.1
+2026-11-20T08:33:24.6281827Z + eslint-plugin-jsx-a11y 6.10.2
+2026-11-20T08:33:24.6282182Z + eslint-plugin-no-function-declare-after-return 1.1.0
+2026-11-20T08:33:24.6282559Z + eslint-plugin-no-only-tests 3.4.0
+2026-11-20T08:33:24.6282832Z + eslint-plugin-react 7.37.5
+2026-11-20T08:33:24.6283127Z + eslint-plugin-react-hooks 7.1.1
+2026-11-20T08:33:24.6283434Z + eslint-plugin-simple-import-sort 14.0.0
+2026-11-20T08:33:24.6283738Z + eslint-plugin-sort-keys-fix 1.1.2
+2026-11-20T08:33:24.6284010Z + fast-check 4.10.2
+2026-11-20T08:33:24.6284232Z + flow-bin 0.333.0
+2026-11-20T08:33:24.6284448Z + flow-typed 4.1.1
+2026-11-20T08:33:24.6284667Z + fs-extra 11.3.4
+2026-11-20T08:33:24.6285326Z + get-east-asian-width 1.7.0
+2026-11-20T08:33:24.6285562Z + glob 13.0.6
+2026-11-20T08:33:24.6285801Z + globals 17.12.0
+2026-11-20T08:33:24.6286130Z + gzip-size 7.0.0
+2026-11-20T08:33:24.6286386Z + hermes-estree 0.37.0
+2026-11-20T08:33:24.6286651Z + hermes-parser 0.37.0
+2026-11-20T08:33:24.6286944Z + hermes-transform 0.37.0
+2026-11-20T08:33:24.6287197Z + husky 9.1.7
+2026-11-20T08:33:24.6287434Z + jsdom 30.1.1
+2026-11-20T08:33:24.6287692Z + lint-staged 17.5.1
+2026-11-20T08:33:24.6287889Z + markdown-it 15.0.3
+2026-11-20T08:33:24.6288065Z + markdown-it-cjk-friendly 3.0.0
+2026-11-20T08:33:24.6288222Z + minimist 1.2.8
+2026-11-20T08:33:24.6288406Z + npm-run-all 4.1.5
+2026-11-20T08:33:24.6288544Z + pkg-pr-new 0.0.91
+2026-11-20T08:33:24.6288683Z + playwright 1.63.0
+2026-11-20T08:33:24.6288814Z + prettier 3.8.5
+2026-11-20T08:33:24.6289011Z + prettier-plugin-hermes-parser 0.37.0
+2026-11-20T08:33:24.6289240Z + prettier-plugin-organize-attributes 1.0.0
+2026-11-20T08:33:24.6289451Z + prettier-plugin-tailwindcss 0.8.1
+2026-11-20T08:33:24.6289901Z + proper-lockfile 4.1.2
+2026-11-20T08:33:24.6290038Z + react 19.2.5
+2026-11-20T08:33:24.6290175Z + react-dom 19.2.5
+2026-11-20T08:33:24.6290323Z + react-test-renderer 19.3.0
+2026-11-20T08:33:24.6290476Z + rollup 4.63.5
+2026-11-20T08:33:24.6290624Z + ts-morph 28.0.0
+2026-11-20T08:33:24.6290754Z + tsx 4.23.15
+2026-11-20T08:33:24.6290887Z + typedoc 0.28.20
+2026-11-20T08:33:24.6291017Z + typescript 6.0.3
+2026-11-20T08:33:24.6291157Z + typescript-eslint 8.70.1
+2026-11-20T08:33:24.6291324Z + vite 8.3.3
+2026-11-20T08:33:24.6291445Z + vitest 5.0.1
+2026-11-20T08:33:24.6291631Z + y-websocket 2.1.0
+2026-11-20T08:33:24.6291705Z 
+2026-11-20T08:33:24.6497240Z . prepare$ husky
+2026-11-20T08:33:24.7123127Z . prepare: Done
+2026-11-20T08:33:24.7642383Z packages/lexical-devtools postinstall$ wxt prepare
+2026-11-20T08:33:25.0053967Z packages/lexical-devtools postinstall: [log] 
+2026-11-20T08:33:25.0054642Z packages/lexical-devtools postinstall: WXT 0.21.4
+2026-11-20T08:33:25.4580609Z packages/lexical-devtools postinstall: [info] Generating types...
+2026-11-20T08:33:25.5331995Z packages/lexical-devtools postinstall: Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+2026-11-20T08:33:25.5332680Z packages/lexical-devtools postinstall:   npx update-browserslist-db@latest
+2026-11-20T08:33:25.5333430Z packages/lexical-devtools postinstall:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-11-20T08:33:25.6011994Z packages/lexical-devtools postinstall: [success] Finished in 597 ms
+2026-11-20T08:33:25.6993755Z packages/lexical-devtools postinstall: Done
+2026-11-20T08:33:25.7748162Z Done in 16.4s using pnpm v11.24.0
+2026-11-20T08:33:26.0115499Z ##[end-action id=__self.__run;outcome=success;conclusion=success;duration_ms=16687]
+2026-11-20T08:33:26.0153719Z Prepare all required actions
+2026-11-20T08:33:26.0154006Z Getting action download info
+2026-11-20T08:33:26.1572793Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-20T08:33:26.2519037Z ##[group]Run ./.github/actions/setup-playground
+2026-11-20T08:33:26.2519232Z with:
+2026-11-20T08:33:26.2519357Z   node-version: 24.x
+2026-11-20T08:33:26.2519481Z env:
+2026-11-20T08:33:26.2519590Z   CI: true
+2026-11-20T08:33:26.2519725Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:26.2519896Z   E2E_PORT: 4000
+2026-11-20T08:33:26.2520033Z   test_results_path: test-results/
+2026-11-20T08:33:26.2520214Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:26.2520391Z ##[endgroup]
+2026-11-20T08:33:26.2523418Z ##[start-action display=Restore build cache;id=__self_2.build-cache]
+2026-11-20T08:33:26.2542763Z ##[group]Run actions/cache/restore@v5
+2026-11-20T08:33:26.2542961Z with:
+2026-11-20T08:33:26.2543148Z   path: packages/lexical-playground/build
+packages/*/dist
+
+2026-11-20T08:33:26.2543413Z   key: build-dev-24.x-Linux-X64-0b0898076de03774b4f08838d1ffc42dd18bc90c
+2026-11-20T08:33:26.2543637Z   enableCrossOsArchive: false
+2026-11-20T08:33:26.2543957Z   lookup-only: false
+2026-11-20T08:33:26.2544082Z env:
+2026-11-20T08:33:26.2544197Z   CI: true
+2026-11-20T08:33:26.2544329Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:26.2544494Z   E2E_PORT: 4000
+2026-11-20T08:33:26.2544638Z   test_results_path: test-results/
+2026-11-20T08:33:26.2544818Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:26.2544999Z ##[endgroup]
+2026-11-20T08:33:26.6504741Z Cache not found for input keys: build-dev-24.x-Linux-X64-0b0898076de03774b4f08838d1ffc42dd18bc90c
+2026-11-20T08:33:26.6643030Z ##[end-action id=__self_2.build-cache;outcome=success;conclusion=success;duration_ms=411]
+2026-11-20T08:33:26.6645350Z ##[start-action display=Build;id=__self_2.__run]
+2026-11-20T08:33:26.6667775Z ##[group]Run pnpm run prepare-ci
+2026-11-20T08:33:26.6667972Z [36;1mpnpm run prepare-ci[0m
+2026-11-20T08:33:26.6687384Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:33:26.6687592Z env:
+2026-11-20T08:33:26.6687711Z   CI: true
+2026-11-20T08:33:26.6687872Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:26.6688050Z   E2E_PORT: 4000
+2026-11-20T08:33:26.6688183Z   test_results_path: test-results/
+2026-11-20T08:33:26.6688380Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:26.6688569Z ##[endgroup]
+2026-11-20T08:33:26.9689262Z $ pnpm run build-playground-dev
+2026-11-20T08:33:27.2337953Z $ pnpm run build && pnpm -C packages/lexical-playground run build-dev
+2026-11-20T08:33:27.5019469Z $ node scripts/build.mjs
+2026-11-20T08:33:35.4904897Z Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+2026-11-20T08:33:35.4905337Z   npx update-browserslist-db@latest
+2026-11-20T08:33:35.4905657Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-11-20T08:33:44.3238320Z $ vite build --mode development
+2026-11-20T08:33:44.7050597Z [36mvite v8.3.3 [32mbuilding client environment for development...[36m[39m
+2026-11-20T08:33:44.7264502Z transforming...
+2026-11-20T08:33:44.7410714Z Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+2026-11-20T08:33:44.7411180Z   npx update-browserslist-db@latest
+2026-11-20T08:33:44.7411632Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-11-20T08:33:45.6066681Z [BABEL] Note: The code generator has deoptimised the styling of /home/runner/work/lexical/lexical/packages/lexical/dist/Lexical.dev.js as it exceeds the max of 500KB.
+2026-11-20T08:33:46.4531944Z [BABEL] Note: The code generator has deoptimised the styling of /home/runner/work/lexical/lexical/packages/lexical-y/dist/LexicalY.dev.js as it exceeds the max of 500KB.
+2026-11-20T08:33:49.5137476Z ✓ 4172 modules transformed.
+2026-11-20T08:33:49.8409789Z rendering chunks...
+2026-11-20T08:33:50.4277966Z [36m[vite-plugin-static-copy][39m [32mCopied 234 items.[39m
+2026-11-20T08:33:50.4384128Z [32mcopied:[39m
+2026-11-20T08:33:50.4394778Z [32m  [1m./esm/index.html[22m → [1mbuild/esm/index.html[22m[39m
+2026-11-20T08:33:50.4410838Z [32m  [1m./esm/index.mjs[22m → [1mbuild/esm/index.mjs[22m[39m
+2026-11-20T08:33:50.4416936Z [32m  [1m./esm/prepopulatedRichText.mjs[22m → [1mbuild/esm/prepopulatedRichText.mjs[22m[39m
+2026-11-20T08:33:50.4422359Z [32m  [1m./esm/styles.css[22m → [1mbuild/esm/styles.css[22m[39m
+2026-11-20T08:33:50.4426220Z [32m  [1mapple-touch-icon.png[22m → [1mbuild/apple-touch-icon.png[22m[39m
+2026-11-20T08:33:50.4430923Z [32m  [1mfavicon-16x16.png[22m → [1mbuild/favicon-16x16.png[22m[39m
+2026-11-20T08:33:50.4433981Z [32m  [1mfavicon-32x32.png[22m → [1mbuild/favicon-32x32.png[22m[39m
+2026-11-20T08:33:50.4438313Z [32m  [1mfavicon.ico[22m → [1mbuild/favicon.ico[22m[39m
+2026-11-20T08:33:50.4455391Z [32m  [1m../lexical/dist/Lexical.dev.js[22m → [1mbuild/esm/dist/Lexical.dev.js[22m[39m
+2026-11-20T08:33:50.4461897Z [32m  [1m../lexical-clipboard/dist/LexicalClipboard.dev.js[22m → [1mbuild/esm/dist/LexicalClipboard.dev.js[22m[39m
+2026-11-20T08:33:50.4466457Z [32m  [1m../lexical-dragon/dist/LexicalDragon.dev.js[22m → [1mbuild/esm/dist/LexicalDragon.dev.js[22m[39m
+2026-11-20T08:33:50.4471391Z [32m  [1m../lexical-extension/dist/LexicalExtension.dev.js[22m → [1mbuild/esm/dist/LexicalExtension.dev.js[22m[39m
+2026-11-20T08:33:50.4477650Z [32m  [1m../lexical-history/dist/LexicalHistory.dev.js[22m → [1mbuild/esm/dist/LexicalHistory.dev.js[22m[39m
+2026-11-20T08:33:50.4485999Z [32m  [1m../lexical-html/dist/LexicalHtml.dev.js[22m → [1mbuild/esm/dist/LexicalHtml.dev.js[22m[39m
+2026-11-20T08:33:50.4493068Z [32m  [1m../lexical-rich-text/dist/LexicalRichText.dev.js[22m → [1mbuild/esm/dist/LexicalRichText.dev.js[22m[39m
+2026-11-20T08:33:50.4499104Z [32m  [1m../lexical-selection/dist/LexicalSelection.dev.js[22m → [1mbuild/esm/dist/LexicalSelection.dev.js[22m[39m
+2026-11-20T08:33:50.4505304Z [32m  [1m../lexical-utils/dist/LexicalUtils.dev.js[22m → [1mbuild/esm/dist/LexicalUtils.dev.js[22m[39m
+2026-11-20T08:33:50.4507379Z computing gzip size...
+2026-11-20T08:33:50.5260896Z build/assets/favicon-16x16-BFVwDe7F.png                                            1.03 kB
+2026-11-20T08:33:50.5261705Z build/split/index.html                                                             1.46 kB │ gzip:     0.54 kB
+2026-11-20T08:33:50.5262099Z build/assets/favicon-32x32-QbsTyw2e.png                                            1.62 kB
+2026-11-20T08:33:50.5262490Z build/assets/apple-touch-icon-x_S7F3sI.png                                         1.66 kB
+2026-11-20T08:33:50.5262922Z build/index.html                                                                   2.17 kB │ gzip:     0.72 kB
+2026-11-20T08:33:50.5263309Z build/assets/KaTeX_Size3-Regular-CTq5MqoE.woff                                     4.42 kB
+2026-11-20T08:33:50.5263738Z build/assets/KaTeX_Size4-Regular-Dl5lxZxV.woff2                                    4.92 kB
+2026-11-20T08:33:50.5264115Z build/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2                                    5.20 kB
+2026-11-20T08:33:50.5264507Z build/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2                                    5.46 kB
+2026-11-20T08:33:50.5264958Z build/assets/KaTeX_Size4-Regular-BF-4gkZK.woff                                     5.98 kB
+2026-11-20T08:33:50.5265327Z build/assets/KaTeX_Size2-Regular-oD1tc_U0.woff                                     6.18 kB
+2026-11-20T08:33:50.5265728Z build/assets/KaTeX_Size1-Regular-C195tn64.woff                                     6.49 kB
+2026-11-20T08:33:50.5266124Z build/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2                              6.90 kB
+2026-11-20T08:33:50.5266505Z build/assets/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2                                 6.91 kB
+2026-11-20T08:33:50.5267294Z build/assets/KaTeX_Size3-Regular-DgpXs0kz.ttf                                      7.58 kB
+2026-11-20T08:33:50.5267756Z build/assets/KaTeX_Caligraphic-Regular-CTRA-rTL.woff                               7.65 kB
+2026-11-20T08:33:50.5268146Z build/assets/KaTeX_Caligraphic-Bold-BEiXGLvX.woff                                  7.71 kB
+2026-11-20T08:33:50.5268544Z build/assets/KaTeX_Script-Regular-D3wIWfF6.woff2                                   9.64 kB
+2026-11-20T08:33:50.5268936Z build/assets/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2                               10.34 kB
+2026-11-20T08:33:50.5269422Z build/assets/KaTeX_Size4-Regular-DWFBv043.ttf                                     10.36 kB
+2026-11-20T08:33:50.5269792Z build/assets/KaTeX_Script-Regular-D5yQViql.woff                                   10.58 kB
+2026-11-20T08:33:50.5270183Z build/assets/KaTeX_Fraktur-Regular-CTYiF6lA.woff2                                 11.31 kB
+2026-11-20T08:33:50.5270554Z build/assets/KaTeX_Fraktur-Bold-CL6g_b3V.woff2                                    11.34 kB
+2026-11-20T08:33:50.5270922Z build/assets/KaTeX_Size2-Regular-B7gKUWhC.ttf                                     11.50 kB
+2026-11-20T08:33:50.5271299Z build/assets/KaTeX_SansSerif-Italic-C3H0VqGB.woff2                                12.02 kB
+2026-11-20T08:33:50.5271850Z build/assets/KaTeX_SansSerif-Bold-D1sUS0GD.woff2                                  12.21 kB
+2026-11-20T08:33:50.5272228Z build/assets/KaTeX_Size1-Regular-Dbsnue_I.ttf                                     12.22 kB
+2026-11-20T08:33:50.5272602Z build/assets/KaTeX_SansSerif-Regular-CS6fqUqJ.woff                                12.31 kB
+2026-11-20T08:33:50.5272986Z build/assets/KaTeX_Caligraphic-Regular-wX97UBjC.ttf                               12.34 kB
+2026-11-20T08:33:50.5273364Z build/assets/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf                                  12.36 kB
+2026-11-20T08:33:50.5273734Z build/assets/KaTeX_Fraktur-Regular-Dxdc4cR9.woff                                  13.20 kB
+2026-11-20T08:33:50.5274111Z build/assets/KaTeX_Fraktur-Bold-BsDP51OF.woff                                     13.29 kB
+2026-11-20T08:33:50.5274486Z build/assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2                              13.56 kB
+2026-11-20T08:33:50.5278973Z [33m[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0msrc/utils/emoji-list.ts is dynamically imported by src/plugins/EmojiPickerPlugin/index.tsx but also statically imported by src/plugins/MarkdownTransformers/index.ts, dynamic import will not move module into another chunk.
+2026-11-20T08:33:50.5279649Z [39m
+2026-11-20T08:33:50.5279959Z build/assets/KaTeX_SansSerif-Italic-DN2j7dab.woff                                 14.11 kB
+2026-11-20T08:33:50.5280385Z build/assets/KaTeX_SansSerif-Bold-DbIhKOiC.woff                                   14.40 kB
+2026-11-20T08:33:50.5280783Z build/assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff                               16.02 kB
+2026-11-20T08:33:50.5281168Z build/assets/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2                                 16.40 kB
+2026-11-20T08:33:50.5281576Z build/assets/KaTeX_Math-Italic-t53AETM-.woff2                                     16.44 kB
+2026-11-20T08:33:50.5281954Z build/assets/KaTeX_Script-Regular-C5JkGWo-.ttf                                    16.64 kB
+2026-11-20T08:33:50.5282333Z build/assets/yellow-flower-vav9Hsve.jpg                                           16.69 kB
+2026-11-20T08:33:50.5282710Z build/assets/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2                                 16.78 kB
+2026-11-20T08:33:50.5283083Z build/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2                                     16.98 kB
+2026-11-20T08:33:50.5283449Z build/assets/KaTeX_Math-BoldItalic-iY-2wyZ7.woff                                  18.66 kB
+2026-11-20T08:33:50.5283822Z build/assets/KaTeX_Math-Italic-DA0__PXp.woff                                      18.74 kB
+2026-11-20T08:33:50.5284188Z build/assets/KaTeX_Main-BoldItalic-SpSLRI95.woff                                  19.41 kB
+2026-11-20T08:33:50.5284572Z build/assets/KaTeX_SansSerif-Regular-BNo7hRIc.ttf                                 19.43 kB
+2026-11-20T08:33:50.5285206Z build/assets/KaTeX_Fraktur-Regular-CB_wures.ttf                                   19.57 kB
+2026-11-20T08:33:50.5285577Z build/assets/KaTeX_Fraktur-Bold-BdnERNNW.ttf                                      19.58 kB
+2026-11-20T08:33:50.5285956Z build/assets/KaTeX_Main-Italic-BMLOBm91.woff                                      19.67 kB
+2026-11-20T08:33:50.5286342Z build/assets/Assistant-SemiBold-SCI4bEL9.woff2                                    20.21 kB
+2026-11-20T08:33:50.5286738Z build/assets/Assistant-Regular-DVxZuzxb.woff2                                     20.23 kB
+2026-11-20T08:33:50.5287111Z build/assets/Assistant-Medium-DrcxCXg3.woff2                                      20.32 kB
+2026-11-20T08:33:50.5287549Z build/assets/Assistant-Bold-gm-uSS1B.woff2                                        20.38 kB
+2026-11-20T08:33:50.5287956Z build/assets/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf                                  22.36 kB
+2026-11-20T08:33:50.5288350Z build/assets/KaTeX_SansSerif-Bold-CFMepnvq.ttf                                    24.50 kB
+2026-11-20T08:33:50.5288729Z build/assets/KaTeX_Main-Bold-Cx986IdX.woff2                                       25.32 kB
+2026-11-20T08:33:50.5289095Z build/assets/KaTeX_Main-Regular-B22Nviop.woff2                                    26.27 kB
+2026-11-20T08:33:50.5289591Z build/assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf                                27.55 kB
+2026-11-20T08:33:50.5290013Z build/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2                                     28.07 kB
+2026-11-20T08:33:50.5290383Z build/assets/KaTeX_Main-Bold-Jm3AIy58.woff                                        29.91 kB
+2026-11-20T08:33:50.5290749Z build/assets/KaTeX_Main-Regular-Dr94JaBh.woff                                     30.77 kB
+2026-11-20T08:33:50.5291118Z build/assets/KaTeX_Math-BoldItalic-B3XSjfu4.ttf                                   31.19 kB
+2026-11-20T08:33:50.5291483Z build/assets/KaTeX_Math-Italic-flOr_0UB.ttf                                       31.30 kB
+2026-11-20T08:33:50.5291864Z build/assets/KaTeX_Main-BoldItalic-DzxPMmG6.ttf                                   32.96 kB
+2026-11-20T08:33:50.5292231Z build/assets/KaTeX_AMS-Regular-DMm9YOAa.woff                                      33.51 kB
+2026-11-20T08:33:50.5292600Z build/assets/KaTeX_Main-Italic-3WenGoN9.ttf                                       33.58 kB
+2026-11-20T08:33:50.5292969Z build/assets/ReenieBeanie-Regular-DP68XtsV.woff2                                  38.96 kB
+2026-11-20T08:33:50.5293340Z build/assets/KaTeX_Main-Bold-waoOVXN0.ttf                                         51.33 kB
+2026-11-20T08:33:50.5293705Z build/assets/KaTeX_Main-Regular-ypZvNtVU.ttf                                      53.58 kB
+2026-11-20T08:33:50.5294072Z build/assets/KaTeX_AMS-Regular-DRggAlZN.ttf                                       63.63 kB
+2026-11-20T08:33:50.5294444Z build/assets/landscape-DorzbG8Q.jpg                                              429.85 kB
+2026-11-20T08:33:50.5294804Z build/assets/cat-typing-CCpT868J.gif                                           1,165.92 kB
+2026-11-20T08:33:50.5295288Z build/assets/EquationComponent-D-wow0bF.css                                        0.64 kB │ gzip:     0.31 kB
+2026-11-20T08:33:50.5295778Z build/assets/StickyComponent-DpobxhMq.css                                          0.75 kB │ gzip:     0.43 kB
+2026-11-20T08:33:50.5296245Z build/assets/ContentEditable-B9YC85t0.css                                          0.83 kB │ gzip:     0.43 kB
+2026-11-20T08:33:50.5296702Z build/assets/ImageComponent-BiexkMDI.css                                           0.87 kB │ gzip:     0.47 kB
+2026-11-20T08:33:50.5297158Z build/assets/PollComponent-BCy7SHL8.css                                            3.23 kB │ gzip:     0.98 kB
+2026-11-20T08:33:50.5297667Z build/assets/DateTimeComponent-C_vIHx5V.css                                       12.45 kB │ gzip:     2.61 kB
+2026-11-20T08:33:50.5298113Z build/assets/main-CkFiKTlP.css                                                   463.34 kB │ gzip:    82.32 kB
+2026-11-20T08:33:50.5298741Z build/assets/percentages-BXMCSKIN-CG3m79Ln.js                                      0.10 kB │ gzip:     0.10 kB
+2026-11-20T08:33:50.5299213Z build/assets/image-GAAHSSAO-CohqqSlV.js                                            0.11 kB │ gzip:     0.11 kB
+2026-11-20T08:33:50.5299676Z build/assets/pie-RZYD4A2V-D6RdhEBm.js                                              0.14 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5300130Z build/assets/info-DKCQHKI2-DS3vjCe-.js                                             0.14 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5300580Z build/assets/radar-I7S5WNFK-DwF6cH09.js                                            0.14 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5301033Z build/assets/packet-7NZHBO7P-B3mHjgjK.js                                           0.15 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5301497Z build/assets/cynefin-VYW2F7L2-DYA94qYC.js                                          0.15 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5301965Z build/assets/treemap-6X3UGDF4-2mpShXjv.js                                          0.15 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5302422Z build/assets/wardley-OPB4EBWU-x45FH8wd.js                                          0.15 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5303112Z build/assets/gitGraph-TEB2WS4Q-mgmRkuef.js                                         0.15 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5303566Z build/assets/railroad-3IZDKUUU-By6OGRhx.js                                         0.15 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5304015Z build/assets/treeView-QDETBFTQ-p67aCabT.js                                         0.15 kB │ gzip:     0.13 kB
+2026-11-20T08:33:50.5304484Z build/assets/railroad-peg-LSFZ7HO6-BxsAf0Yy.js                                     0.16 kB │ gzip:     0.14 kB
+2026-11-20T08:33:50.5304956Z build/assets/architecture-TIHT7OUA-DxBxtY9r.js                                     0.16 kB │ gzip:     0.14 kB
+2026-11-20T08:33:50.5305437Z build/assets/railroad-abnf-AHOZXSZD-B578YO8u.js                                    0.16 kB │ gzip:     0.14 kB
+2026-11-20T08:33:50.5305910Z build/assets/railroad-ebnf-EBAXGLYW-yRcsTJOI.js                                    0.16 kB │ gzip:     0.14 kB
+2026-11-20T08:33:50.5306358Z build/assets/array-75Ih5Qg4.js                                                     0.16 kB │ gzip:     0.14 kB
+2026-11-20T08:33:50.5306816Z build/assets/eventmodeling-45OFAUF4-DGe6hwMj.js                                    0.16 kB │ gzip:     0.14 kB
+2026-11-20T08:33:50.5307290Z build/assets/subset-shared.chunk-mYsne8oB.js                                       0.19 kB │ gzip:     0.16 kB
+2026-11-20T08:33:50.5307787Z build/assets/channel-cmBIKzn5.js                                                   0.29 kB │ gzip:     0.22 kB
+2026-11-20T08:33:50.5308224Z build/assets/init-CgYecCqF.js                                                      0.31 kB │ gzip:     0.21 kB
+2026-11-20T08:33:50.5308668Z build/assets/chunk-Y2CYZVJY-U2gPMgME.js                                            0.42 kB │ gzip:     0.27 kB
+2026-11-20T08:33:50.5309242Z build/assets/chunk-JWPE2WC7-BMJ8LrO4.js                                            0.46 kB │ gzip:     0.27 kB
+2026-11-20T08:33:50.5309710Z build/assets/chunk-2Q5K7J3B-BtDeJiL3.js                                            0.48 kB │ gzip:     0.31 kB
+2026-11-20T08:33:50.5310162Z build/assets/chunk-5VM5RSS4-DP8VmUEU.js                                            0.56 kB │ gzip:     0.37 kB
+2026-11-20T08:33:50.5310622Z build/assets/flowDiagram-UKHOOZJN-BeIwbdxz.js                                      0.60 kB │ gzip:     0.31 kB
+2026-11-20T08:33:50.5311086Z build/assets/chunk-XXDRQBXY-CFAX8z39.js                                            0.62 kB │ gzip:     0.37 kB
+2026-11-20T08:33:50.5311540Z build/assets/subset-worker.chunk-CU2EjG_2.js                                       0.65 kB │ gzip:     0.44 kB
+2026-11-20T08:33:50.5312076Z build/assets/codeowners-CxEKPWu0.js                                                0.66 kB │ gzip:     0.34 kB
+2026-11-20T08:33:50.5312667Z build/assets/file-open-7c801643-CDnNdXsC.js                                        0.68 kB │ gzip:     0.43 kB
+2026-11-20T08:33:50.5313132Z build/assets/file-open-002ab408-B9WI2Pta.js                                        0.80 kB │ gzip:     0.45 kB
+2026-11-20T08:33:50.5313602Z build/assets/directory-open-01563666-DgsmVoRn.js                                   0.84 kB │ gzip:     0.49 kB
+2026-11-20T08:33:50.5314048Z build/assets/tsv-BorGVq2Z.js                                                       0.86 kB │ gzip:     0.36 kB
+2026-11-20T08:33:50.5314481Z build/assets/en-B4ZKOASM-CqAANAMo.js                                               0.94 kB │ gzip:     0.49 kB
+2026-11-20T08:33:50.5314931Z build/assets/file-save-3189631c-D61rGFEo.js                                        0.98 kB │ gzip:     0.58 kB
+2026-11-20T08:33:50.5315383Z build/assets/shellsession-uAScSBNE.js                                              0.99 kB │ gzip:     0.53 kB
+2026-11-20T08:33:50.5315855Z build/assets/useCollabYNestedEditor-DjA2Jfgc.js                                    1.09 kB │ gzip:     0.59 kB
+2026-11-20T08:33:50.5316336Z build/assets/infoDiagram-6WML65LV-CLa6HP0b.js                                      1.12 kB │ gzip:     0.61 kB
+2026-11-20T08:33:50.5316827Z build/assets/swimlanesDiagram-ULZ7WXOC-DuLfpicf.js                                 1.12 kB │ gzip:     0.61 kB
+2026-11-20T08:33:50.5317482Z build/assets/html-derivative-Bq1nxf83.js                                           1.13 kB │ gzip:     0.55 kB
+2026-11-20T08:33:50.5317925Z build/assets/qmldir-Dz8ttxjf.js                                                    1.16 kB │ gzip:     0.47 kB
+2026-11-20T08:33:50.5318374Z build/assets/classDiagram-JCYQIIEL-C1GhYHpY.js                                     1.19 kB │ gzip:     0.62 kB
+2026-11-20T08:33:50.5318857Z build/assets/classDiagram-v2-OCEON4UE-D68ZoSLm.js                                  1.19 kB │ gzip:     0.62 kB
+2026-11-20T08:33:50.5319341Z build/assets/stateDiagram-v2-UEYNNEHI-BYiTCESV.js                                  1.19 kB │ gzip:     0.62 kB
+2026-11-20T08:33:50.5319817Z build/assets/file-save-745eba88-CO2ghbb6.js                                        1.20 kB │ gzip:     0.65 kB
+2026-11-20T08:33:50.5320270Z build/assets/chunk-KBJHAD2P-CoO7glh5.js                                            1.27 kB │ gzip:     0.60 kB
+2026-11-20T08:33:50.5320719Z build/assets/git-rebase-tpaDs6I7.js                                                1.30 kB │ gzip:     0.54 kB
+2026-11-20T08:33:50.5321154Z build/assets/csv-DqIVFkK7.js                                                       1.32 kB │ gzip:     0.40 kB
+2026-11-20T08:33:50.5321573Z build/assets/git-commit-BXDA-ler.js                                                1.57 kB │ gzip:     0.61 kB
+2026-11-20T08:33:50.5322005Z build/assets/dotenv-Dkdv7Sm2.js                                                    1.65 kB │ gzip:     0.56 kB
+2026-11-20T08:33:50.5322429Z build/assets/xsl-BZdJROya.js                                                       1.70 kB │ gzip:     0.59 kB
+2026-11-20T08:33:50.5322879Z build/assets/sizeCapture-X5ZJPWSS-Bv7xXfb9.js                                      1.72 kB │ gzip:     0.77 kB
+2026-11-20T08:33:50.5323320Z build/assets/sparql-CK2tm0rU.js                                                    1.75 kB │ gzip:     0.91 kB
+2026-11-20T08:33:50.5323736Z build/assets/ini-C24lZfdM.js                                                       1.76 kB │ gzip:     0.53 kB
+2026-11-20T08:33:50.5324183Z build/assets/LexicalErrorBoundary.dev-CXVIAWe7.js                                  1.84 kB │ gzip:     0.93 kB
+2026-11-20T08:33:50.5324646Z build/assets/chunk-UBXNYLIW-C-dU30Qj.js                                            1.91 kB │ gzip:     0.86 kB
+2026-11-20T08:33:50.5325106Z build/assets/rolldown-runtime-B-lAHAz2.js                                          1.96 kB │ gzip:     0.91 kB
+2026-11-20T08:33:50.5325548Z build/assets/docker-PC1tuYpa.js                                                    1.96 kB │ gzip:     0.63 kB
+2026-11-20T08:33:50.5326066Z build/assets/line-CDrfUe-o.js                                                      1.97 kB │ gzip:     0.71 kB
+2026-11-20T08:33:50.5326493Z build/assets/desktop-BgOb7Aj4.js                                                   2.06 kB │ gzip:     0.79 kB
+2026-11-20T08:33:50.5328915Z build/assets/fortran-fixed-form-D6dShlUH.js                                        2.11 kB │ gzip:     0.80 kB
+2026-11-20T08:33:50.5329401Z build/assets/directory-open-4ed118d0-CF7kkI7c.js                                   2.14 kB │ gzip:     0.99 kB
+2026-11-20T08:33:50.5329849Z build/assets/hxml-DjK1eDsp.js                                                      2.20 kB │ gzip:     1.00 kB
+2026-11-20T08:33:50.5330273Z build/assets/ordinal-Dly9IO_-.js                                                   2.30 kB │ gzip:     0.86 kB
+2026-11-20T08:33:50.5330693Z build/assets/wenyan-BeysbCrW.js                                                    2.43 kB │ gzip:     1.12 kB
+2026-11-20T08:33:50.5331119Z build/assets/jssm-Dx5A5sBR.js                                                      2.54 kB │ gzip:     0.64 kB
+2026-11-20T08:33:50.5331542Z build/assets/erb-C62ur_4h.js                                                       2.60 kB │ gzip:     0.73 kB
+2026-11-20T08:33:50.5331951Z build/assets/reg-DpJf71oO.js                                                       2.64 kB │ gzip:     0.73 kB
+2026-11-20T08:33:50.5332513Z build/assets/preload-helper-CWTytNQo.js                                            2.65 kB │ gzip:     1.12 kB
+2026-11-20T08:33:50.5332978Z build/assets/railroadDiagram-AXF67PYL-BDQFawPq.js                                  2.81 kB │ gzip:     1.06 kB
+2026-11-20T08:33:50.5333430Z build/assets/edge-DASJFX8X.js                                                      2.84 kB │ gzip:     0.79 kB
+2026-11-20T08:33:50.5333839Z build/assets/hy-CJKxDzbh.js                                                        2.86 kB │ gzip:     1.21 kB
+2026-11-20T08:33:50.5334260Z build/assets/diff-Blb4MjsC.js                                                      2.89 kB │ gzip:     0.72 kB
+2026-11-20T08:33:50.5334677Z build/assets/gleam-CTllUdfC.js                                                     2.93 kB │ gzip:     0.86 kB
+2026-11-20T08:33:50.5335198Z build/assets/LexicalCollaborationContextUtils.dev-B8hSlcKw.js                      3.06 kB │ gzip:     1.20 kB
+2026-11-20T08:33:50.5335678Z build/assets/log-Dad54gsi.js                                                       3.15 kB │ gzip:     0.93 kB
+2026-11-20T08:33:50.5336098Z build/assets/openscad-jn-f1Ocl.js                                                  3.16 kB │ gzip:     1.04 kB
+2026-11-20T08:33:50.5336521Z build/assets/logo-DTXV8SKw.js                                                      3.26 kB │ gzip:     1.50 kB
+2026-11-20T08:33:50.5336976Z build/assets/abnfDiagram-N423BO3Z-DMSXUNQa.js                                      3.40 kB │ gzip:     1.27 kB
+2026-11-20T08:33:50.5337434Z build/assets/berry-CgA2ea0_.js                                                     3.40 kB │ gzip:     0.84 kB
+2026-11-20T08:33:50.5337907Z build/assets/jsonl-Bp0qqr10.js                                                     3.41 kB │ gzip:     0.82 kB
+2026-11-20T08:33:50.5338342Z build/assets/chunk-W5SLKNZC-CJiNLrDk.js                                            3.45 kB │ gzip:     1.22 kB
+2026-11-20T08:33:50.5338770Z build/assets/json-C8893kfT.js                                                      3.48 kB │ gzip:     0.96 kB
+2026-11-20T08:33:50.5339206Z build/assets/cairo-r5k7sj-P.js                                                     3.49 kB │ gzip:     0.91 kB
+2026-11-20T08:33:50.5339626Z build/assets/jsonc-Cu6rqcrJ.js                                                     3.51 kB │ gzip:     0.83 kB
+2026-11-20T08:33:50.5340049Z build/assets/mipsasm-EL46Y4Xg.js                                                   3.53 kB │ gzip:     1.20 kB
+2026-11-20T08:33:50.5340516Z build/assets/pegDiagram-VL7TDLO6-Cz81qpxv.js                                       3.63 kB │ gzip:     1.30 kB
+2026-11-20T08:33:50.5341055Z build/assets/splunk-xP_ZjUH2.js                                                    3.65 kB │ gzip:     1.55 kB
+2026-11-20T08:33:50.5341505Z build/assets/ebnfDiagram-BXEA7PRR-kRfoZEpH.js                                      3.70 kB │ gzip:     1.26 kB
+2026-11-20T08:33:50.5341948Z build/assets/po-IjpR1yHO.js                                                        3.71 kB │ gzip:     0.94 kB
+2026-11-20T08:33:50.5342368Z build/assets/json5-xULSgPQI.js                                                     3.71 kB │ gzip:     0.87 kB
+2026-11-20T08:33:50.5342791Z build/assets/genie-DnK2KWIP.js                                                     3.72 kB │ gzip:     1.25 kB
+2026-11-20T08:33:50.5343224Z build/assets/chunk-2GRJ4B5K-D6YtSosP.js                                            3.74 kB │ gzip:     1.22 kB
+2026-11-20T08:33:50.5343667Z build/assets/vala-BnnASFsX.js                                                      3.74 kB │ gzip:     1.22 kB
+2026-11-20T08:33:50.5344089Z build/assets/rbs-D_4FkXDS.js                                                       3.75 kB │ gzip:     0.75 kB
+2026-11-20T08:33:50.5344517Z build/assets/rel-BT0iIKKw.js                                                       3.75 kB │ gzip:     1.14 kB
+2026-11-20T08:33:50.5344931Z build/assets/tasl-_AAbKiWM.js                                                      3.81 kB │ gzip:     0.89 kB
+2026-11-20T08:33:50.5345454Z build/assets/ssh-config-DXFPABYp.js                                                3.82 kB │ gzip:     1.63 kB
+2026-11-20T08:33:50.5345883Z build/assets/path-BvEWtTRe.js                                                      3.91 kB │ gzip:     1.34 kB
+2026-11-20T08:33:50.5346306Z build/assets/jsonnet-BafgE6cE.js                                                   4.04 kB │ gzip:     1.07 kB
+2026-11-20T08:33:50.5346732Z build/assets/fluent-BjfpB34g.js                                                    4.04 kB │ gzip:     0.94 kB
+2026-11-20T08:33:50.5347148Z build/assets/glsl-BDooEQzu.js                                                      4.09 kB │ gzip:     1.60 kB
+2026-11-20T08:33:50.5347611Z build/assets/kdl-DkTyxPcj.js                                                       4.10 kB │ gzip:     1.07 kB
+2026-11-20T08:33:50.5348030Z build/assets/narrat-D9rrR0H5.js                                                    4.11 kB │ gzip:     1.14 kB
+2026-11-20T08:33:50.5348460Z build/assets/dist-B9GAv9yA.js                                                      4.12 kB │ gzip:     1.42 kB
+2026-11-20T08:33:50.5348872Z build/assets/turtle-BEG5g_eT.js                                                    4.20 kB │ gzip:     1.00 kB
+2026-11-20T08:33:50.5349383Z build/assets/hurl-B6fTI3nH.js                                                      4.22 kB │ gzip:     1.23 kB
+2026-11-20T08:33:50.5349797Z build/assets/gn-DDjbVPF4.js                                                        4.31 kB │ gzip:     1.52 kB
+2026-11-20T08:33:50.5350223Z build/assets/zenscript-BoijL7rl.js                                                 4.37 kB │ gzip:     1.33 kB
+2026-11-20T08:33:50.5350665Z build/assets/pascal-D8-gNZ2I.js                                                    4.48 kB │ gzip:     1.71 kB
+2026-11-20T08:33:50.5351094Z build/assets/ron-DzAo6FTJ.js                                                       4.51 kB │ gzip:     1.02 kB
+2026-11-20T08:33:50.5351517Z build/assets/sdbl-CdQg5gu1.js                                                      4.94 kB │ gzip:     2.03 kB
+2026-11-20T08:33:50.5351933Z build/assets/tcl-DLe0Tsfm.js                                                       4.95 kB │ gzip:     1.55 kB
+2026-11-20T08:33:50.5352350Z build/assets/rosmsg-CyYq6XdT.js                                                    5.13 kB │ gzip:     1.10 kB
+2026-11-20T08:33:50.5352778Z build/assets/fennel-B3wtZRne.js                                                    5.21 kB │ gzip:     1.58 kB
+2026-11-20T08:33:50.5353197Z build/assets/http-Bp2FxJrX.js                                                      5.25 kB │ gzip:     1.19 kB
+2026-11-20T08:33:50.5353631Z build/assets/nextflow-SHpZVmrh.js                                                  5.28 kB │ gzip:     1.28 kB
+2026-11-20T08:33:50.5354190Z build/assets/chunk-7BUUIJ7U-DhHQ4WVK.js                                            5.29 kB │ gzip:     1.25 kB
+2026-11-20T08:33:50.5354629Z build/assets/isObject-BX-DXqXD.js                                                  5.30 kB │ gzip:     1.45 kB
+2026-11-20T08:33:50.5355050Z build/assets/llvm-ZNG_yAr9.js                                                      5.30 kB │ gzip:     2.05 kB
+2026-11-20T08:33:50.5355493Z build/assets/PollComponent-CZN7c2mX.js                                             5.36 kB │ gzip:     1.71 kB
+2026-11-20T08:33:50.5355933Z build/assets/polar-4pN1JrJ8.js                                                     5.38 kB │ gzip:     1.17 kB
+2026-11-20T08:33:50.5356355Z build/assets/bibtex-BzgdqG3s.js                                                    5.40 kB │ gzip:     0.87 kB
+2026-11-20T08:33:50.5356777Z build/assets/dax-S-Noo-ku.js                                                       5.73 kB │ gzip:     2.26 kB
+2026-11-20T08:33:50.5357190Z build/assets/wgsl-1s5rV5xS.js                                                      5.77 kB │ gzip:     1.43 kB
+2026-11-20T08:33:50.5357660Z build/assets/zig-lTQvxhLD.js                                                       5.97 kB │ gzip:     1.59 kB
+2026-11-20T08:33:50.5358190Z build/assets/bicep-CZ338dSk.js                                                     5.97 kB │ gzip:     1.19 kB
+2026-11-20T08:33:50.5358620Z build/assets/gdresource-mRoqdVDT.js                                                6.06 kB │ gzip:     1.46 kB
+2026-11-20T08:33:50.5359065Z build/assets/roundRect-DXi2bP1k.js                                                 6.14 kB │ gzip:     1.47 kB
+2026-11-20T08:33:50.5359500Z build/assets/awk-D6dA05Ye.js                                                       6.16 kB │ gzip:     1.43 kB
+2026-11-20T08:33:50.5359914Z build/assets/qml-Dos1ydqB.js                                                       6.24 kB │ gzip:     1.51 kB
+2026-11-20T08:33:50.5360330Z build/assets/lean-BwOKScIt.js                                                      6.28 kB │ gzip:     1.96 kB
+2026-11-20T08:33:50.5360749Z build/assets/xml-BekufDms.js                                                       6.40 kB │ gzip:     1.41 kB
+2026-11-20T08:33:50.5361169Z build/assets/shaderlab-CXW6vXeZ.js                                                 6.49 kB │ gzip:     2.19 kB
+2026-11-20T08:33:50.5361605Z build/assets/vb-eGVhCUXq.js                                                        6.54 kB │ gzip:     2.36 kB
+2026-11-20T08:33:50.5362017Z build/assets/coq-BtFcIXby.js                                                       6.54 kB │ gzip:     2.00 kB
+2026-11-20T08:33:50.5362445Z build/assets/powerquery-SrvS_NBM.js                                                6.58 kB │ gzip:     1.56 kB
+2026-11-20T08:33:50.5362876Z build/assets/cypher-D8Bb8Cq2.js                                                    6.58 kB │ gzip:     1.76 kB
+2026-11-20T08:33:50.5363303Z build/assets/jinja-HoIMEbfK.js                                                     6.61 kB │ gzip:     1.49 kB
+2026-11-20T08:33:50.5363763Z build/assets/ExcalidrawComponent-C0kqcXop.js                                       6.61 kB │ gzip:     2.17 kB
+2026-11-20T08:33:50.5364226Z build/assets/react-dom-BJswbQSQ.js                                                 6.69 kB │ gzip:     1.97 kB
+2026-11-20T08:33:50.5364654Z build/assets/arc-BIFy3CQx.js                                                       6.79 kB │ gzip:     2.02 kB
+2026-11-20T08:33:50.5365089Z build/assets/StickyComponent-Bh_ZoGXH.js                                           6.96 kB │ gzip:     1.99 kB
+2026-11-20T08:33:50.5365534Z build/assets/verilog-Ma7yBE30.js                                                   6.98 kB │ gzip:     1.97 kB
+2026-11-20T08:33:50.5365964Z build/assets/gdshader-D7JfdFV3.js                                                  7.08 kB │ gzip:     1.77 kB
+2026-11-20T08:33:50.5366386Z build/assets/ara-IxnQjO6j.js                                                       7.10 kB │ gzip:     1.85 kB
+2026-11-20T08:33:50.5366919Z build/assets/diagram-LBJQPF4R-CONv1-et.js                                          7.12 kB │ gzip:     2.46 kB
+2026-11-20T08:33:50.5367366Z build/assets/min-dark-Bku-7oiw.js                                                  7.12 kB │ gzip:     1.81 kB
+2026-11-20T08:33:50.5367855Z build/assets/postcss-D1gKt4z_.js                                                   7.15 kB │ gzip:     1.96 kB
+2026-11-20T08:33:50.5368282Z build/assets/clojure-DDsQ0FaV.js                                                   7.20 kB │ gzip:     1.46 kB
+2026-11-20T08:33:50.5368706Z build/assets/toml-B7BHZIqX.js                                                      7.22 kB │ gzip:     1.32 kB
+2026-11-20T08:33:50.5369119Z build/assets/red-DwHwqZoV.js                                                       7.35 kB │ gzip:     1.74 kB
+2026-11-20T08:33:50.5369575Z build/assets/EquationComponent-35dc1WAW.js                                         7.38 kB │ gzip:     2.05 kB
+2026-11-20T08:33:50.5370031Z build/assets/chapel-C2rmz17D.js                                                    7.47 kB │ gzip:     1.97 kB
+2026-11-20T08:33:50.5370467Z build/assets/proto-ClkOcAW0.js                                                     7.47 kB │ gzip:     1.47 kB
+2026-11-20T08:33:50.5370895Z build/assets/riscv-CvzikGLb.js                                                     7.50 kB │ gzip:     2.02 kB
+2026-11-20T08:33:50.5371430Z build/assets/solarized-light-DJ2lzYCv.js                                           7.63 kB │ gzip:     1.86 kB
+2026-11-20T08:33:50.5371875Z build/assets/hlsl-BJLUNfne.js                                                      7.72 kB │ gzip:     2.21 kB
+2026-11-20T08:33:50.5372307Z build/assets/talonscript-CLxaFu-b.js                                               7.73 kB │ gzip:     1.55 kB
+2026-11-20T08:33:50.5372747Z build/assets/scheme-D3A2QBtM.js                                                    7.86 kB │ gzip:     2.10 kB
+2026-11-20T08:33:50.5373183Z build/assets/min-light-BRs6b7i8.js                                                 7.88 kB │ gzip:     1.99 kB
+2026-11-20T08:33:50.5373624Z build/assets/r-BfwKFMDU.js                                                         7.96 kB │ gzip:     2.04 kB
+2026-11-20T08:33:50.5374038Z build/assets/qss-Iltvkn1C.js                                                       7.97 kB │ gzip:     2.62 kB
+2026-11-20T08:33:50.5374475Z build/assets/solarized-dark-MmMk2OZv.js                                            8.03 kB │ gzip:     1.94 kB
+2026-11-20T08:33:50.5374909Z build/assets/soy-CT7k4ZyH.js                                                       8.12 kB │ gzip:     1.75 kB
+2026-11-20T08:33:50.5375346Z build/assets/ImageResizer-Q27Ye90w.js                                              8.51 kB │ gzip:     1.99 kB
+2026-11-20T08:33:50.5375793Z build/assets/systemd-DFbUltlW.js                                                   8.58 kB │ gzip:     2.58 kB
+2026-11-20T08:33:50.5376217Z build/assets/prisma-4G_BaF_i.js                                                    8.73 kB │ gzip:     1.53 kB
+2026-11-20T08:33:50.5376641Z build/assets/plsql-DCNXypXO.js                                                     9.03 kB │ gzip:     3.03 kB
+2026-11-20T08:33:50.5377071Z build/assets/regexp-cffZg74N.js                                                    9.14 kB │ gzip:     1.63 kB
+2026-11-20T08:33:50.5377550Z build/assets/monokai-DAlmy6iR.js                                                   9.17 kB │ gzip:     2.07 kB
+2026-11-20T08:33:50.5377981Z build/assets/dart-C6DUdjib.js                                                      9.67 kB │ gzip:     2.06 kB
+2026-11-20T08:33:50.5378404Z build/assets/vue-html-Ck6FoP8m.js                                                  9.68 kB │ gzip:     1.81 kB
+2026-11-20T08:33:50.5378830Z build/assets/haml-BQYwjzf5.js                                                      9.70 kB │ gzip:     2.03 kB
+2026-11-20T08:33:50.5379242Z build/assets/sas-B2nRdUe8.js                                                       9.74 kB │ gzip:     3.94 kB
+2026-11-20T08:33:50.5379776Z build/assets/kotlin-BHE8CoV9.js                                                    9.85 kB │ gzip:     2.19 kB
+2026-11-20T08:33:50.5380198Z build/assets/horizon-CKzXRFVt.js                                                   9.93 kB │ gzip:     2.07 kB
+2026-11-20T08:33:50.5380634Z build/assets/horizon-bright-DgW3cW7T.js                                            9.96 kB │ gzip:     2.08 kB
+2026-11-20T08:33:50.5381140Z build/assets/make-B2ukzWs3.js                                                     10.02 kB │ gzip:     1.81 kB
+2026-11-20T08:33:50.5381658Z build/assets/andromeeda-BboLMCth.js                                               10.05 kB │ gzip:     2.48 kB
+2026-11-20T08:33:50.5382180Z build/assets/cmake-DPsCB_V6.js                                                    10.14 kB │ gzip:     3.42 kB
+2026-11-20T08:33:50.5382601Z build/assets/dark-plus-FWdCAg4Q.js                                                10.26 kB │ gzip:     2.23 kB
+2026-11-20T08:33:50.5383025Z build/assets/smithy-BRyN83Yn.js                                                   10.28 kB │ gzip:     1.56 kB
+2026-11-20T08:33:50.5383461Z build/assets/slack-dark-C8o39Bbp.js                                               10.31 kB │ gzip:     2.08 kB
+2026-11-20T08:33:50.5383901Z build/assets/defaultLocale-ETkwfe0L.js                                            10.33 kB │ gzip:     2.94 kB
+2026-11-20T08:33:50.5384458Z build/assets/plastic-CLe7Nwbx.js                                                  10.41 kB │ gzip:     2.09 kB
+2026-11-20T08:33:50.5384879Z build/assets/sass-DI2zJwx7.js                                                     10.43 kB │ gzip:     2.55 kB
+2026-11-20T08:33:50.5385311Z build/assets/si-LK-N5RQ5JYF-BVzV0x-d.js                                           10.62 kB │ gzip:     3.67 kB
+2026-11-20T08:33:50.5385754Z build/assets/az-AZ-76LH7QW2-DcNNmZLt.js                                           10.64 kB │ gzip:     3.90 kB
+2026-11-20T08:33:50.5386204Z build/assets/tex-sjSR5Qhw.js                                                      10.67 kB │ gzip:     3.28 kB
+2026-11-20T08:33:50.5386640Z build/assets/slack-ochin-BXfojKbz.js                                              10.72 kB │ gzip:     2.21 kB
+2026-11-20T08:33:50.5387092Z build/assets/diagram-UB23O5K3-C6zegkxm.js                                         11.08 kB │ gzip:     3.44 kB
+2026-11-20T08:33:50.5387601Z build/assets/raku-DI9yGpeW.js                                                     11.09 kB │ gzip:     3.00 kB
+2026-11-20T08:33:50.5388018Z build/assets/jison-ESOmmSVK.js                                                    11.11 kB │ gzip:     2.01 kB
+2026-11-20T08:33:50.5388457Z build/assets/zh-HK-E62DVLB3-CrjwCoap.js                                           11.12 kB │ gzip:     4.40 kB
+2026-11-20T08:33:50.5388900Z build/assets/light-plus-D9NY7Mh7.js                                               11.16 kB │ gzip:     2.39 kB
+2026-11-20T08:33:50.5389401Z build/assets/hcl-DHg_Osgo.js                                                      11.38 kB │ gzip:     1.99 kB
+2026-11-20T08:33:50.5389824Z build/assets/pkl-C7lWzykI.js                                                      11.50 kB │ gzip:     1.43 kB
+2026-11-20T08:33:50.5390260Z build/assets/dream-maker-CngiPd8U.js                                              11.65 kB │ gzip:     2.32 kB
+2026-11-20T08:33:50.5390702Z build/assets/beancount-CXtOQ8oS.js                                                11.75 kB │ gzip:     1.49 kB
+2026-11-20T08:33:50.5391156Z build/assets/nextflow-groovy-CdFFX-gF.js                                          11.82 kB │ gzip:     2.19 kB
+2026-11-20T08:33:50.5391599Z build/assets/yaml-DglT0x5D.js                                                     11.87 kB │ gzip:     2.47 kB
+2026-11-20T08:33:50.5392023Z build/assets/prolog-Bacii3Ue.js                                                   11.89 kB │ gzip:     3.88 kB
+2026-11-20T08:33:50.5392453Z build/assets/rst-B8zZjjZC.js                                                      11.98 kB │ gzip:     2.43 kB
+2026-11-20T08:33:50.5392898Z build/assets/pieDiagram-7S7Q4E2Y-2GXsSuYL.js                                      12.11 kB │ gzip:     3.63 kB
+2026-11-20T08:33:50.5393552Z build/assets/kk-KZ-P5N5QNE5-BQHzdbJp.js                                           12.16 kB │ gzip:     4.51 kB
+2026-11-20T08:33:50.5394002Z build/assets/kaa-6HZHGXH3-C6lCcmjP.js                                             12.20 kB │ gzip:     4.49 kB
+2026-11-20T08:33:50.5394452Z build/assets/gherkin-D6Lr12YQ.js                                                  12.24 kB │ gzip:     5.08 kB
+2026-11-20T08:33:50.5394890Z build/assets/just-8dtjydAp.js                                                     12.40 kB │ gzip:     2.77 kB
+2026-11-20T08:33:50.5395312Z build/assets/elm-0B2lyDRF.js                                                      12.52 kB │ gzip:     2.23 kB
+2026-11-20T08:33:50.5395737Z build/assets/laserwave-C9y6Ws5p.js                                                12.62 kB │ gzip:     2.70 kB
+2026-11-20T08:33:50.5396182Z build/assets/github-light-CnesCBcY.js                                             12.66 kB │ gzip:     2.63 kB
+2026-11-20T08:33:50.5396631Z build/assets/terraform-v0KN9QQh.js                                                12.77 kB │ gzip:     2.58 kB
+2026-11-20T08:33:50.5397061Z build/assets/puppet-CQlPp728.js                                                   12.80 kB │ gzip:     2.16 kB
+2026-11-20T08:33:50.5397742Z build/assets/ImageComponent-DFR9QsxS.js                                           12.87 kB │ gzip:     4.05 kB
+2026-11-20T08:33:50.5398188Z build/assets/github-dark-CRwr6yx1.js                                              12.89 kB │ gzip:     2.66 kB
+2026-11-20T08:33:50.5398622Z build/assets/linear-CceA8KIF.js                                                   12.95 kB │ gzip:     3.40 kB
+2026-11-20T08:33:50.5399050Z build/assets/wasm-gNIKwGlD.js                                                     13.23 kB │ gzip:     2.22 kB
+2026-11-20T08:33:50.5399471Z build/assets/apache-BIl2qPOf.js                                                   13.38 kB │ gzip:     3.76 kB
+2026-11-20T08:33:50.5399903Z build/assets/hjson-Cuaphql8.js                                                    13.51 kB │ gzip:     1.70 kB
+2026-11-20T08:33:50.5400333Z build/assets/surrealql-DJxosovb.js                                                13.61 kB │ gzip:     3.44 kB
+2026-11-20T08:33:50.5400774Z build/assets/nsis-C3tUpeAt.js                                                     13.79 kB │ gzip:     4.09 kB
+2026-11-20T08:33:50.5401193Z build/assets/vesper-CklTICvw.js                                                   13.95 kB │ gzip:     2.10 kB
+2026-11-20T08:33:50.5401624Z build/assets/handlebars-qYoXhyxk.js                                               13.96 kB │ gzip:     2.53 kB
+2026-11-20T08:33:50.5402050Z build/assets/fish-D7qAeWQz.js                                                     13.97 kB │ gzip:     1.78 kB
+2026-11-20T08:33:50.5402463Z build/assets/bat-Dx8nnxXE.js                                                      14.19 kB │ gzip:     3.29 kB
+2026-11-20T08:33:50.5402904Z build/assets/lt-LT-XHIRWOB4-Cg0O7bg0.js                                           14.59 kB │ gzip:     5.71 kB
+2026-11-20T08:33:50.5403341Z build/assets/aurora-x-DDl5TiDZ.js                                                 15.02 kB │ gzip:     2.40 kB
+2026-11-20T08:33:50.5403761Z build/assets/v-DBTjbKF9.js                                                        15.02 kB │ gzip:     2.82 kB
+2026-11-20T08:33:50.5404199Z build/assets/diagram-7IWD3JNH-3TOyyx3p.js                                         15.30 kB │ gzip:     5.01 kB
+2026-11-20T08:33:50.5404655Z build/assets/vitesse-light-Dc5OlZmQ.js                                            15.32 kB │ gzip:     3.17 kB
+2026-11-20T08:33:50.5405105Z build/assets/chunk-4I5QYGJK-BGtmtXNi.js                                           15.34 kB │ gzip:     4.69 kB
+2026-11-20T08:33:50.5405553Z build/assets/vitesse-black-YWzTxW6e.js                                            15.39 kB │ gzip:     3.21 kB
+2026-11-20T08:33:50.5405999Z build/assets/vitesse-dark-CCLZh8XV.js                                             15.47 kB │ gzip:     3.21 kB
+2026-11-20T08:33:50.5406539Z build/assets/smalltalk-D4IpSogw.js                                                15.67 kB │ gzip:     2.20 kB
+2026-11-20T08:33:50.5406989Z build/assets/synthwave-84-a28FyCBr.js                                             15.78 kB │ gzip:     2.99 kB
+2026-11-20T08:33:50.5407416Z build/assets/pug-Bo9GXBWF.js                                                      15.87 kB │ gzip:     2.74 kB
+2026-11-20T08:33:50.5407875Z build/assets/clarity-BkOxTQMf.js                                                  15.91 kB │ gzip:     2.57 kB
+2026-11-20T08:33:50.5408328Z build/assets/github-light-default-CZ96xzu1.js                                     15.94 kB │ gzip:     3.17 kB
+2026-11-20T08:33:50.5408812Z build/assets/github-light-high-contrast-D4gskWX1.js                               16.09 kB │ gzip:     3.16 kB
+2026-11-20T08:33:50.5409285Z build/assets/vi-VN-M7AON7JQ-CZ-MGE8E.js                                           16.12 kB │ gzip:     6.26 kB
+2026-11-20T08:33:50.5409750Z build/assets/github-dark-dimmed-D810z7ql.js                                       16.24 kB │ gzip:     3.26 kB
+2026-11-20T08:33:50.5410216Z build/assets/github-dark-default-DJFS4s4x.js                                      16.25 kB │ gzip:     3.27 kB
+2026-11-20T08:33:50.5410763Z build/assets/kusto-6FdaWTzR.js                                                    16.28 kB │ gzip:     3.98 kB
+2026-11-20T08:33:50.5411208Z build/assets/gnuplot-DgWvVXI8.js                                                  16.30 kB │ gzip:     3.34 kB
+2026-11-20T08:33:50.5411671Z build/assets/github-dark-high-contrast-6TKTBfhE.js                                16.44 kB │ gzip:     3.22 kB
+2026-11-20T08:33:50.5412174Z build/assets/da-DK-5WZEPLOC-CElJ53UL.js                                           16.45 kB │ gzip:     6.39 kB
+2026-11-20T08:33:50.5412610Z build/assets/abap-LtYK6g-v.js                                                     16.58 kB │ gzip:     5.98 kB
+2026-11-20T08:33:50.5413051Z build/assets/dagre-VZM6K2ZE-DJQeWOMu.js                                           16.72 kB │ gzip:     4.51 kB
+2026-11-20T08:33:50.5413490Z build/assets/rust-COBzcmTx.js                                                     16.94 kB │ gzip:     2.78 kB
+2026-11-20T08:33:50.5413919Z build/assets/jsx-runtime-BFBPYi8m.js                                              17.16 kB │ gzip:     4.49 kB
+2026-11-20T08:33:50.5414371Z build/assets/chunk-RYQCIY6F-D2_X8i1T.js                                           17.17 kB │ gzip:     4.78 kB
+2026-11-20T08:33:50.5414823Z build/assets/actionscript-3-CfsDl31I.js                                           17.38 kB │ gzip:     2.77 kB
+2026-11-20T08:33:50.5415264Z build/assets/lua-ChEb0k7f.js                                                      17.56 kB │ gzip:     3.38 kB
+2026-11-20T08:33:50.5415700Z build/assets/LexicalA11y.dev-iuIVllH9.js                                          17.56 kB │ gzip:     5.40 kB
+2026-11-20T08:33:50.5416175Z build/assets/cynefinDiagram-MW4NZA55-CuKwRtez.js                                  17.65 kB │ gzip:     4.65 kB
+2026-11-20T08:33:50.5416625Z build/assets/nix-TAmRmd1K.js                                                      17.70 kB │ gzip:     2.62 kB
+2026-11-20T08:33:50.5417055Z build/assets/th-TH-HPSO5L25-6-9dHec3.js                                           17.72 kB │ gzip:     5.56 kB
+2026-11-20T08:33:50.5417535Z build/assets/luau-koeK31uZ.js                                                     17.77 kB │ gzip:     3.61 kB
+2026-11-20T08:33:50.5418798Z build/assets/matlab-CfRK6IMC.js                                                   17.96 kB │ gzip:     3.13 kB
+2026-11-20T08:33:50.5419513Z build/assets/nn-NO-6E72VCQL-JtKRwU8q.js                                           18.03 kB │ gzip:     7.07 kB
+2026-11-20T08:33:50.5420213Z build/assets/stateDiagram-OKZ733FA-CYc-ECHB.js                                    18.14 kB │ gzip:     4.88 kB
+2026-11-20T08:33:50.5420892Z build/assets/cue-B5KneM5p.js                                                      18.21 kB │ gzip:     2.12 kB
+2026-11-20T08:33:50.5421813Z build/assets/elixir-D3myBckA.js                                                   18.25 kB │ gzip:     2.89 kB
+2026-11-20T08:33:50.5422446Z build/assets/solidity-DPVu0wkJ.js                                                 18.45 kB │ gzip:     3.24 kB
+2026-11-20T08:33:50.5423069Z build/assets/odin-vjOJSyfV.js                                                     18.58 kB │ gzip:     3.00 kB
+2026-11-20T08:33:50.5423694Z build/assets/nl-NL-IS3SIHDZ-CTSY811t.js                                           18.77 kB │ gzip:     7.27 kB
+2026-11-20T08:33:50.5424348Z build/assets/kanagawa-wave-CYzn7NBp.js                                            18.90 kB │ gzip:     3.04 kB
+2026-11-20T08:33:50.5424997Z build/assets/kanagawa-lotus-BP8qCQpO.js                                           18.90 kB │ gzip:     3.05 kB
+2026-11-20T08:33:50.5425434Z build/assets/kanagawa-dragon-CpjPZ6HB.js                                          18.91 kB │ gzip:     3.06 kB
+2026-11-20T08:33:50.5425862Z build/assets/ts-tags-BWUmh5ht.js                                                  19.03 kB │ gzip:     2.26 kB
+2026-11-20T08:33:50.5426284Z build/assets/my-MM-5M5IBNSE-DdXQUwQi.js                                           19.61 kB │ gzip:     5.60 kB
+2026-11-20T08:33:50.5426732Z build/assets/diagram-B4RE2ZJO-BLQiTFJw.js                                         20.05 kB │ gzip:     5.49 kB
+2026-11-20T08:33:50.5427260Z build/assets/move-B-o8dn0N.js                                                     20.24 kB │ gzip:     3.15 kB
+2026-11-20T08:33:50.5427744Z build/assets/hu-HU-A5ZG7DT2-DjMM9oWl.js                                           20.27 kB │ gzip:     8.05 kB
+2026-11-20T08:33:50.5428164Z build/assets/liquid-Cn_XH7Y9.js                                                   20.33 kB │ gzip:     3.32 kB
+2026-11-20T08:33:50.5428591Z build/assets/fi-FI-Z5N7JZ37-DvvAFHdk.js                                           20.48 kB │ gzip:     7.92 kB
+2026-11-20T08:33:50.5429030Z build/assets/material-theme--6LI38qi.js                                           20.51 kB │ gzip:     3.24 kB
+2026-11-20T08:33:50.5429637Z build/assets/material-theme-ocean-BRn8rtO9.js                                     20.55 kB │ gzip:     3.27 kB
+2026-11-20T08:33:50.5430101Z build/assets/material-theme-darker-DV1IcO25.js                                    20.55 kB │ gzip:     3.24 kB
+2026-11-20T08:33:50.5430571Z build/assets/material-theme-lighter-BMDRm0fm.js                                   20.56 kB │ gzip:     3.25 kB
+2026-11-20T08:33:50.5431052Z build/assets/material-theme-palenight-CUWcvPEW.js                                 20.56 kB │ gzip:     3.26 kB
+2026-11-20T08:33:50.5431503Z build/assets/graphql-D_w8jxGN.js                                                  20.58 kB │ gzip:     2.74 kB
+2026-11-20T08:33:50.5431918Z build/assets/svelte-CWe41mOm.js                                                   20.75 kB │ gzip:     3.32 kB
+2026-11-20T08:33:50.5432399Z build/assets/kab-KAB-ZGHBKWFO-DGxzlI8d.js                                         20.99 kB │ gzip:     7.98 kB
+2026-11-20T08:33:50.5432845Z build/assets/gdscript-CSSSWtkL.js                                                 21.11 kB │ gzip:     3.84 kB
+2026-11-20T08:33:50.5433265Z build/assets/viml-BReTXeDA.js                                                     21.20 kB │ gzip:     6.79 kB
+2026-11-20T08:33:50.5433673Z build/assets/mdc-B1wma5Mv.js                                                      21.34 kB │ gzip:     6.96 kB
+2026-11-20T08:33:50.5434095Z build/assets/lv-LV-5QDEKY6T-DKWj90_R.js                                           21.37 kB │ gzip:     8.23 kB
+2026-11-20T08:33:50.5434523Z build/assets/gl-ES-HMX3MZ6V-XXGl0flU.js                                           21.46 kB │ gzip:     8.13 kB
+2026-11-20T08:33:50.5434954Z build/assets/groovy-Bw2Ku4bU.js                                                   21.56 kB │ gzip:     3.68 kB
+2026-11-20T08:33:50.5435382Z build/assets/zh-TW-RAJ6MFWO-BJ2l-y0N.js                                           21.63 kB │ gzip:     9.66 kB
+2026-11-20T08:33:50.5435941Z build/assets/zh-CN-LNUGB5OW-oj6kC2Q_.js                                           21.66 kB │ gzip:     9.65 kB
+2026-11-20T08:33:50.5436383Z build/assets/tr-TR-DEFEU3FU-C2L47HFG.js                                           21.70 kB │ gzip:     8.40 kB
+2026-11-20T08:33:50.5436814Z build/assets/id-ID-SAP4L64H-BM4d_ZjD.js                                           21.72 kB │ gzip:     8.02 kB
+2026-11-20T08:33:50.5437263Z build/assets/pt-PT-UZXXM6DQ-DDMNxLkZ.js                                           21.73 kB │ gzip:     8.21 kB
+2026-11-20T08:33:50.5437762Z build/assets/cs-CZ-2BRQDIVT-C4gGye5p.js                                           21.83 kB │ gzip:     8.91 kB
+2026-11-20T08:33:50.5438195Z build/assets/ca-ES-6MX7JW3Y-cV-04bnv.js                                           21.85 kB │ gzip:     8.26 kB
+2026-11-20T08:33:50.5438627Z build/assets/oc-FR-POXYY2M6-C1mn87Mq.js                                           21.92 kB │ gzip:     8.20 kB
+2026-11-20T08:33:50.5439068Z build/assets/powershell-DvOBVZPr.js                                               21.96 kB │ gzip:     4.14 kB
+2026-11-20T08:33:50.5439498Z build/assets/nb-NO-T6EIAALU-zU48neev.js                                           22.18 kB │ gzip:     8.58 kB
+2026-11-20T08:33:50.5439925Z build/assets/ayu-dark-DP52gykx.js                                                 22.46 kB │ gzip:     4.07 kB
+2026-11-20T08:33:50.5440490Z build/assets/ayu-mirage-CUGSRmLT.js                                               22.47 kB │ gzip:     4.05 kB
+2026-11-20T08:33:50.5440921Z build/assets/ayu-light-5n3TTRGs.js                                                22.53 kB │ gzip:     4.04 kB
+2026-11-20T08:33:50.5441345Z build/assets/nushell-BLPX3-WC.js                                                  22.84 kB │ gzip:     5.44 kB
+2026-11-20T08:33:50.5441765Z build/assets/glimmer-js-Ctb7vI5e.js                                               22.93 kB │ gzip:     3.11 kB
+2026-11-20T08:33:50.5442191Z build/assets/glimmer-ts-D7jK0ID_.js                                               22.93 kB │ gzip:     3.11 kB
+2026-11-20T08:33:50.5442616Z build/assets/pt-BR-5N22H2LF-gv1gk_1-.js                                           23.12 kB │ gzip:     8.61 kB
+2026-11-20T08:33:50.5443047Z build/assets/eu-ES-A7QVB2H4-CM_PKMtB.js                                           23.24 kB │ gzip:     8.58 kB
+2026-11-20T08:33:50.5443478Z build/assets/snazzy-light-dk3nVXW_.js                                             23.25 kB │ gzip:     3.96 kB
+2026-11-20T08:33:50.5443906Z build/assets/dracula-DqP7pjyg.js                                                  23.26 kB │ gzip:     4.14 kB
+2026-11-20T08:33:50.5444328Z build/assets/dracula-soft-lxqh5qT3.js                                             23.28 kB │ gzip:     4.18 kB
+2026-11-20T08:33:50.5444761Z build/assets/es-ES-U4NZUMDT-1toRISIk.js                                           23.42 kB │ gzip:     8.89 kB
+2026-11-20T08:33:50.5445235Z build/assets/sl-SI-NN7IZMDC-D2KVXBrX.js                                           23.45 kB │ gzip:     8.95 kB
+2026-11-20T08:33:50.5445675Z build/assets/common-lisp-DJtwvW4V.js                                              23.60 kB │ gzip:     6.13 kB
+2026-11-20T08:33:50.5446122Z build/assets/sv-SE-XGPEYMSR-B_FYkGNC.js                                           23.63 kB │ gzip:     8.99 kB
+2026-11-20T08:33:50.5446579Z build/assets/bg-BG-XCXSNQG7-D3_v441r.js                                           23.78 kB │ gzip:     7.96 kB
+2026-11-20T08:33:50.5446999Z build/assets/wit-CeQiCbz_.js                                                      23.94 kB │ gzip:     2.94 kB
+2026-11-20T08:33:50.5447418Z build/assets/map-gow9cWG5.js                                                      24.08 kB │ gzip:     5.49 kB
+2026-11-20T08:33:50.5447896Z build/assets/he-IL-6SHJWFNN-50KSaUOD.js                                           24.11 kB │ gzip:     8.27 kB
+2026-11-20T08:33:50.5448326Z build/assets/it-IT-JPQ66NNP-C2W690VD.js                                           24.11 kB │ gzip:     8.94 kB
+2026-11-20T08:33:50.5448753Z build/assets/rose-pine-BwV6nR0q.js                                                24.14 kB │ gzip:     4.02 kB
+2026-11-20T08:33:50.5449286Z build/assets/rose-pine-moon-gKX4f40D.js                                           24.16 kB │ gzip:     4.04 kB
+2026-11-20T08:33:50.5449725Z build/assets/rose-pine-dawn-CqrF94Xl.js                                           24.16 kB │ gzip:     4.04 kB
+2026-11-20T08:33:50.5450146Z build/assets/twig-CIIG_Fb0.js                                                     24.24 kB │ gzip:     3.94 kB
+2026-11-20T08:33:50.5450558Z build/assets/sk-SK-C5VTKIMK-nRQMgyk3.js                                           24.48 kB │ gzip:     9.55 kB
+2026-11-20T08:33:50.5450990Z build/assets/pl-PL-T2D74RX3-DKlTpi--.js                                           24.65 kB │ gzip:     9.65 kB
+2026-11-20T08:33:50.5451413Z build/assets/sql-Dz4CQKiI.js                                                      24.80 kB │ gzip:     7.69 kB
+2026-11-20T08:33:50.5451836Z build/assets/gruvbox-dark-hard-D4lDZF6z.js                                        25.35 kB │ gzip:     4.32 kB
+2026-11-20T08:33:50.5452283Z build/assets/gruvbox-dark-soft-Zk9EKQUV.js                                        25.35 kB │ gzip:     4.32 kB
+2026-11-20T08:33:50.5452730Z build/assets/gruvbox-light-hard-BbYRP9b7.js                                       25.35 kB │ gzip:     4.33 kB
+2026-11-20T08:33:50.5453274Z build/assets/gruvbox-light-soft-DWdSnZe0.js                                       25.35 kB │ gzip:     4.32 kB
+2026-11-20T08:33:50.5453721Z build/assets/gruvbox-dark-medium-DxHgRxo0.js                                      25.36 kB │ gzip:     4.32 kB
+2026-11-20T08:33:50.5454175Z build/assets/gruvbox-light-medium-DV62jrxz.js                                     25.36 kB │ gzip:     4.33 kB
+2026-11-20T08:33:50.5454618Z build/assets/ro-RO-JPDTUUEW-R-XRnrdq.js                                           25.37 kB │ gzip:     9.40 kB
+2026-11-20T08:33:50.5455051Z build/assets/de-DE-XR44H4JA-VBWH3E1C.js                                           25.41 kB │ gzip:     9.38 kB
+2026-11-20T08:33:50.5455529Z build/assets/fr-FR-RHASNOE6-BfAJ0vnC.js                                           25.55 kB │ gzip:     9.31 kB
+2026-11-20T08:33:50.5455949Z build/assets/nim-DOZGV7AR.js                                                      25.62 kB │ gzip:     3.33 kB
+2026-11-20T08:33:50.5456357Z build/assets/astro-BxWtMGys.js                                                    25.84 kB │ gzip:     7.78 kB
+2026-11-20T08:33:50.5456782Z build/assets/ja-JP-DBVTYXUO-JMGx2AKv.js                                           26.22 kB │ gzip:     9.57 kB
+2026-11-20T08:33:50.5457249Z build/assets/templ-C5zDP3qP.js                                                    26.30 kB │ gzip:     5.58 kB
+2026-11-20T08:33:50.5457722Z build/assets/cadence-B1ELWULD.js                                                  26.36 kB │ gzip:     3.74 kB
+2026-11-20T08:33:50.5458147Z build/assets/ko-KR-MTYHY66A-CHDIim9l.js                                           26.70 kB │ gzip:     9.90 kB
+2026-11-20T08:33:50.5458580Z build/assets/bn-BD-2XOGV67Q-1ufUAU4W.js                                           26.71 kB │ gzip:     7.30 kB
+2026-11-20T08:33:50.5459007Z build/assets/purescript-CLpaGMbw.js                                               26.78 kB │ gzip:     3.32 kB
+2026-11-20T08:33:50.5459431Z build/assets/vhdl-Co2XFKY7.js                                                     26.79 kB │ gzip:     3.94 kB
+2026-11-20T08:33:50.5459840Z build/assets/apl-FgDu7wP5.js                                                      27.01 kB │ gzip:     4.34 kB
+2026-11-20T08:33:50.5460251Z build/assets/moonbit-BzHkbr4Q.js                                                  27.51 kB │ gzip:     3.84 kB
+2026-11-20T08:33:50.5460672Z build/assets/typespec-C_R5TbvO.js                                                 27.64 kB │ gzip:     2.69 kB
+2026-11-20T08:33:50.5461098Z build/assets/angular-html-B1lXj4tC.js                                             27.67 kB │ gzip:     4.27 kB
+2026-11-20T08:33:50.5461532Z build/assets/fa-IR-HGAKTJCU-DGyCunO7.js                                           27.99 kB │ gzip:     9.17 kB
+2026-11-20T08:33:50.5462063Z build/assets/one-light-KRrN8Edx.js                                                28.19 kB │ gzip:     3.77 kB
+2026-11-20T08:33:50.5462494Z build/assets/chunk-6Q2QTUOP-gBMfnQCU.js                                           28.41 kB │ gzip:     5.77 kB
+2026-11-20T08:33:50.5462923Z build/assets/fsharp-LJ549CX7.js                                                   28.43 kB │ gzip:     4.28 kB
+2026-11-20T08:33:50.5463335Z build/assets/marko-CP6gUs9w.js                                                    28.69 kB │ gzip:     3.78 kB
+2026-11-20T08:33:50.5463738Z build/assets/vue-vKQkzDDG.js                                                      28.79 kB │ gzip:     3.26 kB
+2026-11-20T08:33:50.5464160Z build/assets/system-verilog-DW0KSMVO.js                                           28.95 kB │ gzip:     4.93 kB
+2026-11-20T08:33:50.5464599Z build/assets/night-owl-light-8bQhsmZi.js                                          29.05 kB │ gzip:     4.41 kB
+2026-11-20T08:33:50.5465030Z build/assets/codeql-BwdvwJnv.js                                                   29.60 kB │ gzip:     3.89 kB
+2026-11-20T08:33:50.5465488Z build/assets/nord-Dm_TuZ-P.js                                                     29.64 kB │ gzip:     4.52 kB
+2026-11-20T08:33:50.5465975Z build/assets/c3-u0qNrniV.js                                                       29.84 kB │ gzip:     4.07 kB
+2026-11-20T08:33:50.5466389Z build/assets/ar-SA-G6X2FPQ2-4sq3R0gn.js                                           29.86 kB │ gzip:     9.94 kB
+2026-11-20T08:33:50.5466802Z build/assets/coffee-BLnVQtHT.js                                                   29.89 kB │ gzip:     6.52 kB
+2026-11-20T08:33:50.5467218Z build/assets/pa-IN-N4M65BXN-Dv5HcdpS.js                                           30.62 kB │ gzip:     8.54 kB
+2026-11-20T08:33:50.5467699Z build/assets/java-C3Afrg2B.js                                                     30.67 kB │ gzip:     4.52 kB
+2026-11-20T08:33:50.5468104Z build/assets/scss-CxpF6thz.js                                                     30.71 kB │ gzip:     4.45 kB
+2026-11-20T08:33:50.5468539Z build/assets/ishikawaDiagram-WSZJBQD7-JF_gwbxG.js                                 30.81 kB │ gzip:     8.86 kB
+2026-11-20T08:33:50.5468986Z build/assets/razor-D_8wK7CJ.js                                                    30.84 kB │ gzip:     3.72 kB
+2026-11-20T08:33:50.5469489Z build/assets/scala-pMGZAs9j.js                                                    31.32 kB │ gzip:     4.00 kB
+2026-11-20T08:33:50.5469909Z build/assets/applescript-CJ80B5XJ.js                                              32.08 kB │ gzip:     6.03 kB
+2026-11-20T08:33:50.5470336Z build/assets/night-owl-DS1aT-g3.js                                                32.34 kB │ gzip:     5.32 kB
+2026-11-20T08:33:50.5470765Z build/assets/diagram-Q27KOJAE-BFE2BNPE.js                                         32.40 kB │ gzip:     7.72 kB
+2026-11-20T08:33:50.5471183Z build/assets/ahk-B0zayAPr.js                                                      32.82 kB │ gzip:     7.89 kB
+2026-11-20T08:33:50.5471603Z build/assets/crystal-Cs9l9Si4.js                                                  32.91 kB │ gzip:     4.61 kB
+2026-11-20T08:33:50.5472014Z build/assets/julia-Bqcox523.js                                                    33.22 kB │ gzip:     4.47 kB
+2026-11-20T08:33:50.5472449Z build/assets/stylus-ZZDn1yUO.js                                                   33.22 kB │ gzip:     8.11 kB
+2026-11-20T08:33:50.5472872Z build/assets/ku-TR-6OUDTVRD-CGrOySeM.js                                           33.70 kB │ gzip:    10.09 kB
+2026-11-20T08:33:50.5473340Z build/assets/kanban-definition-27J2QSJJ-DOWVhHIG.js                               33.90 kB │ gzip:     9.09 kB
+2026-11-20T08:33:50.5473785Z build/assets/english-DS4W4Oki.js                                                  34.35 kB │ gzip:    11.10 kB
+2026-11-20T08:33:50.5474213Z build/assets/el-GR-BZB4AONW-DCKlNBkM.js                                           34.75 kB │ gzip:    10.54 kB
+2026-11-20T08:33:50.5474752Z build/assets/uk-UA-QMV73CPH-CZscOES8.js                                           34.94 kB │ gzip:    10.76 kB
+2026-11-20T08:33:50.5475187Z build/assets/hi-IN-IWLTKZ5I-DLdfpqbV.js                                           34.98 kB │ gzip:     9.63 kB
+2026-11-20T08:33:50.5475612Z build/assets/bsl-B51LXa5S.js                                                      35.04 kB │ gzip:     8.50 kB
+2026-11-20T08:33:50.5476042Z build/assets/mermaid-parser.core-Dj8pzxFf.js                                      35.29 kB │ gzip:     5.57 kB
+2026-11-20T08:33:50.5476483Z build/assets/ru-RU-B4JR7IUQ-vPI5ef9P.js                                           35.39 kB │ gzip:    10.69 kB
+2026-11-20T08:33:50.5476907Z build/assets/poimandres-De7tdKKG.js                                               36.74 kB │ gzip:     5.66 kB
+2026-11-20T08:33:50.5477332Z build/assets/one-dark-pro-CK3AWsBk.js                                             37.42 kB │ gzip:     5.67 kB
+2026-11-20T08:33:50.5477826Z build/assets/rough.esm-WPr-dXTc.js                                                38.37 kB │ gzip:    10.46 kB
+2026-11-20T08:33:50.5478278Z build/assets/mindmap-definition-FAOFIHXS-B9qP2yAD.js                              38.73 kB │ gzip:    10.31 kB
+2026-11-20T08:33:50.5478737Z build/assets/ta-IN-2NMHFXQM-Bn8cDJJM.js                                           38.87 kB │ gzip:     9.21 kB
+2026-11-20T08:33:50.5479289Z build/assets/tokyo-night-BtmKoTVq.js                                              38.95 kB │ gzip:     6.42 kB
+2026-11-20T08:33:50.5479711Z build/assets/houston-CBxcj3Hz.js                                                  39.13 kB │ gzip:     5.94 kB
+2026-11-20T08:33:50.5480120Z build/assets/nginx-RFXcmfNn.js                                                    39.44 kB │ gzip:     4.66 kB
+2026-11-20T08:33:50.5480557Z build/assets/journeyDiagram-NVQOT4AX-D4VRcaRc.js                                  40.17 kB │ gzip:    10.71 kB
+2026-11-20T08:33:50.5480989Z build/assets/haxe-QaqXWmIB.js                                                     40.26 kB │ gzip:     6.14 kB
+2026-11-20T08:33:50.5481407Z build/assets/km-KH-HSX4SM5Z-DeQ2QLHY.js                                           40.88 kB │ gzip:    10.10 kB
+2026-11-20T08:33:50.5481828Z build/assets/bird2-BMprQDNV.js                                                    41.31 kB │ gzip:     8.59 kB
+2026-11-20T08:33:50.5482236Z build/assets/cobol-Dfoq8EW4.js                                                    41.47 kB │ gzip:    11.05 kB
+2026-11-20T08:33:50.5482644Z build/assets/org-DZORe-kQ.js                                                      41.56 kB │ gzip:     4.03 kB
+2026-11-20T08:33:50.5483044Z build/assets/erlang-oSMXqKDK.js                                                   41.69 kB │ gzip:     4.56 kB
+2026-11-20T08:33:50.5483476Z build/assets/LexicalUtils.dev-DPpayXXN.js                                         42.25 kB │ gzip:    11.78 kB
+2026-11-20T08:33:50.5483927Z build/assets/sankeyDiagram-W5VNT64P-BeU4sjdY.js                                   42.27 kB │ gzip:    11.32 kB
+2026-11-20T08:33:50.5484412Z build/assets/wardleyDiagram-T6FBY63Y-DMsexvNu.js                                  42.43 kB │ gzip:     8.74 kB
+2026-11-20T08:33:50.5484850Z build/assets/asm-wBDSgBbA.js                                                      43.88 kB │ gzip:     8.27 kB
+2026-11-20T08:33:50.5485301Z build/assets/haskell-CfGsE1Cf.js                                                  45.57 kB │ gzip:     6.55 kB
+2026-11-20T08:33:50.5485742Z build/assets/erDiagram-JOGREHBK-gil3KBc0.js                                       45.66 kB │ gzip:    11.90 kB
+2026-11-20T08:33:50.5486183Z build/assets/shellscript-Bkb129pe.js                                              45.75 kB │ gzip:     6.40 kB
+2026-11-20T08:33:50.5486616Z build/assets/mr-IN-CRQNXWMA-B0kc1eFC.js                                           46.96 kB │ gzip:    11.74 kB
+2026-11-20T08:33:50.5487034Z build/assets/perl-Du9Dq4M1.js                                                     48.57 kB │ gzip:     4.85 kB
+2026-11-20T08:33:50.5487581Z build/assets/d-BQY8TDgQ.js                                                        48.93 kB │ gzip:     8.60 kB
+2026-11-20T08:33:50.5487993Z build/assets/ahk2-bJ5Wm9-K.js                                                     48.95 kB │ gzip:    10.06 kB
+2026-11-20T08:33:50.5488440Z build/assets/requirementDiagram-LRYGKXZP-Dp-3T-_9.js                              51.43 kB │ gzip:    12.00 kB
+2026-11-20T08:33:50.5488885Z build/assets/go-aXtTCanQ.js                                                       51.85 kB │ gzip:     5.28 kB
+2026-11-20T08:33:50.5489283Z build/assets/css-l2MpuuY-.js                                                      52.49 kB │ gzip:    12.17 kB
+2026-11-20T08:33:50.5489696Z build/assets/ruby-bjtLVUQI.js                                                     52.51 kB │ gzip:     5.97 kB
+2026-11-20T08:33:50.5490116Z build/assets/chunk-7Z6QIM7H-D4DmfBPZ.js                                           52.97 kB │ gzip:     9.47 kB
+2026-11-20T08:33:50.5490538Z build/assets/apex-CybrBQ0z.js                                                     53.20 kB │ gzip:     7.03 kB
+2026-11-20T08:33:50.5490978Z build/assets/gitGraphDiagram-DS77QQ5N-BldKF_9x.js                                 53.86 kB │ gzip:    11.34 kB
+2026-11-20T08:33:50.5491452Z build/assets/timeline-definition-Z64GVDOM-VMxrTAp9.js                             54.34 kB │ gzip:    12.94 kB
+2026-11-20T08:33:50.5491991Z build/assets/ada-twHwrVWN.js                                                      54.61 kB │ gzip:     6.15 kB
+2026-11-20T08:33:50.5492393Z build/assets/imba-96qKoJCa.js                                                     54.85 kB │ gzip:     9.64 kB
+2026-11-20T08:33:50.5492830Z build/assets/catppuccin-mocha-FguZIKxS.js                                         56.20 kB │ gzip:     8.70 kB
+2026-11-20T08:33:50.5493277Z build/assets/catppuccin-latte-gUSF_Qy_.js                                         56.20 kB │ gzip:     8.70 kB
+2026-11-20T08:33:50.5493726Z build/assets/catppuccin-frappe-C1vNRgWa.js                                        56.20 kB │ gzip:     8.72 kB
+2026-11-20T08:33:50.5494183Z build/assets/catppuccin-macchiato-CqR4pfvw.js                                     56.22 kB │ gzip:     8.71 kB
+2026-11-20T08:33:50.5494646Z build/assets/quadrantDiagram-CIZ2JOQS-jnKRU12M.js                                 58.25 kB │ gzip:    12.02 kB
+2026-11-20T08:33:50.5495100Z build/assets/everforest-dark-CH0oPBKh.js                                          58.65 kB │ gzip:     8.58 kB
+2026-11-20T08:33:50.5495590Z build/assets/everforest-light-DlwQOYhF.js                                         58.65 kB │ gzip:     8.58 kB
+2026-11-20T08:33:50.5496023Z build/assets/mermaid-ItFqCK9s.js                                                  61.20 kB │ gzip:     4.94 kB
+2026-11-20T08:33:50.5496440Z build/assets/stata-BoHGfzJd.js                                                    62.02 kB │ gzip:    12.64 kB
+2026-11-20T08:33:50.5496849Z build/assets/html-CzdPnnoJ.js                                                     62.31 kB │ gzip:    12.04 kB
+2026-11-20T08:33:50.5497263Z build/assets/wikitext-wjhjmmzD.js                                                 62.35 kB │ gzip:     4.92 kB
+2026-11-20T08:33:50.5497813Z build/assets/LexicalExtensionGetExtensionDependencyFromEditor.dev-DdSHPkyh.js     63.37 kB │ gzip:    16.10 kB
+2026-11-20T08:33:50.5498311Z build/assets/pica-CqwIGzHb.js                                                     63.44 kB │ gzip:    16.98 kB
+2026-11-20T08:33:50.5498735Z build/assets/chunk-WRU74C26-CDLpU_Lq.js                                           64.48 kB │ gzip:    17.93 kB
+2026-11-20T08:33:50.5499158Z build/assets/ballerina-DIdXD2KH.js                                                64.73 kB │ gzip:     8.30 kB
+2026-11-20T08:33:50.5499579Z build/assets/markdown-CkmxmzqY.js                                                 65.34 kB │ gzip:     5.75 kB
+2026-11-20T08:33:50.5499993Z build/assets/ocaml-vm1Y8An6.js                                                    67.28 kB │ gzip:     5.18 kB
+2026-11-20T08:33:50.5500414Z build/assets/chunk-5RXB4S5H-D6Ml5zFU.js                                           67.29 kB │ gzip:    16.74 kB
+2026-11-20T08:33:50.5500959Z build/assets/xychartDiagram-ELKLHX3M-BhxrHHvR.js                                  72.14 kB │ gzip:    15.08 kB
+2026-11-20T08:33:50.5501415Z build/assets/chunk-NSK5VX7P-Dsfa08h_.js                                           74.07 kB │ gzip:    14.94 kB
+2026-11-20T08:33:50.5501836Z build/assets/mojo-CsUSYzsu.js                                                     76.64 kB │ gzip:     9.44 kB
+2026-11-20T08:33:50.5502254Z build/assets/python-BjnOIxPe.js                                                   77.16 kB │ gzip:     9.36 kB
+2026-11-20T08:33:50.5502662Z build/assets/c-MmviFAIf.js                                                        78.39 kB │ gzip:    10.88 kB
+2026-11-20T08:33:50.5503069Z build/assets/latex-BvZ0pOlj.js                                                    80.49 kB │ gzip:     6.95 kB
+2026-11-20T08:33:50.5503478Z build/assets/vyper-C6KGx0YU.js                                                    82.04 kB │ gzip:    10.99 kB
+2026-11-20T08:33:50.5503914Z build/assets/chunk-GF5L2VYU-CP5TMmrq.js                                           83.87 kB │ gzip:    20.17 kB
+2026-11-20T08:33:50.5504366Z build/assets/image-blob-reduce.esm-DtM5sb8f.js                                    85.52 kB │ gzip:    21.79 kB
+2026-11-20T08:33:50.5504890Z build/assets/hack-Cyn3twnB.js                                                     86.01 kB │ gzip:    26.72 kB
+2026-11-20T08:33:50.5505336Z build/assets/src-CuHlePyC.js                                                      87.63 kB │ gzip:    20.82 kB
+2026-11-20T08:33:50.5505765Z build/assets/vennDiagram-T6HMQDX7-Do_Jy2hb.js                                     89.38 kB │ gzip:    23.34 kB
+2026-11-20T08:33:50.5506204Z build/assets/swift-DWmMn3lF.js                                                    94.57 kB │ gzip:    14.97 kB
+2026-11-20T08:33:50.5506618Z build/assets/racket-DRv7j6nv.js                                                   95.06 kB │ gzip:    15.16 kB
+2026-11-20T08:33:50.5507055Z build/assets/fortran-free-form-yxJ7igsv.js                                        98.64 kB │ gzip:    11.44 kB
+2026-11-20T08:33:50.5507481Z build/assets/csharp-CFKaLbHg.js                                                   99.97 kB │ gzip:    11.09 kB
+2026-11-20T08:33:50.5507948Z build/assets/dagre-SK009465.js                                                   101.68 kB │ gzip:    24.14 kB
+2026-11-20T08:33:50.5508376Z build/assets/chunk-JQJVKLGR-B-DRA1M2.js                                          101.88 kB │ gzip:    23.73 kB
+2026-11-20T08:33:50.5508794Z build/assets/less-BzbdhFUi.js                                                    107.13 kB │ gzip:    15.10 kB
+2026-11-20T08:33:50.5509385Z build/assets/objective-c-6dJF64Dt.js                                             111.92 kB │ gzip:    23.84 kB
+2026-11-20T08:33:50.5509808Z build/assets/blade-CXo5bqA3.js                                                   112.46 kB │ gzip:    28.64 kB
+2026-11-20T08:33:50.5510244Z build/assets/c4Diagram-5PPSVZJV-BARU47GP.js                                      114.48 kB │ gzip:    23.61 kB
+2026-11-20T08:33:50.5510692Z build/assets/standalone-DBkY9keP.js                                              114.80 kB │ gzip:    37.19 kB
+2026-11-20T08:33:50.5511107Z build/assets/php-CKrLQ0Qk.js                                                     120.71 kB │ gzip:    29.14 kB
+2026-11-20T08:33:50.5511546Z build/assets/ganttDiagram-PKOTCBZU-aiS7fWgd.js                                   124.83 kB │ gzip:    29.85 kB
+2026-11-20T08:33:50.5511996Z build/assets/graphlib-DvdXluWv.js                                                128.68 kB │ gzip:    25.53 kB
+2026-11-20T08:33:50.5512437Z build/assets/blockDiagram-VBNYF7ZC-BTqY3wuc.js                                   131.19 kB │ gzip:    27.22 kB
+2026-11-20T08:33:50.5512873Z build/assets/mdx-BK9ZufRc.js                                                     146.32 kB │ gzip:    23.81 kB
+2026-11-20T08:33:50.5513279Z build/assets/asciidoc-xKuVlNk6.js                                                150.63 kB │ gzip:     9.72 kB
+2026-11-20T08:33:50.5513832Z build/assets/cose-bilkent-JH36ORCC-2_sdv4PJ.js                                   166.16 kB │ gzip:    33.60 kB
+2026-11-20T08:33:50.5514279Z build/assets/objective-cpp-_ooRQ-PY.js                                           184.45 kB │ gzip:    31.44 kB
+2026-11-20T08:33:50.5514698Z build/assets/typst-exZb8Sxc.js                                                   184.54 kB │ gzip:    11.49 kB
+2026-11-20T08:33:50.5515115Z build/assets/javascript-neBjq8Ub.js                                              185.19 kB │ gzip:    17.21 kB
+2026-11-20T08:33:50.5515527Z build/assets/tsx-CLeoeMEH.js                                                     185.85 kB │ gzip:    17.21 kB
+2026-11-20T08:33:50.5515925Z build/assets/jsx-6LxCbjwm.js                                                     188.10 kB │ gzip:    17.35 kB
+2026-11-20T08:33:50.5516366Z build/assets/sequenceDiagram-SI44F4Z6-BVbZGHvR.js                                190.08 kB │ gzip:    37.20 kB
+2026-11-20T08:33:50.5516816Z build/assets/typescript-CXBIuqOq.js                                              191.00 kB │ gzip:    16.81 kB
+2026-11-20T08:33:50.5517242Z build/assets/angular-ts-BWrB9iJN.js                                              194.58 kB │ gzip:    17.35 kB
+2026-11-20T08:33:50.5517818Z build/assets/vue-vine-CQbs3_oU.js                                                201.20 kB │ gzip:    18.48 kB
+2026-11-20T08:33:50.5518232Z build/assets/markdown-Z9iMC0Ld.js                                                202.81 kB │ gzip:    60.28 kB
+2026-11-20T08:33:50.5518662Z build/assets/chunk-QR6OTTB3-C6iyvhwn.js                                          202.98 kB │ gzip:    30.31 kB
+2026-11-20T08:33:50.5519077Z build/assets/html-PPMJOcFu.js                                                    212.88 kB │ gzip:    56.08 kB
+2026-11-20T08:33:50.5519486Z build/assets/postcss-WIVIKw5h.js                                                 215.38 kB │ gzip:    51.59 kB
+2026-11-20T08:33:50.5519922Z build/assets/ContentEditable-xuIsHzZV.js                                         229.59 kB │ gzip:    61.65 kB
+2026-11-20T08:33:50.5520354Z build/assets/estree-CQb4JP3Q.js                                                  250.97 kB │ gzip:    65.60 kB
+2026-11-20T08:33:50.5520785Z build/assets/DateTimeComponent-CTNf-Ktl.js                                       263.94 kB │ gzip:    49.02 kB
+2026-11-20T08:33:50.5521220Z build/assets/wolfram-CcZPfnLd.js                                                 266.98 kB │ gzip:    77.80 kB
+2026-11-20T08:33:50.5521653Z build/assets/swimlanes-SLNWSIFB-C0lifNv7.js                                      270.71 kB │ gzip:    59.64 kB
+2026-11-20T08:33:50.5522080Z build/assets/dist-Bru1C_aL.js                                                    276.49 kB │ gzip:    64.20 kB
+2026-11-20T08:33:50.5522533Z build/assets/architectureDiagram-T3A2C74G-TpB6NDI8.js                            318.67 kB │ gzip:    62.04 kB
+2026-11-20T08:33:50.5522978Z build/assets/korean-BcGLG16k.js                                                  320.39 kB │ gzip:    95.28 kB
+2026-11-20T08:33:50.5523494Z build/assets/chunk-I66GZJ75-i6rzk9LD.js                                          355.26 kB │ gzip:    57.48 kB
+2026-11-20T08:33:50.5523917Z build/assets/babel-DOLZG8pP.js                                                   394.80 kB │ gzip:    92.50 kB
+2026-11-20T08:33:50.5524370Z build/assets/LexicalReactExtension.dev-4IuLbMfp.js                               453.88 kB │ gzip:   100.88 kB
+2026-11-20T08:33:50.5524808Z build/assets/katex-B7IOdvh1.js                                                   496.86 kB │ gzip:   109.65 kB
+2026-11-20T08:33:50.5525223Z build/assets/emacs-lisp-Dv0hCzlu.js                                              792.54 kB │ gzip:   200.41 kB
+2026-11-20T08:33:50.5525634Z build/assets/cpp-Bcqtlm_3.js                                                     837.86 kB │ gzip:    60.49 kB
+2026-11-20T08:33:50.5526052Z build/assets/cytoscape.esm-y2iRk2dw.js                                           869.37 kB │ gzip:   199.49 kB
+2026-11-20T08:33:50.5526516Z build/assets/LexicalComposerContext.dev-6ozSmUyZ.js                              872.30 kB │ gzip:   233.78 kB
+2026-11-20T08:33:50.5526965Z build/assets/typescript-D_m05V00.js                                            1,065.57 kB │ gzip:   224.56 kB
+2026-11-20T08:33:50.5527504Z build/assets/chunk-KEIR6QF5-uAi42Nst.js                                        1,154.21 kB │ gzip:   201.93 kB
+2026-11-20T08:33:50.5528004Z build/assets/collaborationY-6poJvGOZ.js                                        1,772.08 kB │ gzip:   482.11 kB
+2026-11-20T08:33:50.5528441Z build/assets/chunk-EIO257PC-8Vygl6AS.js                                        1,838.55 kB │ gzip:   747.93 kB
+2026-11-20T08:33:50.5528870Z build/assets/main-Co9bAscd.js                                                  5,119.08 kB │ gzip: 1,192.35 kB
+2026-11-20T08:33:50.5529050Z 
+2026-11-20T08:33:50.5529513Z [32m✓ built in 5.83s[39m
+2026-11-20T08:33:50.8713614Z ##[end-action id=__self_2.__run;outcome=success;conclusion=success;duration_ms=24206]
+2026-11-20T08:33:50.8715732Z ##[start-action display=Save build cache;id=__self_2.__actions_cache]
+2026-11-20T08:33:50.8735671Z ##[group]Run actions/cache/save@v5
+2026-11-20T08:33:50.8735831Z with:
+2026-11-20T08:33:50.8736022Z   path: packages/lexical-playground/build
+packages/*/dist
+
+2026-11-20T08:33:50.8736351Z   key: build-dev-24.x-Linux-X64-0b0898076de03774b4f08838d1ffc42dd18bc90c
+2026-11-20T08:33:50.8736585Z   enableCrossOsArchive: false
+2026-11-20T08:33:50.8736735Z env:
+2026-11-20T08:33:50.8736851Z   CI: true
+2026-11-20T08:33:50.8736997Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:50.8737161Z   E2E_PORT: 4000
+2026-11-20T08:33:50.8737298Z   test_results_path: test-results/
+2026-11-20T08:33:50.8737486Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:50.8737668Z ##[endgroup]
+2026-11-20T08:33:50.9904406Z [command]/usr/local/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/lexical/lexical --files-from manifest.txt --use-compress-program zstdmt
+2026-11-20T08:33:51.1613497Z Sent 25136196 of 25136196 (100.0%), 428.1 MBs/sec
+2026-11-20T08:33:51.1683588Z Cache saved with key: build-dev-24.x-Linux-X64-0b0898076de03774b4f08838d1ffc42dd18bc90c
+2026-11-20T08:33:51.1804868Z ##[end-action id=__self_2.__actions_cache;outcome=success;conclusion=success;duration_ms=308]
+2026-11-20T08:33:51.1861142Z Prepare all required actions
+2026-11-20T08:33:51.1861452Z Getting action download info
+2026-11-20T08:33:51.3672296Z ##[group]Run ./.github/actions/setup-playwright
+2026-11-20T08:33:51.3672489Z with:
+2026-11-20T08:33:51.3672607Z   node-version: 24.x
+2026-11-20T08:33:51.3672743Z   browsers: chromium firefox
+2026-11-20T08:33:51.3672878Z env:
+2026-11-20T08:33:51.3672986Z   CI: true
+2026-11-20T08:33:51.3673119Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:51.3673285Z   E2E_PORT: 4000
+2026-11-20T08:33:51.3673419Z   test_results_path: test-results/
+2026-11-20T08:33:51.3673604Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:51.3673822Z ##[endgroup]
+2026-11-20T08:33:51.3677881Z ##[start-action display=Compute path;id=__self_3.vars]
+2026-11-20T08:33:51.3686841Z ##[group]Run echo "cache_playwright_path=~/.cache/ms-playwright" >> "$GITHUB_OUTPUT"
+2026-11-20T08:33:51.3687222Z [36;1mecho "cache_playwright_path=~/.cache/ms-playwright" >> "$GITHUB_OUTPUT"[0m
+2026-11-20T08:33:51.3700844Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:33:51.3701045Z env:
+2026-11-20T08:33:51.3701164Z   CI: true
+2026-11-20T08:33:51.3701303Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:51.3701475Z   E2E_PORT: 4000
+2026-11-20T08:33:51.3701618Z   test_results_path: test-results/
+2026-11-20T08:33:51.3701806Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:51.3701993Z ##[endgroup]
+2026-11-20T08:33:51.3741416Z ##[end-action id=__self_3.vars;outcome=success;conclusion=success;duration_ms=6]
+2026-11-20T08:33:51.3743700Z ##[start-action display=Compute apt cache key;id=__self_3.apt-vars]
+2026-11-20T08:33:51.3753975Z ##[group]Run set -euo pipefail
+2026-11-20T08:33:51.3754182Z [36;1mset -euo pipefail[0m
+2026-11-20T08:33:51.3754338Z [36;1m# shellcheck disable=SC1091[0m
+2026-11-20T08:33:51.3754510Z [36;1m. /etc/os-release[0m
+2026-11-20T08:33:51.3754721Z [36;1m# The dependency set is a function of the distro, the arch, the[0m
+2026-11-20T08:33:51.3755154Z [36;1m# playwright version (it ships the package list) and the browsers.[0m
+2026-11-20T08:33:51.3755588Z [36;1mprefix="playwright-apt-v1-${ID}-${VERSION_ID}-${RUNNER_ARCH}-pw$(pnpm exec playwright --version | tr -cd '0-9.')-$(echo "$BROWSERS" | tr ' ' '+')"[0m
+2026-11-20T08:33:51.3755940Z [36;1m{[0m
+2026-11-20T08:33:51.3756097Z [36;1m  echo "dir=${RUNNER_TEMP}/playwright-apt"[0m
+2026-11-20T08:33:51.3756288Z [36;1m  echo "restore_key=${prefix}-"[0m
+2026-11-20T08:33:51.3756511Z [36;1m  # The ISO week rotates the key so the cached .debs never drift more[0m
+2026-11-20T08:33:51.3756790Z [36;1m  # than a week behind the archive index (apt re-downloads anything[0m
+2026-11-20T08:33:51.3757064Z [36;1m  # whose hash no longer matches, and the refreshed set is saved).[0m
+2026-11-20T08:33:51.3757300Z [36;1m  echo "key=${prefix}-$(date -u +%Y-%V)"[0m
+2026-11-20T08:33:51.3757479Z [36;1m} >> "$GITHUB_OUTPUT"[0m
+2026-11-20T08:33:51.3768282Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:33:51.3768480Z env:
+2026-11-20T08:33:51.3768606Z   CI: true
+2026-11-20T08:33:51.3768744Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:51.3768914Z   E2E_PORT: 4000
+2026-11-20T08:33:51.3769053Z   test_results_path: test-results/
+2026-11-20T08:33:51.3769236Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:51.3769436Z   BROWSERS: chromium firefox
+2026-11-20T08:33:51.3769582Z ##[endgroup]
+2026-11-20T08:33:52.0619654Z ##[end-action id=__self_3.apt-vars;outcome=success;conclusion=success;duration_ms=687]
+2026-11-20T08:33:52.0622056Z ##[start-action display=Restore apt packages from cache;id=__self_3.apt-cache]
+2026-11-20T08:33:52.0643310Z ##[group]Run actions/cache/restore@v5
+2026-11-20T08:33:52.0643485Z with:
+2026-11-20T08:33:52.0643640Z   path: /home/runner/work/_temp/playwright-apt/*.deb
+2026-11-20T08:33:52.0643910Z   key: playwright-apt-v1-ubuntu-24.04-X64-pw1.63.0-chromium+firefox-2026-47
+2026-11-20T08:33:52.0644501Z   restore-keys: playwright-apt-v1-ubuntu-24.04-X64-pw1.63.0-chromium+firefox-
+2026-11-20T08:33:52.0644748Z   enableCrossOsArchive: false
+2026-11-20T08:33:52.0644903Z   fail-on-cache-miss: false
+2026-11-20T08:33:52.0645051Z   lookup-only: false
+2026-11-20T08:33:52.0645179Z env:
+2026-11-20T08:33:52.0645298Z   CI: true
+2026-11-20T08:33:52.0645436Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:52.0645600Z   E2E_PORT: 4000
+2026-11-20T08:33:52.0645740Z   test_results_path: test-results/
+2026-11-20T08:33:52.0645923Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:52.0646104Z ##[endgroup]
+2026-11-20T08:33:52.1633847Z Cache hit for: playwright-apt-v1-ubuntu-24.04-X64-pw1.63.0-chromium+firefox-2026-47
+2026-11-20T08:33:52.2591964Z Cache Size: ~57 MB (59785431 B)
+2026-11-20T08:33:52.2608603Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/32e8aa46-45ae-493e-8fda-76f3629e7302/cache.tzst -P -C /home/runner/work/lexical/lexical --use-compress-program unzstd
+2026-11-20T08:33:52.5131512Z Cache restored successfully
+2026-11-20T08:33:52.5351781Z Cache restored from key: playwright-apt-v1-ubuntu-24.04-X64-pw1.63.0-chromium+firefox-2026-47
+2026-11-20T08:33:52.5553170Z ##[end-action id=__self_3.apt-cache;outcome=success;conclusion=success;duration_ms=493]
+2026-11-20T08:33:52.5556414Z ##[start-action display=Install playwright system dependencies;id=__self_3.apt-deps]
+2026-11-20T08:33:52.5566509Z ##[group]Run set -euo pipefail
+2026-11-20T08:33:52.5566703Z [36;1mset -euo pipefail[0m
+2026-11-20T08:33:52.5566867Z [36;1mmkdir -p "$APT_CACHE_DIR/partial"[0m
+2026-11-20T08:33:52.5567145Z [36;1m# apt drops privileges to `_apt` while downloading; without this it[0m
+2026-11-20T08:33:52.5567473Z [36;1m# warns that the partial directory is inaccessible and falls back to[0m
+2026-11-20T08:33:52.5567703Z [36;1m# downloading unsandboxed as root.[0m
+2026-11-20T08:33:52.5567924Z [36;1msudo chown _apt:root "$APT_CACHE_DIR/partial" || true[0m
+2026-11-20T08:33:52.5568380Z [36;1mprintf 'Dir::Cache::archives "%s";\nAPT::Keep-Downloaded-Packages "true";\n' \[0m
+2026-11-20T08:33:52.5568717Z [36;1m  "$APT_CACHE_DIR" | sudo tee /etc/apt/apt.conf.d/99-playwright-deps-cache > /dev/null[0m
+2026-11-20T08:33:52.5568968Z [36;1m# shellcheck disable=SC2086[0m
+2026-11-20T08:33:52.5569153Z [36;1mpnpm exec playwright install-deps $BROWSERS[0m
+2026-11-20T08:33:52.5569395Z [36;1m# actions/cache reads as the runner user; apt writes the .debs as root.[0m
+2026-11-20T08:33:52.5569648Z [36;1msudo chmod -f a+r "$APT_CACHE_DIR"/*.deb || true[0m
+2026-11-20T08:33:52.5569839Z [36;1mshopt -s nullglob[0m
+2026-11-20T08:33:52.5569991Z [36;1mdebs=("$APT_CACHE_DIR"/*.deb)[0m
+2026-11-20T08:33:52.5570171Z [36;1mecho "deb_count=${#debs[@]}" >> "$GITHUB_OUTPUT"[0m
+2026-11-20T08:33:52.5570389Z [36;1mecho "Cached ${#debs[@]} package(s) in $APT_CACHE_DIR"[0m
+2026-11-20T08:33:52.5583060Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:33:52.5583281Z env:
+2026-11-20T08:33:52.5583413Z   CI: true
+2026-11-20T08:33:52.5583560Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:33:52.5583728Z   E2E_PORT: 4000
+2026-11-20T08:33:52.5583863Z   test_results_path: test-results/
+2026-11-20T08:33:52.5584049Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:33:52.5584264Z   APT_CACHE_DIR: /home/runner/work/_temp/playwright-apt
+2026-11-20T08:33:52.5584494Z   BROWSERS: chromium firefox
+2026-11-20T08:33:52.5584642Z ##[endgroup]
+2026-11-20T08:33:53.1621325Z Installing dependencies...
+2026-11-20T08:33:53.1670546Z Switching to root user to install dependencies...
+2026-11-20T08:33:53.2507551Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-20T08:33:53.2901652Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-20T08:33:53.2963644Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-11-20T08:33:53.3205275Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-11-20T08:33:53.3282847Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-11-20T08:33:53.3471193Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-11-20T08:33:53.3967164Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1475 kB]
+2026-11-20T08:33:53.4342570Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [319 kB]
+2026-11-20T08:33:53.4414791Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1716 kB]
+2026-11-20T08:33:53.4662248Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [346 kB]
+2026-11-20T08:33:53.4754860Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1922 kB]
+2026-11-20T08:33:53.5014107Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [443 kB]
+2026-11-20T08:33:53.5128497Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.6 kB]
+2026-11-20T08:33:53.5193212Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1199 kB]
+2026-11-20T08:33:53.5374856Z Get:21 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [743 kB]
+2026-11-20T08:33:53.5379129Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [239 kB]
+2026-11-20T08:33:53.5462443Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1231 kB]
+2026-11-20T08:33:53.5826169Z Get:22 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [814 kB]
+2026-11-20T08:33:53.6123039Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [248 kB]
+2026-11-20T08:33:53.6209049Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1792 kB]
+2026-11-20T08:33:53.6460254Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [414 kB]
+2026-11-20T08:33:53.6561524Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.7 kB]
+2026-11-20T08:33:56.8776143Z Fetched 13.3 MB in 1s (14.0 MB/s)
+2026-11-20T08:33:57.7345052Z Reading package lists...
+2026-11-20T08:33:57.7674209Z Reading package lists...
+2026-11-20T08:33:57.9798290Z Building dependency tree...
+2026-11-20T08:33:57.9802885Z Reading state information...
+2026-11-20T08:33:58.0947629Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-11-20T08:33:58.0948103Z libasound2t64 set to manually installed.
+2026-11-20T08:33:58.0948525Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-20T08:33:58.0948935Z libatk-bridge2.0-0t64 set to manually installed.
+2026-11-20T08:33:58.0949540Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-20T08:33:58.0949899Z libatk1.0-0t64 set to manually installed.
+2026-11-20T08:33:58.0950275Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-20T08:33:58.0950663Z libatspi2.0-0t64 set to manually installed.
+2026-11-20T08:33:58.0951074Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-11-20T08:33:58.0951418Z libcairo2 set to manually installed.
+2026-11-20T08:33:58.0951781Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-11-20T08:33:58.0952139Z libcups2t64 set to manually installed.
+2026-11-20T08:33:58.0952505Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-11-20T08:33:58.0952867Z libdbus-1-3 set to manually installed.
+2026-11-20T08:33:58.0953245Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-11-20T08:33:58.0953700Z libdrm2 set to manually installed.
+2026-11-20T08:33:58.0954069Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.10).
+2026-11-20T08:33:58.0954446Z libglib2.0-0t64 set to manually installed.
+2026-11-20T08:33:58.0954831Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-11-20T08:33:58.0955181Z libnspr4 set to manually installed.
+2026-11-20T08:33:58.0956177Z libnss3 is already the newest version (2:3.98-1ubuntu0.3).
+2026-11-20T08:33:58.0956413Z libnss3 set to manually installed.
+2026-11-20T08:33:58.0956658Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-20T08:33:58.0956920Z libpango-1.0-0 set to manually installed.
+2026-11-20T08:33:58.0957173Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+2026-11-20T08:33:58.0957410Z libx11-6 set to manually installed.
+2026-11-20T08:33:58.0957633Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-11-20T08:33:58.0957851Z libxcb1 set to manually installed.
+2026-11-20T08:33:58.0958100Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-11-20T08:33:58.0958354Z libxcomposite1 set to manually installed.
+2026-11-20T08:33:58.0958609Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-11-20T08:33:58.0958842Z libxdamage1 set to manually installed.
+2026-11-20T08:33:58.0959076Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-11-20T08:33:58.0959300Z libxext6 set to manually installed.
+2026-11-20T08:33:58.0959541Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-11-20T08:33:58.0959769Z libxfixes3 set to manually installed.
+2026-11-20T08:33:58.0960021Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-11-20T08:33:58.0960259Z libxkbcommon0 set to manually installed.
+2026-11-20T08:33:58.0960501Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-11-20T08:33:58.0960733Z libxrandr2 set to manually installed.
+2026-11-20T08:33:58.0960967Z xvfb is already the newest version (2:21.1.12-1ubuntu1.9).
+2026-11-20T08:33:58.0961278Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-11-20T08:33:58.0961614Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-11-20T08:33:58.0961863Z libfontconfig1 set to manually installed.
+2026-11-20T08:33:58.0962123Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+2026-11-20T08:33:58.0962373Z libfreetype6 set to manually installed.
+2026-11-20T08:33:58.0962783Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-11-20T08:33:58.0963032Z fonts-liberation set to manually installed.
+2026-11-20T08:33:58.0963294Z libcairo-gobject2 is already the newest version (1.18.0-3build1).
+2026-11-20T08:33:58.0963609Z libcairo-gobject2 set to manually installed.
+2026-11-20T08:33:58.0963893Z libgdk-pixbuf-2.0-0 is already the newest version (2.42.10+dfsg-3ubuntu3.3).
+2026-11-20T08:33:58.0964167Z libgdk-pixbuf-2.0-0 set to manually installed.
+2026-11-20T08:33:58.0964430Z libgtk-3-0t64 is already the newest version (3.24.41-4ubuntu1.3).
+2026-11-20T08:33:58.0964683Z libgtk-3-0t64 set to manually installed.
+2026-11-20T08:33:58.0964949Z libpangocairo-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-20T08:33:58.0965213Z libpangocairo-1.0-0 set to manually installed.
+2026-11-20T08:33:58.0965468Z libx11-xcb1 is already the newest version (2:1.8.7-1ubuntu0.1).
+2026-11-20T08:33:58.0965708Z libx11-xcb1 set to manually installed.
+2026-11-20T08:33:58.0965955Z libxcb-shm0 is already the newest version (1.15-1ubuntu2).
+2026-11-20T08:33:58.0966184Z libxcb-shm0 set to manually installed.
+2026-11-20T08:33:58.0966425Z libxcursor1 is already the newest version (1:1.2.1-1build1).
+2026-11-20T08:33:58.0966657Z libxcursor1 set to manually installed.
+2026-11-20T08:33:58.0966880Z libxi6 is already the newest version (2:1.8.1-1build1).
+2026-11-20T08:33:58.0967097Z libxi6 set to manually installed.
+2026-11-20T08:33:58.0967341Z libxrender1 is already the newest version (1:0.9.10-1.1build1).
+2026-11-20T08:33:58.0967574Z libxrender1 set to manually installed.
+2026-11-20T08:33:58.0967804Z The following additional packages will be installed:
+2026-11-20T08:33:58.0968090Z   libavutil58 libcodec2-1.2 libdav1d7 libgl1-mesa-dri libglx-mesa0 libgsm1
+2026-11-20T08:33:58.0968410Z   libhwy1t64 libjxl0.7 libmp3lame0 libopus0 librav1e0 librsvg2-2 libshine3
+2026-11-20T08:33:58.0968731Z   libsoxr0 libspeex1 libsvtav1enc1d1 libswresample4 libtheora0 libtwolame0
+2026-11-20T08:33:58.0969148Z   libva-drm2 libva-x11-2 libva2 libvdpau1 libvorbisenc2 libvpl2 libvpx9
+2026-11-20T08:33:58.0969436Z   libx264-164 libx265-199 libxvidcore4 libzvbi-common libzvbi0t64
+2026-11-20T08:33:58.0969727Z   mesa-libgallium ocl-icd-libopencl1 xfonts-encodings xfonts-utils
+2026-11-20T08:33:58.0969960Z Suggested packages:
+2026-11-20T08:33:58.0970185Z   libcuda1 libnvcuvid1 libnvidia-encode1 opus-tools librsvg2-bin speex
+2026-11-20T08:33:58.0970412Z   opencl-icd
+2026-11-20T08:33:58.0970563Z Recommended packages:
+2026-11-20T08:33:58.0970791Z   fonts-ipafont-mincho fonts-tlwg-loma librsvg2-common va-driver-all
+2026-11-20T08:33:58.0971049Z   | va-driver vdpau-driver-all | vdpau-driver
+2026-11-20T08:33:58.1156349Z The following NEW packages will be installed:
+2026-11-20T08:33:58.1156878Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-11-20T08:33:58.1159534Z   fonts-wqy-zenhei libavcodec60 libavutil58 libcodec2-1.2 libdav1d7 libgsm1
+2026-11-20T08:33:58.1162143Z   libhwy1t64 libjxl0.7 libmp3lame0 libopus0 librav1e0 librsvg2-2 libshine3
+2026-11-20T08:33:58.1162637Z   libsoxr0 libspeex1 libsvtav1enc1d1 libswresample4 libtheora0 libtwolame0
+2026-11-20T08:33:58.1163107Z   libva-drm2 libva-x11-2 libva2 libvdpau1 libvorbisenc2 libvpl2 libvpx9
+2026-11-20T08:33:58.1164847Z   libx264-164 libx265-199 libxvidcore4 libzvbi-common libzvbi0t64
+2026-11-20T08:33:58.1167093Z   ocl-icd-libopencl1 xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-11-20T08:33:58.1167343Z   xfonts-utils
+2026-11-20T08:33:58.1172973Z The following packages will be upgraded:
+2026-11-20T08:33:58.1178178Z   libgbm1 libgl1-mesa-dri libglx-mesa0 mesa-libgallium
+2026-11-20T08:33:58.3597487Z 4 upgraded, 40 newly installed, 0 to remove and 75 not upgraded.
+2026-11-20T08:33:58.3597904Z Need to get 0 B/59.8 MB of archives.
+2026-11-20T08:33:58.3598280Z After this operation, 168 MB of additional disk space will be used.
+2026-11-20T08:33:58.3857660Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-11-20T08:33:58.4220428Z (Reading database ... 
+2026-11-20T08:33:58.4220693Z (Reading database ... 5%
+2026-11-20T08:33:58.4220933Z (Reading database ... 10%
+2026-11-20T08:33:58.4221156Z (Reading database ... 15%
+2026-11-20T08:33:58.4221367Z (Reading database ... 20%
+2026-11-20T08:33:58.4221584Z (Reading database ... 25%
+2026-11-20T08:33:58.4221788Z (Reading database ... 30%
+2026-11-20T08:33:58.4221992Z (Reading database ... 35%
+2026-11-20T08:33:58.4222192Z (Reading database ... 40%
+2026-11-20T08:33:58.4222397Z (Reading database ... 45%
+2026-11-20T08:33:58.4222598Z (Reading database ... 50%
+2026-11-20T08:33:58.4241903Z (Reading database ... 55%
+2026-11-20T08:33:58.4476218Z (Reading database ... 60%
+2026-11-20T08:33:58.4737675Z (Reading database ... 65%
+2026-11-20T08:33:58.4854298Z (Reading database ... 70%
+2026-11-20T08:33:58.5004806Z (Reading database ... 75%
+2026-11-20T08:33:58.5155394Z (Reading database ... 80%
+2026-11-20T08:33:58.5418684Z (Reading database ... 85%
+2026-11-20T08:33:58.5582797Z (Reading database ... 90%
+2026-11-20T08:33:58.5751413Z (Reading database ... 95%
+2026-11-20T08:33:58.5751716Z (Reading database ... 100%
+2026-11-20T08:33:58.5752117Z (Reading database ... 210270 files and directories currently installed.)
+2026-11-20T08:33:58.5786737Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-11-20T08:33:58.5848275Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-20T08:33:58.7326116Z Selecting previously unselected package fonts-freefont-ttf.
+2026-11-20T08:33:58.7441145Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-11-20T08:33:58.7447716Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-20T08:33:58.8120729Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-11-20T08:33:58.8236344Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-11-20T08:33:58.8244009Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-20T08:33:58.8386701Z Selecting previously unselected package fonts-unifont.
+2026-11-20T08:33:58.8499084Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-11-20T08:33:58.8504992Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-11-20T08:33:58.9442353Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-11-20T08:33:58.9557483Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-11-20T08:33:58.9633017Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-20T08:33:59.2511283Z Selecting previously unselected package libva2:amd64.
+2026-11-20T08:33:59.2625249Z Preparing to unpack .../05-libva2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-20T08:33:59.2637994Z Unpacking libva2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T08:33:59.2790150Z Selecting previously unselected package libva-drm2:amd64.
+2026-11-20T08:33:59.2901955Z Preparing to unpack .../06-libva-drm2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-20T08:33:59.2908962Z Unpacking libva-drm2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T08:33:59.3049388Z Selecting previously unselected package libva-x11-2:amd64.
+2026-11-20T08:33:59.3162002Z Preparing to unpack .../07-libva-x11-2_2.20.0-2ubuntu0.2_amd64.deb ...
+2026-11-20T08:33:59.3169453Z Unpacking libva-x11-2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T08:33:59.3328598Z Selecting previously unselected package libvdpau1:amd64.
+2026-11-20T08:33:59.3446546Z Preparing to unpack .../08-libvdpau1_1.5-2build1_amd64.deb ...
+2026-11-20T08:33:59.3453772Z Unpacking libvdpau1:amd64 (1.5-2build1) ...
+2026-11-20T08:33:59.3640952Z Selecting previously unselected package libvpl2.
+2026-11-20T08:33:59.3757206Z Preparing to unpack .../09-libvpl2_2023.3.0-1build1_amd64.deb ...
+2026-11-20T08:33:59.3763135Z Unpacking libvpl2 (2023.3.0-1build1) ...
+2026-11-20T08:33:59.3936793Z Selecting previously unselected package ocl-icd-libopencl1:amd64.
+2026-11-20T08:33:59.4052922Z Preparing to unpack .../10-ocl-icd-libopencl1_2.3.2-1build1_amd64.deb ...
+2026-11-20T08:33:59.4059345Z Unpacking ocl-icd-libopencl1:amd64 (2.3.2-1build1) ...
+2026-11-20T08:33:59.4242250Z Selecting previously unselected package libavutil58:amd64.
+2026-11-20T08:33:59.4367031Z Preparing to unpack .../11-libavutil58_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-20T08:33:59.4375479Z Unpacking libavutil58:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T08:33:59.4569904Z Selecting previously unselected package libcodec2-1.2:amd64.
+2026-11-20T08:33:59.4686819Z Preparing to unpack .../12-libcodec2-1.2_1.2.0-2build1_amd64.deb ...
+2026-11-20T08:33:59.4694683Z Unpacking libcodec2-1.2:amd64 (1.2.0-2build1) ...
+2026-11-20T08:33:59.5295227Z Selecting previously unselected package libdav1d7:amd64.
+2026-11-20T08:33:59.5412326Z Preparing to unpack .../13-libdav1d7_1.4.1-1build1_amd64.deb ...
+2026-11-20T08:33:59.5418784Z Unpacking libdav1d7:amd64 (1.4.1-1build1) ...
+2026-11-20T08:33:59.5623448Z Selecting previously unselected package libgsm1:amd64.
+2026-11-20T08:33:59.5740967Z Preparing to unpack .../14-libgsm1_1.0.22-1build1_amd64.deb ...
+2026-11-20T08:33:59.5746509Z Unpacking libgsm1:amd64 (1.0.22-1build1) ...
+2026-11-20T08:33:59.5896374Z Selecting previously unselected package libhwy1t64:amd64.
+2026-11-20T08:33:59.6009942Z Preparing to unpack .../15-libhwy1t64_1.0.7-8.1build1_amd64.deb ...
+2026-11-20T08:33:59.6015695Z Unpacking libhwy1t64:amd64 (1.0.7-8.1build1) ...
+2026-11-20T08:33:59.6266744Z Selecting previously unselected package libjxl0.7:amd64.
+2026-11-20T08:33:59.6383344Z Preparing to unpack .../16-libjxl0.7_0.7.0-10.2ubuntu6.1_amd64.deb ...
+2026-11-20T08:33:59.6391909Z Unpacking libjxl0.7:amd64 (0.7.0-10.2ubuntu6.1) ...
+2026-11-20T08:33:59.6695984Z Selecting previously unselected package libmp3lame0:amd64.
+2026-11-20T08:33:59.6817474Z Preparing to unpack .../17-libmp3lame0_3.100-6build1_amd64.deb ...
+2026-11-20T08:33:59.6824048Z Unpacking libmp3lame0:amd64 (3.100-6build1) ...
+2026-11-20T08:33:59.6988232Z Selecting previously unselected package libopus0:amd64.
+2026-11-20T08:33:59.7106038Z Preparing to unpack .../18-libopus0_1.4-1build1_amd64.deb ...
+2026-11-20T08:33:59.7113691Z Unpacking libopus0:amd64 (1.4-1build1) ...
+2026-11-20T08:33:59.7287131Z Selecting previously unselected package librav1e0:amd64.
+2026-11-20T08:33:59.7410047Z Preparing to unpack .../19-librav1e0_0.7.1-2_amd64.deb ...
+2026-11-20T08:33:59.7416026Z Unpacking librav1e0:amd64 (0.7.1-2) ...
+2026-11-20T08:33:59.7671245Z Selecting previously unselected package librsvg2-2:amd64.
+2026-11-20T08:33:59.7789863Z Preparing to unpack .../20-librsvg2-2_2.58.0+dfsg-1ubuntu0.1_amd64.deb ...
+2026-11-20T08:33:59.7796574Z Unpacking librsvg2-2:amd64 (2.58.0+dfsg-1ubuntu0.1) ...
+2026-11-20T08:33:59.8191778Z Selecting previously unselected package libshine3:amd64.
+2026-11-20T08:33:59.8311721Z Preparing to unpack .../21-libshine3_3.1.1-2build1_amd64.deb ...
+2026-11-20T08:33:59.8317426Z Unpacking libshine3:amd64 (3.1.1-2build1) ...
+2026-11-20T08:33:59.8465853Z Selecting previously unselected package libspeex1:amd64.
+2026-11-20T08:33:59.8580254Z Preparing to unpack .../22-libspeex1_1.2.1-2ubuntu2.24.04.1_amd64.deb ...
+2026-11-20T08:33:59.8585808Z Unpacking libspeex1:amd64 (1.2.1-2ubuntu2.24.04.1) ...
+2026-11-20T08:33:59.8732139Z Selecting previously unselected package libsvtav1enc1d1:amd64.
+2026-11-20T08:33:59.8850978Z Preparing to unpack .../23-libsvtav1enc1d1_1.7.0+dfsg-2build1_amd64.deb ...
+2026-11-20T08:33:59.8857002Z Unpacking libsvtav1enc1d1:amd64 (1.7.0+dfsg-2build1) ...
+2026-11-20T08:33:59.9285431Z Selecting previously unselected package libsoxr0:amd64.
+2026-11-20T08:33:59.9403615Z Preparing to unpack .../24-libsoxr0_0.1.3-4build3_amd64.deb ...
+2026-11-20T08:33:59.9409282Z Unpacking libsoxr0:amd64 (0.1.3-4build3) ...
+2026-11-20T08:33:59.9563799Z Selecting previously unselected package libswresample4:amd64.
+2026-11-20T08:33:59.9680004Z Preparing to unpack .../25-libswresample4_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-20T08:33:59.9685654Z Unpacking libswresample4:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T08:33:59.9842313Z Selecting previously unselected package libtheora0:amd64.
+2026-11-20T08:33:59.9960008Z Preparing to unpack .../26-libtheora0_1.1.1+dfsg.1-16.1build3_amd64.deb ...
+2026-11-20T08:33:59.9966484Z Unpacking libtheora0:amd64 (1.1.1+dfsg.1-16.1build3) ...
+2026-11-20T08:34:00.0135892Z Selecting previously unselected package libtwolame0:amd64.
+2026-11-20T08:34:00.0247385Z Preparing to unpack .../27-libtwolame0_0.4.0-2build3_amd64.deb ...
+2026-11-20T08:34:00.0254439Z Unpacking libtwolame0:amd64 (0.4.0-2build3) ...
+2026-11-20T08:34:00.0404336Z Selecting previously unselected package libvorbisenc2:amd64.
+2026-11-20T08:34:00.0519851Z Preparing to unpack .../28-libvorbisenc2_1.3.7-1build3_amd64.deb ...
+2026-11-20T08:34:00.0525047Z Unpacking libvorbisenc2:amd64 (1.3.7-1build3) ...
+2026-11-20T08:34:00.0705700Z Selecting previously unselected package libvpx9:amd64.
+2026-11-20T08:34:00.0831796Z Preparing to unpack .../29-libvpx9_1.14.0-1ubuntu2.3_amd64.deb ...
+2026-11-20T08:34:00.0838677Z Unpacking libvpx9:amd64 (1.14.0-1ubuntu2.3) ...
+2026-11-20T08:34:00.1130956Z Selecting previously unselected package libx264-164:amd64.
+2026-11-20T08:34:00.1248970Z Preparing to unpack .../30-libx264-164_2%3a0.164.3108+git31e19f9-1_amd64.deb ...
+2026-11-20T08:34:00.1254261Z Unpacking libx264-164:amd64 (2:0.164.3108+git31e19f9-1) ...
+2026-11-20T08:34:00.1486806Z Selecting previously unselected package libx265-199:amd64.
+2026-11-20T08:34:00.1609372Z Preparing to unpack .../31-libx265-199_3.5-2build1_amd64.deb ...
+2026-11-20T08:34:00.1615211Z Unpacking libx265-199:amd64 (3.5-2build1) ...
+2026-11-20T08:34:00.2353721Z Selecting previously unselected package libxvidcore4:amd64.
+2026-11-20T08:34:00.2476075Z Preparing to unpack .../32-libxvidcore4_2%3a1.3.7-1build1_amd64.deb ...
+2026-11-20T08:34:00.2483548Z Unpacking libxvidcore4:amd64 (2:1.3.7-1build1) ...
+2026-11-20T08:34:00.2656534Z Selecting previously unselected package libzvbi-common.
+2026-11-20T08:34:00.2778622Z Preparing to unpack .../33-libzvbi-common_0.2.42-2_all.deb ...
+2026-11-20T08:34:00.2786112Z Unpacking libzvbi-common (0.2.42-2) ...
+2026-11-20T08:34:00.2985905Z Selecting previously unselected package libzvbi0t64:amd64.
+2026-11-20T08:34:00.3104693Z Preparing to unpack .../34-libzvbi0t64_0.2.42-2_amd64.deb ...
+2026-11-20T08:34:00.3111998Z Unpacking libzvbi0t64:amd64 (0.2.42-2) ...
+2026-11-20T08:34:00.3487438Z Selecting previously unselected package libavcodec60:amd64.
+2026-11-20T08:34:00.3608207Z Preparing to unpack .../35-libavcodec60_7%3a6.1.1-3ubuntu5_amd64.deb ...
+2026-11-20T08:34:00.3658626Z Unpacking libavcodec60:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T08:34:00.4511854Z Preparing to unpack .../36-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-20T08:34:00.4617225Z Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-20T08:34:00.5016344Z Preparing to unpack .../37-libglx-mesa0_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-20T08:34:00.5030060Z Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-20T08:34:00.5307509Z Preparing to unpack .../38-libgbm1_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-20T08:34:00.5323542Z Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-20T08:34:00.5599221Z Preparing to unpack .../39-mesa-libgallium_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-20T08:34:00.5613888Z Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-20T08:34:00.6988536Z Selecting previously unselected package xfonts-encodings.
+2026-11-20T08:34:00.7110388Z Preparing to unpack .../40-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-11-20T08:34:00.7119310Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-20T08:34:00.7343280Z Selecting previously unselected package xfonts-utils.
+2026-11-20T08:34:00.7463109Z Preparing to unpack .../41-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-11-20T08:34:00.7468858Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-11-20T08:34:00.7730944Z Selecting previously unselected package xfonts-cyrillic.
+2026-11-20T08:34:00.7853161Z Preparing to unpack .../42-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-11-20T08:34:00.7859181Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-20T08:34:00.8116376Z Selecting previously unselected package xfonts-scalable.
+2026-11-20T08:34:00.8232990Z Preparing to unpack .../43-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-11-20T08:34:00.8238956Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-20T08:34:00.8668081Z Setting up libhwy1t64:amd64 (1.0.7-8.1build1) ...
+2026-11-20T08:34:00.8686337Z Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-20T08:34:00.8699869Z Setting up libspeex1:amd64 (1.2.1-2ubuntu2.24.04.1) ...
+2026-11-20T08:34:00.8712673Z Setting up libshine3:amd64 (3.1.1-2build1) ...
+2026-11-20T08:34:00.8724815Z Setting up libvpl2 (2023.3.0-1build1) ...
+2026-11-20T08:34:00.8737396Z Setting up libx264-164:amd64 (2:0.164.3108+git31e19f9-1) ...
+2026-11-20T08:34:00.8751321Z Setting up libtwolame0:amd64 (0.4.0-2build3) ...
+2026-11-20T08:34:00.8763637Z Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-20T08:34:00.8776730Z Setting up libgsm1:amd64 (1.0.22-1build1) ...
+2026-11-20T08:34:00.8790097Z Setting up libsoxr0:amd64 (0.1.3-4build3) ...
+2026-11-20T08:34:00.8803598Z Setting up libcodec2-1.2:amd64 (1.2.0-2build1) ...
+2026-11-20T08:34:00.8817474Z Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-20T08:34:00.8873864Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-20T08:34:00.8956955Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-20T08:34:00.8971359Z Setting up libsvtav1enc1d1:amd64 (1.7.0+dfsg-2build1) ...
+2026-11-20T08:34:00.8985363Z Setting up libxvidcore4:amd64 (2:1.3.7-1build1) ...
+2026-11-20T08:34:00.8998779Z Setting up librav1e0:amd64 (0.7.1-2) ...
+2026-11-20T08:34:00.9010622Z Setting up librsvg2-2:amd64 (2.58.0+dfsg-1ubuntu0.1) ...
+2026-11-20T08:34:00.9023534Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-20T08:34:00.9037140Z Setting up libva2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T08:34:00.9049381Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-20T08:34:00.9061353Z Setting up libopus0:amd64 (1.4-1build1) ...
+2026-11-20T08:34:00.9073934Z Setting up libjxl0.7:amd64 (0.7.0-10.2ubuntu6.1) ...
+2026-11-20T08:34:00.9085977Z Setting up libx265-199:amd64 (3.5-2build1) ...
+2026-11-20T08:34:00.9098227Z Setting up libvpx9:amd64 (1.14.0-1ubuntu2.3) ...
+2026-11-20T08:34:00.9113697Z Setting up libdav1d7:amd64 (1.4.1-1build1) ...
+2026-11-20T08:34:00.9128416Z Setting up libva-drm2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T08:34:00.9140513Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-20T08:34:00.9229426Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-11-20T08:34:00.9241516Z Setting up ocl-icd-libopencl1:amd64 (2.3.2-1build1) ...
+2026-11-20T08:34:00.9254776Z Setting up libvdpau1:amd64 (1.5-2build1) ...
+2026-11-20T08:34:00.9272964Z Setting up libtheora0:amd64 (1.1.1+dfsg.1-16.1build3) ...
+2026-11-20T08:34:00.9286433Z Setting up libva-x11-2:amd64 (2.20.0-2ubuntu0.2) ...
+2026-11-20T08:34:00.9298521Z Setting up libzvbi-common (0.2.42-2) ...
+2026-11-20T08:34:00.9311768Z Setting up libmp3lame0:amd64 (3.100-6build1) ...
+2026-11-20T08:34:00.9324361Z Setting up libvorbisenc2:amd64 (1.3.7-1build3) ...
+2026-11-20T08:34:00.9337458Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-11-20T08:34:00.9351150Z Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-20T08:34:00.9365258Z Setting up libzvbi0t64:amd64 (0.2.42-2) ...
+2026-11-20T08:34:00.9378081Z Setting up libavutil58:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T08:34:00.9390442Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-11-20T08:34:00.9421371Z Setting up libswresample4:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T08:34:00.9434469Z Setting up libavcodec60:amd64 (7:6.1.1-3ubuntu5) ...
+2026-11-20T08:34:00.9448083Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-20T08:34:00.9704976Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-20T08:34:00.9916315Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-11-20T08:34:01.1385745Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-11-20T08:34:01.1408863Z Not building database; man-db/auto-update is not 'true'.
+2026-11-20T08:34:01.1420994Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-11-20T08:34:01.5458428Z 
+2026-11-20T08:34:01.5459386Z Failed to retrieve available kernel versions.
+2026-11-20T08:34:01.5459666Z 
+2026-11-20T08:34:01.5459820Z No services need to be restarted.
+2026-11-20T08:34:01.5460005Z 
+2026-11-20T08:34:01.5460158Z No containers need to be restarted.
+2026-11-20T08:34:01.5460345Z 
+2026-11-20T08:34:01.5460523Z No user sessions are running outdated binaries.
+2026-11-20T08:34:01.5460737Z 
+2026-11-20T08:34:01.5461003Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-20T08:34:02.5235057Z Cached 44 package(s) in /home/runner/work/_temp/playwright-apt
+2026-11-20T08:34:02.5241379Z ##[end-action id=__self_3.apt-deps;outcome=success;conclusion=success;duration_ms=9968]
+2026-11-20T08:34:02.5243257Z ##[start-action display=Save apt packages to cache;id=__self_3.__actions_cache]
+2026-11-20T08:34:02.5249316Z ##[end-action id=__self_3.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T08:34:02.5250616Z ##[start-action display=Restore playwright from cache;id=__self_3.playwright-cache]
+2026-11-20T08:34:02.5736378Z ##[group]Run actions/cache/restore@v5
+2026-11-20T08:34:02.5736550Z with:
+2026-11-20T08:34:02.5736678Z   path: ~/.cache/ms-playwright
+2026-11-20T08:34:02.5736958Z   key: playwright-v2-24.x-Linux-X64-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-20T08:34:02.5737250Z   enableCrossOsArchive: false
+2026-11-20T08:34:02.5737401Z   lookup-only: false
+2026-11-20T08:34:02.5737526Z env:
+2026-11-20T08:34:02.5737638Z   CI: true
+2026-11-20T08:34:02.5737772Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:34:02.5737936Z   E2E_PORT: 4000
+2026-11-20T08:34:02.5738070Z   test_results_path: test-results/
+2026-11-20T08:34:02.5738256Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:34:02.5738815Z ##[endgroup]
+2026-11-20T08:34:02.9663420Z Cache hit for: playwright-v2-24.x-Linux-X64-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-20T08:34:03.5803818Z Cache Size: ~465 MB (487539650 B)
+2026-11-20T08:34:03.5824577Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/45f44893-a65f-4884-a031-98b889e7096c/cache.tzst -P -C /home/runner/work/lexical/lexical --use-compress-program unzstd
+2026-11-20T08:34:06.1230217Z Cache restored successfully
+2026-11-20T08:34:06.2296335Z Cache restored from key: playwright-v2-24.x-Linux-X64-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77
+2026-11-20T08:34:06.2531475Z ##[end-action id=__self_3.playwright-cache;outcome=success;conclusion=success;duration_ms=3728]
+2026-11-20T08:34:06.2533477Z ##[start-action display=Install playwright;id=__self_3.__run]
+2026-11-20T08:34:06.2543885Z ##[group]Run pnpm exec playwright install
+2026-11-20T08:34:06.2544091Z [36;1mpnpm exec playwright install[0m
+2026-11-20T08:34:06.2544318Z [36;1mpnpm exec playwright install --list[0m
+2026-11-20T08:34:06.2562492Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:34:06.2562717Z env:
+2026-11-20T08:34:06.2562838Z   CI: true
+2026-11-20T08:34:06.2562985Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:34:06.2563163Z   E2E_PORT: 4000
+2026-11-20T08:34:06.2563304Z   test_results_path: test-results/
+2026-11-20T08:34:06.2563507Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:34:06.2563688Z ##[endgroup]
+2026-11-20T08:34:06.9840454Z Playwright Host validation warning: 
+2026-11-20T08:34:06.9841209Z ╔══════════════════════════════════════════════════════╗
+2026-11-20T08:34:06.9841560Z ║ Host system is missing dependencies to run browsers. ║
+2026-11-20T08:34:06.9841865Z ║ Missing libraries:                                   ║
+2026-11-20T08:34:06.9842161Z ║     libgtk-4.so.1                                    ║
+2026-11-20T08:34:06.9842472Z ║     libgraphene-1.0.so.0                             ║
+2026-11-20T08:34:06.9843176Z ║     libicudata.so.78                                 ║
+2026-11-20T08:34:06.9843485Z ║     libicui18n.so.78                                 ║
+2026-11-20T08:34:06.9843763Z ║     libicuuc.so.78                                   ║
+2026-11-20T08:34:06.9844030Z ║     libxml2.so.16                                    ║
+2026-11-20T08:34:06.9844293Z ║     libevent-2.1.so.7                                ║
+2026-11-20T08:34:06.9844568Z ║     libgstallocators-1.0.so.0                        ║
+2026-11-20T08:34:06.9844838Z ║     libgstapp-1.0.so.0                               ║
+2026-11-20T08:34:06.9845116Z ║     libgstpbutils-1.0.so.0                           ║
+2026-11-20T08:34:06.9845385Z ║     libgstaudio-1.0.so.0                             ║
+2026-11-20T08:34:06.9845649Z ║     libgsttag-1.0.so.0                               ║
+2026-11-20T08:34:06.9845922Z ║     libgstvideo-1.0.so.0                             ║
+2026-11-20T08:34:06.9846197Z ║     libgstgl-1.0.so.0                                ║
+2026-11-20T08:34:06.9846467Z ║     libgstcodecparsers-1.0.so.0                      ║
+2026-11-20T08:34:06.9846752Z ║     libgstfft-1.0.so.0                               ║
+2026-11-20T08:34:06.9847016Z ║     libflite.so.1                                    ║
+2026-11-20T08:34:06.9847284Z ║     libflite_usenglish.so.1                          ║
+2026-11-20T08:34:06.9847558Z ║     libflite_cmu_grapheme_lang.so.1                  ║
+2026-11-20T08:34:06.9847828Z ║     libflite_cmu_grapheme_lex.so.1                   ║
+2026-11-20T08:34:06.9848096Z ║     libflite_cmu_indic_lang.so.1                     ║
+2026-11-20T08:34:06.9848372Z ║     libflite_cmu_indic_lex.so.1                      ║
+2026-11-20T08:34:06.9848639Z ║     libflite_cmulex.so.1                             ║
+2026-11-20T08:34:06.9848906Z ║     libflite_cmu_time_awb.so.1                       ║
+2026-11-20T08:34:06.9849172Z ║     libflite_cmu_us_awb.so.1                         ║
+2026-11-20T08:34:06.9849617Z ║     libflite_cmu_us_kal16.so.1                       ║
+2026-11-20T08:34:06.9849889Z ║     libflite_cmu_us_kal.so.1                         ║
+2026-11-20T08:34:06.9850151Z ║     libflite_cmu_us_rms.so.1                         ║
+2026-11-20T08:34:06.9850416Z ║     libflite_cmu_us_slt.so.1                         ║
+2026-11-20T08:34:06.9850685Z ║     libjxl.so.0.11                                   ║
+2026-11-20T08:34:06.9850945Z ║     libavif.so.16                                    ║
+2026-11-20T08:34:06.9851215Z ║     libharfbuzz-icu.so.0                             ║
+2026-11-20T08:34:06.9851489Z ║     libsoup-3.0.so.0                                 ║
+2026-11-20T08:34:06.9851756Z ║     libwayland-server.so.0                           ║
+2026-11-20T08:34:06.9852023Z ║     libmanette-0.2.so.0                              ║
+2026-11-20T08:34:06.9852294Z ║     libhyphen.so.0                                   ║
+2026-11-20T08:34:06.9852562Z ║     libsecret-1.so.0                                 ║
+2026-11-20T08:34:06.9852848Z ║     libGLESv2.so.2                                   ║
+2026-11-20T08:34:06.9853146Z ╚══════════════════════════════════════════════════════╝
+2026-11-20T08:34:06.9853702Z     at validateDependenciesLinux (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:32259:9)
+2026-11-20T08:34:06.9854255Z     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-11-20T08:34:06.9854857Z     at async Registry._validateHostRequirements (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:33519:18)
+2026-11-20T08:34:06.9855686Z     at async Registry._validateHostRequirementsForExecutableIfNeeded (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:33641:11)
+2026-11-20T08:34:06.9856556Z     at async Registry.validateHostRequirementsForExecutablesIfNeeded (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:33630:11)
+2026-11-20T08:34:06.9857422Z     at async installBrowsers (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:70097:5)
+2026-11-20T08:34:06.9858145Z     at async _Command.<anonymous> (/home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core/lib/coreBundle.js:73670:7)
+2026-11-20T08:34:07.6726868Z 
+2026-11-20T08:34:07.6727280Z Playwright version: 1.63.0
+2026-11-20T08:34:07.6728603Z   Browsers:
+2026-11-20T08:34:07.6728813Z     /home/runner/.cache/ms-playwright/chromium-1243
+2026-11-20T08:34:07.6729112Z     /home/runner/.cache/ms-playwright/chromium_headless_shell-1243
+2026-11-20T08:34:07.6729393Z     /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-11-20T08:34:07.6731857Z     /home/runner/.cache/ms-playwright/firefox-1543
+2026-11-20T08:34:07.6732113Z     /home/runner/.cache/ms-playwright/webkit-2359
+2026-11-20T08:34:07.6732338Z   References:
+2026-11-20T08:34:07.6732645Z     /home/runner/work/lexical/lexical/node_modules/.pnpm/playwright-core@1.63.0/node_modules/playwright-core
+2026-11-20T08:34:07.7212467Z ##[end-action id=__self_3.__run;outcome=success;conclusion=success;duration_ms=1467]
+2026-11-20T08:34:07.7214205Z ##[start-action display=Save playwright to cache;id=__self_3.__actions_cache_2]
+2026-11-20T08:34:07.7218087Z ##[end-action id=__self_3.__actions_cache_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T08:34:07.7238259Z ##[group]Run nohup pnpm run collab > /tmp/collab-server.log 2>&1 &
+2026-11-20T08:34:07.7238667Z [36;1mnohup pnpm run collab > /tmp/collab-server.log 2>&1 &[0m
+2026-11-20T08:34:07.7238976Z [36;1mup() { curl --max-time 3 -s -o /dev/null http://localhost:1234/; }[0m
+2026-11-20T08:34:07.7239234Z [36;1mfor i in $(seq 1 60); do up && break; sleep 1; done[0m
+2026-11-20T08:34:07.7239426Z [36;1mif ! up; then[0m
+2026-11-20T08:34:07.7239625Z [36;1m  echo "::error::The collab server did not respond on :1234 within 60s"[0m
+2026-11-20T08:34:07.7239885Z [36;1m  tail -n 100 /tmp/collab-server.log || true[0m
+2026-11-20T08:34:07.7240057Z [36;1m  exit 1[0m
+2026-11-20T08:34:07.7240175Z [36;1mfi[0m
+2026-11-20T08:34:07.7252796Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T08:34:07.7253000Z env:
+2026-11-20T08:34:07.7253120Z   CI: true
+2026-11-20T08:34:07.7253262Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:34:07.7253448Z   E2E_PORT: 4000
+2026-11-20T08:34:07.7253662Z   test_results_path: test-results/
+2026-11-20T08:34:07.7253854Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:34:07.7254039Z ##[endgroup]
+2026-11-20T08:34:08.7580094Z ##[group]Run coldteadotai/boba@v1
+2026-11-20T08:34:08.7580261Z with:
+2026-11-20T08:34:08.7580394Z   config: playwright.config.mjs
+2026-11-20T08:34:08.7580558Z   project: chromium
+2026-11-20T08:34:08.7580683Z   turbo: false
+2026-11-20T08:34:08.7580804Z   fail-fast: false
+2026-11-20T08:34:08.7582340Z   github-token: ***
+2026-11-20T08:34:08.7582466Z   timeout-minutes: 60
+2026-11-20T08:34:08.7582595Z   check-name: Boba
+2026-11-20T08:34:08.7582719Z   post: true
+2026-11-20T08:34:08.7582839Z env:
+2026-11-20T08:34:08.7582951Z   CI: true
+2026-11-20T08:34:08.7583082Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:34:08.7583242Z   E2E_PORT: 4000
+2026-11-20T08:34:08.7583374Z   test_results_path: test-results/
+2026-11-20T08:34:08.7583553Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:34:08.7583744Z   E2E_BROWSER: chromium
+2026-11-20T08:34:08.7583876Z ##[endgroup]
+2026-11-20T08:34:10.3337170Z Waiting for Boba job bj_0b2f4071183b9543
+2026-11-20T08:34:10.5597880Z Boba history read in 226 ms
+2026-11-20T08:34:11.7799143Z Boba job bj_0b2f4071183b9543: running, resolving
+2026-11-20T08:34:14.2922943Z Boba job bj_0b2f4071183b9543: running, building
+2026-11-20T08:34:26.3111403Z Boba job bj_0b2f4071183b9543: running, listing
+2026-11-20T08:34:29.9954022Z Boba job bj_0b2f4071183b9543: running, running
+2026-11-20T08:37:57.0936946Z Boba job bj_0b2f4071183b9543: done
+2026-11-20T08:37:57.1304134Z Merged report unpacked into /home/runner/work/_temp/boba-report
+2026-11-20T08:37:58.0931600Z Check run: https://github.com/boba-benchmarks/lexical/runs/136179255924
+2026-11-20T08:37:58.1190062Z ##[group]Run actions/upload-artifact@v7
+2026-11-20T08:37:58.1190331Z with:
+2026-11-20T08:37:58.1190577Z   name: Test Results collab-v2-linux-chromium-44703231983-1
+2026-11-20T08:37:58.1190891Z   path: test-results/
+2026-11-20T08:37:58.1191110Z   if-no-files-found: ignore
+2026-11-20T08:37:58.1191325Z   retention-days: 7
+2026-11-20T08:37:58.1191533Z   compression-level: 6
+2026-11-20T08:37:58.1191742Z   overwrite: false
+2026-11-20T08:37:58.1191955Z   include-hidden-files: false
+2026-11-20T08:37:58.1192186Z   archive: true
+2026-11-20T08:37:58.1192420Z env:
+2026-11-20T08:37:58.1192609Z   CI: true
+2026-11-20T08:37:58.1192827Z   E2E_EDITOR_MODE: rich-text-with-collab-v2
+2026-11-20T08:37:58.1193073Z   E2E_PORT: 4000
+2026-11-20T08:37:58.1193304Z   test_results_path: test-results/
+2026-11-20T08:37:58.1193562Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T08:37:58.1193850Z ##[endgroup]
+2026-11-20T08:37:58.2162549Z No files were found with the provided path: test-results/. No artifacts will be uploaded.
+2026-11-20T08:37:58.2336070Z Post job cleanup.
+2026-11-20T08:37:58.2340736Z ##[start-action display=Use Node.js 24.x;id=__1e79b605-e63c-4034-a180-c0b3cd90bafd.__actions_setup-node]
+2026-11-20T08:37:58.2373700Z Post job cleanup.
+2026-11-20T08:37:58.3305447Z [command]/usr/local/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/lexical/lexical --files-from manifest.txt --use-compress-program zstdmt
+2026-11-20T08:38:06.1299818Z ##[warning]Cache reservation failed: cache entry with key node-cache-Linux-x64-pnpm-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77 already exists for refs/heads/main
+2026-11-20T08:38:06.1301343Z Failed to save: Unable to reserve cache with key node-cache-Linux-x64-pnpm-60015096333d564ee24c484fca3a545e805afcf17807bc52658a4a1f687e1d77, another job may be creating this cache.
+2026-11-20T08:38:06.2608269Z ##[end-action id=__1e79b605-e63c-4034-a180-c0b3cd90bafd.__actions_setup-node;outcome=success;conclusion=success;duration_ms=8026]
+2026-11-20T08:38:06.2611478Z ##[start-action display=Run pnpm/action-setup@v6;id=__1e79b605-e63c-4034-a180-c0b3cd90bafd.__pnpm_action-setup]
+2026-11-20T08:38:06.2644208Z Post job cleanup.
+2026-11-20T08:38:06.3637522Z Pruning is unnecessary.
+2026-11-20T08:38:06.3726669Z ##[end-action id=__1e79b605-e63c-4034-a180-c0b3cd90bafd.__pnpm_action-setup;outcome=success;conclusion=success;duration_ms=111]
+2026-11-20T08:38:06.3798927Z Post job cleanup.
+2026-11-20T08:38:06.4380059Z [command]/usr/bin/git version
+2026-11-20T08:38:06.4408199Z git version 2.56.1
+2026-11-20T08:38:06.4425994Z Temporarily overriding HOME='/home/runner/work/_temp/ba232750-f9e6-48dc-ab76-96dc108a7fc3' before making global git config changes
+2026-11-20T08:38:06.4426587Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T08:38:06.4429200Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/lexical/lexical
+2026-11-20T08:38:06.4451374Z Removing SSH command configuration
+2026-11-20T08:38:06.4454736Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T08:38:06.4476465Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T08:38:06.4710380Z Removing HTTP extra header
+2026-11-20T08:38:06.4713298Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T08:38:06.4736045Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T08:38:06.4920589Z Removing includeIf entries pointing to credentials config files
+2026-11-20T08:38:06.4924443Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T08:38:06.4944337Z includeif.gitdir:/home/runner/work/lexical/lexical/.git.path
+2026-11-20T08:38:06.4944798Z includeif.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path
+2026-11-20T08:38:06.4945208Z includeif.gitdir:/github/workspace/.git.path
+2026-11-20T08:38:06.4945550Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-20T08:38:06.4951199Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/lexical/lexical/.git.path
+2026-11-20T08:38:06.4967602Z /home/runner/work/_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:38:06.4972983Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/lexical/lexical/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-1534dc96\-5e4b\-4d6c\-b6f5\-488114eaf5d6\.config
+2026-11-20T08:38:06.4999870Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path
+2026-11-20T08:38:06.5015373Z /home/runner/work/_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:38:06.5020443Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/lexical/lexical/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-1534dc96\-5e4b\-4d6c\-b6f5\-488114eaf5d6\.config
+2026-11-20T08:38:06.5046412Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-20T08:38:06.5063212Z /github/runner_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:38:06.5067991Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-1534dc96\-5e4b\-4d6c\-b6f5\-488114eaf5d6\.config
+2026-11-20T08:38:06.5090684Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-20T08:38:06.5105920Z /github/runner_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config
+2026-11-20T08:38:06.5110940Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-1534dc96\-5e4b\-4d6c\-b6f5\-488114eaf5d6\.config
+2026-11-20T08:38:06.5132757Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T08:38:06.5309578Z Removing credentials config '/home/runner/work/_temp/git-credentials-1534dc96-5e4b-4d6c-b6f5-488114eaf5d6.config'
+2026-11-20T08:38:06.5453166Z Cleaning up orphan processes
+2026-11-20T08:38:06.5790808Z Terminate orphan process: pid (3704) (MainThread)
+2026-11-20T08:38:06.5811537Z Terminate orphan process: pid (3726) (sh)
+2026-11-20T08:38:06.5828481Z Terminate orphan process: pid (3727) (MainThread)
+2026-11-20T08:38:06.5841767Z Terminate orphan process: pid (3739) (MainThread)
+2026-11-20T08:38:06.5857405Z Terminate orphan process: pid (3758) (MainThread)

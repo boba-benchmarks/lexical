@@ -1,0 +1,13 @@
+{
+ "id": 44703231983,
+ "html_url": "https://github.com/boba-benchmarks/lexical/actions/runs/44703231983",
+ "head_sha": "0b0898076de03774b4f08838d1ffc42dd18bc90c",
+ "head_branch": "main",
+ "event": "workflow_dispatch",
+ "status": "completed",
+ "conclusion": "success",
+ "created_at": "2026-11-20T08:31:32Z",
+ "updated_at": "2026-11-20T08:41:13Z",
+ "run_started_at": "2026-11-20T08:31:32Z",
+ "run_attempt": 1
+}

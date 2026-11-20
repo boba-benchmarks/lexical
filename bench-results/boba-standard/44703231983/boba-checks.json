@@ -1,0 +1,132 @@
+[
+ {
+  "name": "Boba / collab-v2-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136180604855",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:20Z",
+  "completed_at": "2026-11-20T08:40:56Z",
+  "title": "452 passed",
+  "summary": "### \u2705 All 452 tests passed in 6 min 36 s\n\nOn 0b08980 \u00b7 7 min 57 s into the job \u00b7 256 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_683cd2a121223b69/a75b324729bed426e192aba107d749b4/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (firefox, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136179832080",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:43Z",
+  "completed_at": "2026-11-20T08:39:11Z",
+  "title": "608 passed",
+  "summary": "### \u2705 All 608 tests passed in 4 min 27 s\n\nOn 0b08980 \u00b7 6 min 12 s into the job \u00b7 100 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_e1997ece60eb14d9/3c986f1e449bbe39b5092410ebe2d2fe/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136179509382",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:25Z",
+  "completed_at": "2026-11-20T08:38:27Z",
+  "title": "463 passed",
+  "summary": "### \u2705 All 463 tests passed in 4 min 1 s\n\nOn 0b08980 \u00b7 5 min 29 s into the job \u00b7 245 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_9e25cdf94e21a437/29f96d1f8c731a420f7825c35c7bbdd8/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-prod (chromium, rich-text-with-collab) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136179417969",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:07Z",
+  "completed_at": "2026-11-20T08:38:14Z",
+  "title": "478 passed",
+  "summary": "### \u2705 All 478 tests passed in 4 min 6 s\n\nOn 0b08980 \u00b7 5 min 15 s into the job \u00b7 230 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_dcb7c33edee89047/8a9b2ff86d5bb454d165d403f32a9c31/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / prod (chromium, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136179264693",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:44Z",
+  "completed_at": "2026-11-20T08:37:51Z",
+  "title": "638 passed",
+  "summary": "### \u2705 All 638 tests passed in 3 min 7 s\n\nOn 0b08980 \u00b7 4 min 52 s into the job \u00b7 70 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_310c9c29cc3fd584/e9d6e2856bc10e64f6c02ea8321f6297/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-v2-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136179255924",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:26Z",
+  "completed_at": "2026-11-20T08:37:52Z",
+  "title": "466 passed",
+  "summary": "### \u2705 All 466 tests passed in 3 min 27 s\n\nOn 0b08980 \u00b7 4 min 56 s into the job \u00b7 242 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_0b2f4071183b9543/bb9b743477144377728f2f2f156bc921/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136179047834",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:24Z",
+  "completed_at": "2026-11-20T08:37:24Z",
+  "title": "478 passed",
+  "summary": "### \u2705 All 478 tests passed in 3 min\n\nOn 0b08980 \u00b7 4 min 28 s into the job \u00b7 230 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_48368350a9f0522e/f67f4eefb1322eb8e6e2b00fd85ab12a/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (chromium, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136179028039",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:09Z",
+  "completed_at": "2026-11-20T08:37:21Z",
+  "title": "638 passed",
+  "summary": "### \u2705 All 638 tests passed in 3 min 12 s\n\nOn 0b08980 \u00b7 4 min 23 s into the job \u00b7 70 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_a6f1c8bbdcb4afff/d32a8c7a6943f0382098bbf867acf598/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-y-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136178280507",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:44Z",
+  "completed_at": "2026-11-20T08:35:41Z",
+  "title": "39 passed",
+  "summary": "### \u2705 All 39 tests passed in 57 s\n\nOn 0b08980 \u00b7 2 min 42 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_455e67f5e094767b/82871ef318a36dbe7dd43b5fef02f14e/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (firefox, plain-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136178022526",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:24Z",
+  "completed_at": "2026-11-20T08:35:06Z",
+  "title": "82 passed",
+  "summary": "### \u2705 All 82 tests passed in 42 s\n\nOn 0b08980 \u00b7 2 min 9 s into the job \u00b7 626 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_517672c85b75385c/c31fa8ecff80026d7a13c30efc5f065a/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (chromium, plain-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136177956235",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:19Z",
+  "completed_at": "2026-11-20T08:34:55Z",
+  "title": "92 passed",
+  "summary": "### \u2705 All 92 tests passed in 36 s\n\nOn 0b08980 \u00b7 1 min 59 s into the job \u00b7 616 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_6a183f20001675f5/c281b70acd9debd5bb60874844edeea0/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-y-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136177956069",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:34:02Z",
+  "completed_at": "2026-11-20T08:34:58Z",
+  "title": "35 passed",
+  "summary": "### \u2705 All 35 tests passed in 56 s\n\nOn 0b08980 \u00b7 1 min 59 s into the job \u00b7 4 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_7c00c846955e19b4/0b82a90996a9621a7533575d4681adcf/html/index.html)\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136176457574",
+  "conclusion": "success",
+  "started_at": "2026-11-20T08:31:40Z",
+  "completed_at": "2026-11-20T08:41:03Z",
+  "title": "All 14 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| build-ubuntu (boba-standard) | Passed | The job ended (success) |\n| build-ubuntu-prod (boba-standard) | Passed | The job ended (success) |\n| [collab-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136179047834) | Passed | 478 passed |\n| [collab-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136179509382) | Passed | 463 passed |\n| [collab-prod (chromium, rich-text-with-collab) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136179417969) | Passed | 478 passed |\n| [collab-v2-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136179255924) | Passed | 466 passed |\n| [collab-v2-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136180604855) | Passed | 452 passed |\n| [collab-y-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136178280507) | Passed | 39 passed |\n| [collab-y-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136177956069) | Passed | 35 passed |\n| [linux (chromium, plain-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136177956235) | Passed | 92 passed |\n| [linux (chromium, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136179028039) | Passed | 638 passed |\n| [linux (firefox, plain-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136178022526) | Passed | 82 passed |\n| [linux (firefox, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136179832080) | Passed | 608 passed |\n| [prod (chromium, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136179264693) | Passed | 638 passed |",
+  "text": null
+ }
+]
