@@ -1,0 +1,132 @@
+[
+ {
+  "name": "Boba / linux (firefox, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136196214169",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:10Z",
+  "completed_at": "2026-11-20T09:15:26Z",
+  "title": "608 passed",
+  "summary": "### \u2705 All 608 tests passed in 4 min 16 s\n\nOn 0b08980 \u00b7 5 min 5 s into the job \u00b7 100 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_5a7f01900e155e9c/d06457b54b44ec2021436929ddb40aba/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136196134266",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:11Z",
+  "completed_at": "2026-11-20T09:15:16Z",
+  "title": "463 passed",
+  "summary": "### \u2705 All 463 tests passed in 4 min 5 s\n\nOn 0b08980 \u00b7 4 min 54 s into the job \u00b7 245 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_be837b51e976f7cd/2d7a024cf9c7cdc628ba77cd0da5a7a2/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-v2-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136196081997",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:10Z",
+  "completed_at": "2026-11-20T09:15:10Z",
+  "title": "452 passed",
+  "summary": "### \u2705 All 452 tests passed in 4 min\n\nOn 0b08980 \u00b7 4 min 48 s into the job \u00b7 256 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_96384249d5f59ab4/5bb6abcf7b2bd7eba41b6114bf39064e/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-v2-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136195875022",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:23Z",
+  "completed_at": "2026-11-20T09:14:44Z",
+  "title": "466 passed",
+  "summary": "### \u2705 All 466 tests passed in 3 min 21 s\n\nOn 0b08980 \u00b7 4 min 18 s into the job \u00b7 242 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_1cdd9adadef139b3/8d835a41c9836d77eb5c9d86ef8b1234/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136195699078",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:11Z",
+  "completed_at": "2026-11-20T09:14:22Z",
+  "title": "478 passed",
+  "summary": "### \u2705 All 478 tests passed in 3 min 11 s\n\nOn 0b08980 \u00b7 4 min into the job \u00b7 230 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_860af4ec6753817f/c62bbe5732f10e098b63b0ad7f8d298d/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / prod (chromium, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136195591359",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:34Z",
+  "completed_at": "2026-11-20T09:14:09Z",
+  "title": "638 passed",
+  "summary": "### \u2705 All 638 tests passed in 2 min 35 s\n\nOn 0b08980 \u00b7 3 min 48 s into the job \u00b7 70 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_ea3a2a3fe7d751a2/87257b148cdb866290405089b9c128c7/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (chromium, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136195337340",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:15Z",
+  "completed_at": "2026-11-20T09:13:35Z",
+  "title": "638 passed",
+  "summary": "### \u2705 All 638 tests passed in 2 min 20 s\n\nOn 0b08980 \u00b7 3 min 11 s into the job \u00b7 70 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_dded12e5dcfd9b48/1b235e1905f84991f3b8dab9ad306e3d/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-prod (chromium, rich-text-with-collab) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136195269905",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:08Z",
+  "completed_at": "2026-11-20T09:13:28Z",
+  "title": "478 passed",
+  "summary": "### \u2705 All 478 tests passed in 2 min 20 s\n\nOn 0b08980 \u00b7 3 min 7 s into the job \u00b7 230 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_af722aeca81208cc/89f1c2a463a92c05ac99f1e6ffa5c032/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-y-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136194951963",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:19Z",
+  "completed_at": "2026-11-20T09:12:50Z",
+  "title": "35 passed",
+  "summary": "### \u2705 All 35 tests passed in 1 min 31 s\n\nOn 0b08980 \u00b7 2 min 23 s into the job \u00b7 4 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_a9f5b4ba7b4e5eea/405a391e179118955ccee4691e400074/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-y-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136194825808",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:12Z",
+  "completed_at": "2026-11-20T09:12:34Z",
+  "title": "39 passed",
+  "summary": "### \u2705 All 39 tests passed in 1 min 21 s\n\nOn 0b08980 \u00b7 2 min 8 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_5d2cedb534aab12d/02ae4d18cbde63b44ca78719e0eb71c2/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (firefox, plain-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136194655315",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:09Z",
+  "completed_at": "2026-11-20T09:12:09Z",
+  "title": "82 passed",
+  "summary": "### \u2705 All 82 tests passed in 1 min\n\nOn 0b08980 \u00b7 1 min 46 s into the job \u00b7 626 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_7c1f8d35c8374ad0/f7cba8c3964b55cc266ab9df2aaa61c1/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (chromium, plain-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136194646044",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:11:09Z",
+  "completed_at": "2026-11-20T09:12:06Z",
+  "title": "92 passed",
+  "summary": "### \u2705 All 92 tests passed in 57 s\n\nOn 0b08980 \u00b7 1 min 45 s into the job \u00b7 616 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_155de506b94d88d1/47170be68c50e88fae17d439d4ba984f/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136193468257",
+  "conclusion": "success",
+  "started_at": "2026-11-20T09:09:44Z",
+  "completed_at": "2026-11-20T09:15:35Z",
+  "title": "All 14 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| build-ubuntu (boba-standard) | Passed | The job ended (success) |\n| build-ubuntu-prod (boba-standard) | Passed | The job ended (success) |\n| [collab-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136195699078) | Passed | 478 passed |\n| [collab-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136196134266) | Passed | 463 passed |\n| [collab-prod (chromium, rich-text-with-collab) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136195269905) | Passed | 478 passed |\n| [collab-v2-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136195875022) | Passed | 466 passed |\n| [collab-v2-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136196081997) | Passed | 452 passed |\n| [collab-y-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136194825808) | Passed | 39 passed |\n| [collab-y-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136194951963) | Passed | 35 passed |\n| [linux (chromium, plain-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136194646044) | Passed | 92 passed |\n| [linux (chromium, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136195337340) | Passed | 638 passed |\n| [linux (firefox, plain-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136194655315) | Passed | 82 passed |\n| [linux (firefox, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136196214169) | Passed | 608 passed |\n| [prod (chromium, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136195591359) | Passed | 638 passed |",
+  "text": null
+ }
+]
