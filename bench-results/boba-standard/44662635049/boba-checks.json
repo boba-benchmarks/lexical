@@ -1,0 +1,132 @@
+[
+ {
+  "name": "Boba / prod (chromium, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045639091",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:31Z",
+  "completed_at": "2026-11-20T02:45:33Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-v2-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045629130",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:29Z",
+  "completed_at": "2026-11-20T02:45:31Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045622480",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:29Z",
+  "completed_at": "2026-11-20T02:45:30Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (chromium, plain-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045595124",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:24Z",
+  "completed_at": "2026-11-20T02:45:26Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045588246",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:22Z",
+  "completed_at": "2026-11-20T02:45:25Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-y-linux (chromium) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045577461",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:22Z",
+  "completed_at": "2026-11-20T02:45:23Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-v2-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045571426",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:20Z",
+  "completed_at": "2026-11-20T02:45:22Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (firefox, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045564240",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:19Z",
+  "completed_at": "2026-11-20T02:45:21Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (firefox, plain-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045557851",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:18Z",
+  "completed_at": "2026-11-20T02:45:21Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-prod (chromium, rich-text-with-collab) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045546269",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:17Z",
+  "completed_at": "2026-11-20T02:45:19Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / linux (chromium, rich-text) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045518425",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:11Z",
+  "completed_at": "2026-11-20T02:45:14Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba / collab-y-linux (firefox) (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136045511591",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:45:11Z",
+  "completed_at": "2026-11-20T02:45:14Z",
+  "title": "Nothing ran: check the Boba step's settings",
+  "summary": "### \u26a0\ufe0f Nothing ran: check the Boba step's settings\n\nThe Boba step's settings don't pick a suite with tests on eec04f5, so nothing ran.\n\n```\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n```\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nThe Playwright tests of boba-benchmarks/lexical at commit eec04f5 didn't run: the settings of its Boba step don't pick a suite with tests. The error:\n\nThe Boba step's settings don't name one suite to run. Several Playwright configs; set working-directory on the Boba step to the one your workflow runs:\nplaywright.config.mjs\nexamples/extension-sveltekit-ssr-hydration/playwright.config.ts\nexamples/nextjs-code-shiki/playwright.config.ts\nexamples/shadow-dom/playwright.config.ts\nexamples/shadow-dom-web-component/playwright.config.ts\n\nFix the `coldteadotai/boba` step in the workflow under .github/workflows/ (its `working-directory`, `config` and `project` inputs), not the test code. Then check that `npx playwright test --list`, run with the same settings, lists the tests\n```\n\n</details>\n\n[Full log](https://github.com/boba-benchmarks/lexical/actions/runs/44662635049)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/lexical/runs/136044328137",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T02:42:02Z",
+  "completed_at": "2026-11-20T02:45:34Z",
+  "title": "12 of 14 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| build-ubuntu (boba-standard) | Passed | The job ended (success) |\n| build-ubuntu-prod (boba-standard) | Passed | The job ended (success) |\n| [collab-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045588246) | **Failed** | Nothing ran: check the Boba step's settings |\n| [collab-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045622480) | **Failed** | Nothing ran: check the Boba step's settings |\n| [collab-prod (chromium, rich-text-with-collab) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045546269) | **Failed** | Nothing ran: check the Boba step's settings |\n| [collab-v2-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045629130) | **Failed** | Nothing ran: check the Boba step's settings |\n| [collab-v2-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045571426) | **Failed** | Nothing ran: check the Boba step's settings |\n| [collab-y-linux (chromium) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045577461) | **Failed** | Nothing ran: check the Boba step's settings |\n| [collab-y-linux (firefox) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045511591) | **Failed** | Nothing ran: check the Boba step's settings |\n| [linux (chromium, plain-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045595124) | **Failed** | Nothing ran: check the Boba step's settings |\n| [linux (chromium, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045518425) | **Failed** | Nothing ran: check the Boba step's settings |\n| [linux (firefox, plain-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045557851) | **Failed** | Nothing ran: check the Boba step's settings |\n| [linux (firefox, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045564240) | **Failed** | Nothing ran: check the Boba step's settings |\n| [prod (chromium, rich-text) (boba-standard)](https://github.com/boba-benchmarks/lexical/runs/136045639091) | **Failed** | Nothing ran: check the Boba step's settings |",
+  "text": null
+ }
+]
